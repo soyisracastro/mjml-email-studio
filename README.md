@@ -47,10 +47,12 @@ emails/
 │   │   │   └── special-offer.mjml
 │   │   ├── follow-up/          # Emails de seguimiento
 │   │   │   └── post-service-feedback.mjml
-│   │   └── newsletter/         # Newsletters y boletines
-│   │       ├── personal-newsletter.mjml
-│   │       ├── workshop-example.mjml
-│   │       └── workshop-update.mjml
+│   │   ├── newsletter/         # Newsletters y boletines
+│   │   │   ├── personal-newsletter.mjml
+│   │   │   ├── workshop-example.mjml
+│   │   │   └── workshop-update.mjml
+│   │   └── gmail/              # Templates para Gmail 🆕
+│   │       └── simple-template.mjml
 │   │
 │   └── config/
 │       └── design-tokens.json  # Variables del design system
@@ -60,7 +62,10 @@ emails/
 │   └── build.js               # Script de compilación
 ├── package.json
 ├── mjml.config.js
-└── README.md
+├── README.md
+├── QUICK_START.md
+├── TESTING_GUIDE.md
+└── GMAIL_TEMPLATE_GUIDE.md    # Guía para Gmail 🆕
 ```
 
 ---
@@ -186,6 +191,35 @@ Ver [`newsletter/workshop-example.mjml`](src/templates/newsletter/workshop-examp
 - 3 planes de precios
 - Instrucciones de pago bancario
 - Firma personalizada con P.S.
+
+### 5. **Gmail Template** - Template Personal Simple 🆕
+**Archivo:** `gmail/simple-template.mjml`
+
+**Uso:** Template minimalista para usar directamente en Gmail como borrador o plantilla personal
+
+**Características:**
+- ✨ **Sin elementos de marketing** - No incluye unsubscribe, links legales, etc.
+- ✨ **Header simple** - Solo logo y línea divisoria
+- ✨ **Footer minimalista** - Solo información de contacto básica
+- ✨ **Área de contenido limpia** - Espacio en blanco para escribir libremente
+- ✨ **Optimizado para Gmail** - Compatible con el editor de Gmail
+- ✨ **Fácil de personalizar** - Edita directamente en Gmail después de importar
+
+**Cómo usar:**
+1. Compila el template: `npm run build`
+2. Copia el HTML de `dist/gmail/simple-template.html`
+3. En Gmail: Redactar → Vista HTML → Pegar
+4. Guarda como borrador o plantilla de Gmail
+
+**Guía completa:** Ver [`GMAIL_TEMPLATE_GUIDE.md`](GMAIL_TEMPLATE_GUIDE.md) para instrucciones detalladas paso a paso.
+
+**Ideal para:**
+- Emails personales desde tu cuenta de Gmail
+- Comunicación rápida con clientes
+- Respuestas que necesitan el branding de Todoconta
+- Emails que no requieren tracking o métricas
+
+---
 
 **Cómo usar:**
 1. Abre `personal-newsletter.mjml`

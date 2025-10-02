@@ -1,0 +1,60 @@
+<mj-section background-color="#f8fafc" padding="30px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="16px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="12px"
+        >
+          Todoconta
+        </mj-text>
+
+        <mj-text 
+        color="#9ca3af" 
+        font-size="14px"
+        align="center"
+        padding-bottom="24px"
+        >
+        Soluciones fiscales y contables para tu negocio
+        </mj-text>
+        
+        <!-- Contact Info -->
+        <mj-text 
+          color="#6b7280" 
+          font-size="14px"
+          align="center"
+          padding-bottom="8px"
+        >
+          📱 <a href="https://wa.me/5215544753602" style="color: #14b8a6; text-decoration: none;">+52 55 4475 3602</a>
+        </mj-text>
+
+        <mj-text 
+          color="#6b7280" 
+          font-size="14px"
+          align="center"
+        >
+          🌐 <a href="https://todoconta.com" style="color: #14b8a6; text-decoration: none;">www.todoconta.com</a>
+        </mj-text>
+
+        <!-- Legal Links -->
+        <mj-text 
+        color="#6b7280" 
+        font-size="12px"
+        align="center"
+        padding-bottom="16px"
+        >
+        <a href="https://todoconta.com/privacidad" style="color: #6b7280; text-decoration: none;">Política de Privacidad</a> | 
+        <a href="https://todoconta.com/terminos" style="color: #6b7280; text-decoration: none;">Términos y Condiciones</a>
+        </mj-text>
+
+        <!-- Copyright -->
+    <mj-text 
+      color="#6b7280" 
+      font-size="12px"
+      align="center"
+    >
+      © 2025 Todoconta. Todos los derechos reservados.
+    </mj-text>
+      </mj-column>
+    </mj-section>

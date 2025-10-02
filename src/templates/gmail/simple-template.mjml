@@ -1,0 +1,59 @@
+<mjml>
+  <mj-head>
+    <mj-title>Template Gmail - Todoconta</mj-title>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header Simple -->
+        <mj-include path="../../components/header.mjml" />
+    
+    <!-- ÁREA DE CONTENIDO - ESCRIBE AQUÍ -->
+    <mj-section background-color="#ffffff" padding="40px 30px">
+      <mj-column>
+        <!-- Saludo -->
+        <mj-text padding-bottom="16px"
+        >
+          Hola 👋
+        </mj-text>
+        
+        <!-- 
+          ============================================
+          ESCRIBE TU CONTENIDO AQUÍ
+          ============================================
+          
+          Usa <mj-text> para cada párrafo
+          Usa <strong> para negritas
+          Usa <em> para cursivas
+          
+          Ejemplo:
+          <mj-text padding-bottom="16px">
+            Tu texto aquí
+          </mj-text>
+        -->
+        
+        <mj-text padding-bottom="16px">
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer Simple -->
+    <mj-include path="../../components/footer-simple.mjml" />
+  </mj-body>
+</mjml>
