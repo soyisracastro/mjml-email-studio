@@ -54,6 +54,14 @@ Usa "Send a test email" en Sendy para verificar que todo se vea bien.
 - Servicios relacionados
 - Encuesta de satisfacción
 
+### Newsletter Personal
+**Archivo:** `dist/newsletter/personal-newsletter.html`
+- Boletín personalizado
+- Contenido flexible
+- Ideal para talleres y anuncios
+
+**Ejemplo completo:** `dist/newsletter/workshop-example.html`
+
 ---
 
 ## 🔧 Comandos Útiles

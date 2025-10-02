@@ -1,9 +1,9 @@
 <mj-section background-color="#ffffff" padding="20px 0">
   <mj-column>
     <mj-image 
-      src="https://todoconta.com/images/logo-todoconta.png" 
+      src="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/isotipo-dark.png" 
       alt="Todoconta" 
-      width="180px"
+      width="50px"
       align="center"
       padding="0"
     />

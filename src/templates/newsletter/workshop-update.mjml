@@ -1,0 +1,403 @@
+<mjml>
+  <mj-head>
+    <mj-title>El taller cambió (y mejoró 🚀). Esto es lo que necesitas saber</mj-title>
+    <mj-preview>Tengo que confesarte algo. Hace unos días te escribí sobre un taller de IA para contadores...</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name] 👋
+        </mj-text>
+        
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          Tengo que confesarte algo.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Hace unos días te escribí sobre un taller de IA para contadores. Te dije que serían 3 horas enfocadas en Gemini (la IA de Google).
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Y... bueno, <strong>te mentí</strong>.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Y no porque hubiera un problema. Sino porque me di cuenta de que te estaba <strong>limitando</strong>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What Changed Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Lo que cambió:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="12px">
+          ❌ <strong>Antes:</strong> 3 horas enfocadas solo en Gemini
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          ✅ <strong>Ahora:</strong> 8 horas dominando un ecosistema COMPLETO de IAs
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Why Section -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Por qué el cambio?
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Porque mientras tú lees este correo, en algún lugar del mundo están lanzando una nueva IA que podría ser mejor que la que usabas ayer.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Enseñarte a usar solo Gemini sería como darte <strong>una caña de pescar cuando puedo darte toda la flota pesquera</strong>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What You Really Need -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          Esto es lo que realmente necesitas (y lo que ahora te voy a enseñar):
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          🧠 <strong>Mentalidad IA-First:</strong> No te voy a enseñar a "usar ChatGPT". Te voy a enseñar a PENSAR como un contador que domina IA. A ver oportunidades de automatización que tus colegas ni siquiera imaginan.
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          🎯 <strong>El ecosistema completo:</strong> ChatGPT, Claude, Gemini, Perplexity, Gamma... y sabrás EXACTAMENTE cuál usar para cada tarea de tu oficina.
+        </mj-text>
+        
+        <mj-text color="#047857">
+          💰 <strong>Monetización real:</strong> No solo ahorrarás tiempo. Crearás nuevas fuentes de ingreso: consultorías IA, productos digitales, servicios premium.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Money Talk -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#14b8a6"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          Sí, leíste bien. Monetización. Biyullo. Pasta 💸
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          No necesitas que te enseñe a usar ChatGPT. O Claude. O Gemini. O la que lancen a final del mes.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Necesitas aprender a <strong>PENSAR diferente</strong>.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Necesitas desarrollar esa capacidad de ver tu oficina contable y decir: <em>"Esto que me toma 2 horas... ¿cómo lo automatizo? ¿Qué IA uso? ¿Cómo lo combino con otras herramientas?"</em>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Dates Section -->
+    <mj-section background-color="#f8fafc" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          Las fechas quedaron así:
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          📅 <strong>Inicia:</strong> 14 de octubre
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ⏰ <strong>Horario:</strong> 5:30 PM (Tiempo del Centro de México)
+        </mj-text>
+        
+        <mj-text>
+          🗓️ <strong>Días:</strong> Martes 14, Jueves 16, Martes 21, Jueves 23 y Viernes 24
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Pricing Section -->
+    <mj-section background-color="#ffffff" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="24px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          Los precios (también cambiaron, pero para bien)
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280" 
+          align="center"
+          padding-bottom="32px"
+        >
+          Aprovecha que están en promocional por 3 días más (te respetaré el precio que te dije en el último correo, eso no cambiará):
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 1 - Básico -->
+    <mj-section background-color="#ffffff" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          🎯 Plan Básico
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$850</span>
+          <span style="color: #14b8a6; font-weight: 800; font-size: 36px; margin-left: 12px;">$450</span>
+          <span style="color: #6b7280; font-size: 18px;"> MXN</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 2 - Pro (Recomendado) -->
+    <mj-section background-color="#ffffff" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="2px solid #14b8a6">
+        <mj-text 
+          color="#14b8a6" 
+          font-size="12px" 
+          font-weight="700"
+          text-transform="uppercase"
+          padding-bottom="8px"
+        >
+          🏆 El que te recomiendo
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Plan Pro
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$2,250</span>
+          <span style="color: #14b8a6; font-weight: 800; font-size: 36px; margin-left: 12px;">$850</span>
+          <span style="color: #6b7280; font-size: 18px;"> MXN</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 3 - Premium -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          💎 Plan Premium
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$6,500</span>
+          <span style="color: #14b8a6; font-weight: 800; font-size: 36px; margin-left: 12px;">$2,500</span>
+          <span style="color: #6b7280; font-size: 18px;"> MXN</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Button -->
+    <mj-section background-color="#ffffff" padding="0 20px 40px">
+      <mj-column>
+        <mj-text align="center" padding-bottom="24px">
+          Puedes ver el programa completo, los módulos, todo lo que incluye, aquí:
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://todoconta.com/ia-contadores"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Ver Programa Completo
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Next Steps -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Ahora... te adelanto algo.
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          <strong>En los próximos 3 días te voy a enviar un par de correos más.</strong>
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          No para venderte. Sino para <strong>mostrarte cosas que puedes usar de inmediato</strong>. Probaditas de lo que viene en el taller.
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          <strong>Mañana:</strong> Te mostraré cómo usar IA para interpretar cambios fiscales en segundos (no horas).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Reflection Question -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Pero antes de eso... quiero que pienses en algo:
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-size="22px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¿Qué harías con 10-15 horas extra cada semana?
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          ¿Conseguir más clientes? ¿Pasar tiempo con tu familia? ¿Iniciar ese proyecto que has pospuesto?
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Esas horas están ahí. Solo necesitas las herramientas correctas y saber usarlas.
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280"
+          font-style="italic"
+        >
+          Nos vemos mañana en tu bandeja de entrada.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          Con cariño y números 📊
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Sé que suena ambicioso decir "$10K-$30K MXN extra al mes". Pero te voy a enseñar formas de lograrlo. Con casos reales. Sin humo.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          Si pagas antes del 5 de octubre, te quedas con el precio promocional. Después sube. No porque quiera presionarte, sino porque literalmente cambié 3 horas de contenido por 8. Haz las cuentas 😉
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>

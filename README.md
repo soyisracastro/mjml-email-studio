@@ -45,8 +45,12 @@ emails/
 │   │   │   └── purchase-confirmation.mjml
 │   │   ├── promotional/        # Emails promocionales
 │   │   │   └── special-offer.mjml
-│   │   └── follow-up/          # Emails de seguimiento
-│   │       └── post-service-feedback.mjml
+│   │   ├── follow-up/          # Emails de seguimiento
+│   │   │   └── post-service-feedback.mjml
+│   │   └── newsletter/         # Newsletters y boletines
+│   │       ├── personal-newsletter.mjml
+│   │       ├── workshop-example.mjml
+│   │       └── workshop-update.mjml
 │   │
 │   └── config/
 │       └── design-tokens.json  # Variables del design system
@@ -157,6 +161,39 @@ npm run build:prod
 - `[RELATED_SERVICE_X]` - Servicios relacionados
 - `[RELATED_SERVICE_X_DESC]` - Descripción
 - `[RELATED_SERVICE_X_LINK]` - Link
+
+### 4. **Newsletter - Boletín Personal**
+**Archivo:** `newsletter/personal-newsletter.mjml`
+
+**Uso:** Enviar newsletters personales, anuncios de talleres, contenido educativo
+
+**Características:**
+- ✨ Área de contenido completamente flexible para escribir libremente
+- ✨ Secciones opcionales para precios/planes (3 niveles)
+- ✨ Espacio para firma personalizada
+- ✨ Sección de P.S. (postdata) para mensajes finales
+- ✨ Instrucciones de pago bancario integradas
+- ✨ Secciones destacadas para puntos clave
+
+**Variables:**
+- `[Name]` - Nombre del suscriptor
+- Todo el contenido es personalizable directamente en el MJML
+
+**Ejemplo completo:** 
+Ver [`newsletter/workshop-example.mjml`](src/templates/newsletter/workshop-example.mjml) para un ejemplo real completo basado en un taller de IA para contadores, incluyendo:
+- Introducción personal
+- Lista de beneficios
+- 3 planes de precios
+- Instrucciones de pago bancario
+- Firma personalizada con P.S.
+
+**Cómo usar:**
+1. Abre `personal-newsletter.mjml`
+2. Reemplaza los textos entre `[CORCHETES]` con tu contenido
+3. Elimina las secciones opcionales que no necesites
+4. Compila con `npm run build`
+
+---
 
 ---
 
@@ -432,11 +469,12 @@ Si tienes preguntas o necesitas ayuda:
 
 ### v1.0.0 (2024)
 - ✨ Sistema inicial de plantillas
-- ✨ 3 plantillas base (Transaccional, Promocional, Seguimiento)
+- ✨ 4 plantillas base (Transaccional, Promocional, Seguimiento, Newsletter)
 - ✨ Componentes reutilizables
 - ✨ Sistema de build automatizado
 - ✨ Integración con design system
 - ✨ Documentación completa
+- ✨ Plantilla de newsletter personal flexible
 
 ---
 

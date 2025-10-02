@@ -1,0 +1,384 @@
+<mjml>
+  <mj-head>
+    <mj-title>Newsletter Personal - Todoconta</mj-title>
+    <mj-preview>Tu boletín personalizado de Todoconta</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+      .greeting { font-size: 18px; font-weight: 600; color: #1f2937; margin-bottom: 16px; }
+      .signature { font-style: italic; color: #6b7280; margin-top: 24px; }
+      .ps { background: #fef3c7; padding: 16px; border-left: 4px solid #d4a64a; margin-top: 24px; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content Area - Flexible for writing -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name] 👋
+        </mj-text>
+        
+        <!-- 
+          ÁREA DE CONTENIDO LIBRE
+          Aquí puedes escribir tu mensaje personal.
+          Usa los componentes de MJML para dar formato:
+          - <mj-text> para párrafos
+          - <strong> para negritas
+          - <em> para cursivas
+          - Links con <a href="">
+        -->
+        
+        <!-- Párrafo de introducción -->
+        <mj-text padding-bottom="16px">
+          [ESCRIBE TU INTRODUCCIÓN AQUÍ]
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          [SEGUNDO PÁRRAFO - Comparte tu experiencia, historia o contexto]
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          [TERCER PÁRRAFO - Presenta el problema o situación que quieres abordar]
+        </mj-text>
+        
+        <!-- Sección destacada (opcional) -->
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ecfdf5" padding="20px">
+      <mj-column>
+        <mj-text
+          color="#047857"
+          font-weight="600"
+        >
+          💡 [MENSAJE DESTACADO O PUNTO CLAVE]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        
+        <!-- Continuación del contenido -->
+        <mj-text padding-top="24px" padding-bottom="16px">
+          [CONTINÚA TU MENSAJE AQUÍ]
+        </mj-text>
+        
+        <!-- Lista de beneficios/puntos (opcional) -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="700"
+          padding-bottom="16px"
+          padding-top="8px"
+        >
+          [TÍTULO DE LA SECCIÓN - Ej: "En este taller descubrirás:"]
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>✓</strong> [PUNTO 1 - Beneficio o característica principal]
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>✓</strong> [PUNTO 2 - Segundo beneficio importante]
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>✓</strong> [PUNTO 3 - Tercer beneficio]
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          <strong>✓</strong> [PUNTO 4 - Cuarto beneficio]
+        </mj-text>
+        
+        <!-- Más contenido -->
+        <mj-text padding-bottom="16px">
+          [PÁRRAFO ADICIONAL - Explica más detalles o da contexto]
+        </mj-text>
+        
+        <mj-text padding-bottom="32px">
+          [LLAMADO A LA ACCIÓN EN TEXTO - Ej: "Si quieres dejar de trabajar más horas y empezar a trabajar de forma más inteligente, este taller es el paso que necesitas."]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Call to Action Section (opcional) -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="24px"
+        >
+          [TÍTULO DEL CTA - Ej: "Opciones de Participación"]
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="[CTA_LINK]"
+          padding="0 0 16px 0"
+          inner-padding="16px 48px"
+        >
+          [TEXTO DEL BOTÓN]
+        </mj-button>
+        
+        <mj-text 
+          color="#6b7280" 
+          font-size="14px"
+          align="center"
+        >
+          [TEXTO ADICIONAL DEL CTA - Ej: "Cupo limitado - Reserva tu lugar hoy"]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Pricing/Options Section (opcional - para talleres/productos) -->
+    <mj-section background-color="#f8fafc" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="32px"
+        >
+          [TÍTULO DE OPCIONES - Ej: "Elige tu plan"]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Option 1 -->
+    <mj-section background-color="#f8fafc" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="2px solid #14b8a6">
+        <mj-text 
+          color="#14b8a6" 
+          font-size="12px" 
+          font-weight="700"
+          text-transform="uppercase"
+          padding-bottom="8px"
+        >
+          🎯 [ETIQUETA - Ej: "Más Popular"]
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          [NOMBRE DEL PLAN 1]
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6" 
+          font-size="32px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $[PRECIO] <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 1]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 2]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • [BENEFICIO 3]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Option 2 -->
+    <mj-section background-color="#f8fafc" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          [NOMBRE DEL PLAN 2]
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="32px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $[PRECIO] <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 1]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 2]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • [BENEFICIO 3]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Option 3 -->
+    <mj-section background-color="#f8fafc" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          [NOMBRE DEL PLAN 3]
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="32px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $[PRECIO] <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 1]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • [BENEFICIO 2]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • [BENEFICIO 3]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Payment Instructions (opcional) -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          [TÍTULO INSTRUCCIONES - Ej: "Cómo realizar tu pago"]
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          [INSTRUCCIONES DE PAGO - Explica el proceso]
+        </mj-text>
+        
+        <!-- Bank Transfer Component (si aplica) -->
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#f8fafc" padding="20px" border-left="4px solid #14b8a6">
+      <mj-column>
+        <mj-text>
+          <strong style="color: #1f2937;">Datos bancarios:</strong><br><br>
+          <strong>Banco:</strong> [NOMBRE DEL BANCO]<br>
+          <strong>Titular:</strong> [NOMBRE DEL TITULAR]<br>
+          <strong>Número de cuenta:</strong> [NÚMERO]<br>
+          <strong>CLABE:</strong> [CLABE INTERBANCARIA]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        
+        <mj-text padding-top="16px" padding-bottom="24px">
+          [INSTRUCCIONES POST-PAGO - Ej: "Una vez realizado el pago, envía tu comprobante..."]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing/Signature Section -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          [MENSAJE DE CIERRE]
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          [FIRMA PERSONALIZADA - Ej: "Con cariño y números"]
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – [TU NOMBRE]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- P.S. Section (opcional pero recomendado) -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          [TU POSTDATA - Un mensaje final ingenioso o importante]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>

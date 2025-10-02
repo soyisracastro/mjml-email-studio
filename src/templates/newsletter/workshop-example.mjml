@@ -1,0 +1,348 @@
+<mjml>
+  <mj-head>
+    <mj-title>Tu trabajo como contador está a punto de cambiar (para bien)</mj-title>
+    <mj-preview>He estado usando la inteligencia artificial de Google, Gemini, en mi trabajo como contador y el resultado es increíble.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola 👋
+        </mj-text>
+        
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          He estado usando la inteligencia artificial de Google, <strong>Gemini</strong>, en mi trabajo como contador y el resultado es increíble. He logrado hacer mi trabajo más eficiente, rápido y, lo más importante, <strong>¡he generado ingresos adicionales!</strong>
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Sé que muchos de ustedes se enfrentan a los mismos retos: el tiempo no alcanza, las leyes son complejas y la competencia es cada vez más fuerte.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Por eso, he creado un <strong>taller online de 3 horas</strong>, diseñado específicamente para contadores como tú, donde te revelaré mis secretos para usar Gemini.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Highlighted Section -->
+    <mj-section background-color="#ecfdf5" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-weight="600"
+          align="center"
+        >
+          💡 Este es un curso totalmente práctico. Te guiaré con ejemplos reales que puedes aplicar de inmediato.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Benefits Section -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          En este curso, descubrirás cómo:
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <strong>✓ Dejar de perder horas leyendo leyes y regulaciones.</strong> Te enseñaré a usar Gemini para que analice y resuma documentos fiscales complejos por ti.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <strong>✓ Crear plantillas inteligentes de hojas de cálculo con macros</strong> que te ayudarán a automatizar procesos. Incluso te mostraré cómo monetizar estas herramientas.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <strong>✓ Construir un sitio web simple y funcional</strong> para tu negocio de contabilidad sin saber de programación.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          <strong>✓ Aumentar tus ingresos</strong> al ofrecer servicios de automatización a otros colegas o empresas.
+        </mj-text>
+        
+        <mj-text padding-bottom="32px">
+          Si quieres dejar de trabajar más horas y empezar a trabajar de forma más inteligente, este taller es el paso que necesitas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Section -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          Para que te unas fácilmente, he creado tres opciones de pago
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280" 
+          align="center"
+          padding-bottom="24px"
+        >
+          Te recomiendo la primera, ya que es la más popular.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Pricing Section -->
+    <mj-section background-color="#f8fafc" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="24px" 
+          font-weight="700"
+          align="center"
+          padding-bottom="32px"
+        >
+          Elige tu plan
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 1 - Básico (Popular) -->
+    <mj-section background-color="#f8fafc" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="2px solid #14b8a6">
+        <mj-text 
+          color="#14b8a6" 
+          font-size="12px" 
+          font-weight="700"
+          text-transform="uppercase"
+          padding-bottom="8px"
+        >
+          🎯 ¡El más popular!
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Plan Básico: Early Bird
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6" 
+          font-size="36px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $450 <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • Acceso completo al taller de 3 horas
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • La grabación del curso por 72 horas
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 2 - Pro -->
+    <mj-section background-color="#f8fafc" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Plan Pro
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="36px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $850 <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • Acceso al taller de 3 horas
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • La grabación del curso para verla en cualquier momento
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • Las plantillas/código/ejemplos trabajados en clase para implementarlo ya mismo
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan 3 - Premium -->
+    <mj-section background-color="#f8fafc" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Plan Premium
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="36px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $2,500 <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • Acceso al taller de 3 horas
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • La grabación del curso
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          • Trabajo realizado en clase
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          • Una sesión 1 a 1 de 60 minutos conmigo, donde te ayudaré a optimizar tu flujo de trabajo
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Payment Instructions -->
+    <mj-section background-color="#ffffff" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Cómo asegurar tu lugar
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Para asegurar tu lugar de inmediato, puedes realizar el pago a la siguiente cuenta. Así evitamos demoras y las comisiones de la plataforma de eventos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Bank Details -->
+    <mj-section background-color="#f8fafc" padding="24px 20px" border-left="4px solid #14b8a6">
+      <mj-column>
+        <mj-text>
+          <strong style="color: #1f2937;">Datos bancarios:</strong><br><br>
+          <strong>Banco:</strong> BBVA BANCOMER<br>
+          <strong>Titular:</strong> Israel Castro Urieta<br>
+          <strong>Número de cuenta:</strong> 2851186442<br>
+          <strong>CLABE Interbancaria:</strong> 012266028511864426
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ffffff" padding="24px 20px 32px">
+      <mj-column>
+        <mj-text padding-bottom="24px">
+          Una vez que hayas realizado el pago, envía el comprobante respondiendo a este mail o por WhatsApp al <strong>5544753602</strong>. En cuanto lo reciba, te enviaré el enlace para que accedas al evento.
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6" 
+          font-weight="700"
+          font-size="18px"
+          align="center"
+        >
+          El cupo es limitado, ¡así que reserva tu lugar hoy mismo!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          Con cariño y números 🧮
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          Después del taller, la única cosa que te hará "cuadrar las cuentas" será el tiempo libre que te va a sobrar. 😉
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
