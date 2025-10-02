@@ -1,0 +1,24 @@
+{
+  "name": "todoconta-email-templates",
+  "version": "1.0.0",
+  "description": "Email templates for Todoconta using MJML",
+  "scripts": {
+    "build": "mjml src/templates/**/*.mjml -o dist/",
+    "build:watch": "mjml src/templates/**/*.mjml -o dist/ --watch",
+    "build:prod": "mjml src/templates/**/*.mjml -o dist/ --config.minify=true --config.beautify=false",
+    "preview": "node scripts/preview-server.js",
+    "test": "node scripts/test-emails.js"
+  },
+  "keywords": [
+    "email",
+    "templates",
+    "mjml",
+    "todoconta"
+  ],
+  "author": "Todoconta",
+  "license": "MIT",
+  "devDependencies": {
+    "mjml": "^4.15.3"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,180 @@
+<mjml>
+  <mj-head>
+    <mj-title>Confirmación de Compra - Todoconta</mj-title>
+    <mj-preview>¡Gracias por tu compra! Tu pago ha sido procesado exitosamente.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#6b7280" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; }
+      .link:hover { color: #0d9488; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../components/header.mjml" />
+    
+    <!-- Hero Section -->
+    <mj-section background-color="#14b8a6" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff" 
+          font-size="32px" 
+          font-weight="800"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="12px"
+        >
+          ¡Gracias por tu compra!
+        </mj-text>
+        <mj-text 
+          color="#e0f2fe" 
+          font-size="18px"
+          align="center"
+        >
+          Tu pago ha sido procesado exitosamente
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <!-- Order Details Card -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📦 Detalles de tu pedido
+        </mj-text>
+        
+        <mj-table padding-bottom="24px">
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Producto:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[PRODUCT_NAME]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Plan:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[PLAN_NAME]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Número de orden:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[ORDER_NUMBER]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Fecha:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[PURCHASE_DATE]</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Total pagado:</td>
+            <td style="padding: 12px 0; color: #14b8a6; font-weight: 700; font-size: 18px; text-align: right;">$[AMOUNT] MXN</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Instructions Section -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-size="18px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📋 Próximos pasos
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          <strong>1.</strong> Revisa tu correo electrónico para encontrar los archivos adjuntos o el enlace de descarga
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          <strong>2.</strong> Guarda los archivos en una ubicación segura de tu computadora
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          <strong>3.</strong> Si compraste una licencia de software, sigue las instrucciones de activación
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          <strong>4.</strong> Si tienes dudas, contacta a nuestro equipo de soporte
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Download/Access Button -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="8px"
+          href="[DOWNLOAD_LINK]"
+          padding="0"
+          inner-padding="14px 40px"
+        >
+          Descargar Producto
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Support Section -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857" 
+          font-size="18px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          📞 ¿Necesitas ayuda?
+        </mj-text>
+        
+        <mj-text color="#047857" align="center" padding-bottom="8px">
+          Nuestro equipo de soporte está disponible para ayudarte
+        </mj-text>
+        
+        <mj-text color="#047857" align="center" padding-bottom="8px">
+          📧 <a href="mailto:soporte@todoconta.com" class="link" style="color: #14b8a6;">soporte@todoconta.com</a>
+        </mj-text>
+        
+        <mj-text color="#047857" align="center" padding-bottom="8px">
+          📱 <a href="https://wa.me/5215544753602" class="link" style="color: #14b8a6;">+52 55 4475 3602</a>
+        </mj-text>
+        
+        <mj-text color="#047857" align="center" font-size="14px">
+          Horario: Lunes a Viernes 9:00 - 18:00 CST
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Thank You Message -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text align="center" color="#6b7280" padding-bottom="16px">
+          Gracias por confiar en Todoconta para tus necesidades fiscales y contables.
+        </mj-text>
+        
+        <mj-text align="center" color="#6b7280" font-size="14px">
+          Si tienes alguna pregunta sobre tu compra, no dudes en contactarnos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

@@ -1,0 +1,297 @@
+<mjml>
+  <mj-head>
+    <mj-title>¿Cómo fue tu experiencia? - Todoconta</mj-title>
+    <mj-preview>Nos encantaría conocer tu opinión sobre nuestro servicio</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#6b7280" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; }
+      .link:hover { color: #0d9488; }
+      .rating-star { font-size: 32px; text-decoration: none; display: inline-block; margin: 0 4px; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../components/header.mjml" />
+    
+    <!-- Hero Section -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="32px" 
+          font-weight="800"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          Hola [CUSTOMER_NAME] 👋
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280" 
+          font-size="18px"
+          align="center"
+          padding-bottom="24px"
+        >
+          Esperamos que hayas tenido una excelente experiencia con nuestro servicio de <strong style="color: #1f2937;">[SERVICE_NAME]</strong>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Feedback Request -->
+    <mj-section background-color="#ecfdf5" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          💬 Tu opinión es muy importante
+        </mj-text>
+        
+        <mj-text color="#047857" align="center" padding-bottom="24px">
+          Nos ayudaría mucho conocer tu experiencia. Solo te tomará 2 minutos compartir tu opinión.
+        </mj-text>
+        
+        <mj-text 
+          color="#047857" 
+          font-size="18px" 
+          font-weight="600"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¿Cómo calificarías nuestro servicio?
+        </mj-text>
+        
+        <!-- Rating Stars -->
+        <mj-text align="center" padding-bottom="24px">
+          <a href="[FEEDBACK_LINK]?rating=5" class="rating-star" style="color: #d4a64a;">⭐</a>
+          <a href="[FEEDBACK_LINK]?rating=4" class="rating-star" style="color: #d4a64a;">⭐</a>
+          <a href="[FEEDBACK_LINK]?rating=3" class="rating-star" style="color: #d4a64a;">⭐</a>
+          <a href="[FEEDBACK_LINK]?rating=2" class="rating-star" style="color: #d4a64a;">⭐</a>
+          <a href="[FEEDBACK_LINK]?rating=1" class="rating-star" style="color: #d4a64a;">⭐</a>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="8px"
+          href="[FEEDBACK_LINK]"
+          padding="0"
+          inner-padding="14px 40px"
+        >
+          Dejar mi Opinión
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Summary -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="20px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📋 Resumen del servicio
+        </mj-text>
+        
+        <mj-table padding-bottom="24px">
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Servicio:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[SERVICE_NAME]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Fecha:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[SERVICE_DATE]</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Referencia:</td>
+            <td style="padding: 12px 0; color: #1f2937; font-weight: 600; text-align: right;">[REFERENCE_NUMBER]</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Additional Resources -->
+    <mj-section background-color="#f8fafc" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="24px"
+        >
+          📚 Recursos que podrían interesarte
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="12px">
+          📖 <a href="https://todoconta.com/blog" class="link" style="color: #14b8a6; font-weight: 600;">Blog de Contabilidad</a> - Artículos y guías útiles
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="12px">
+          🎓 <a href="https://todoconta.com/talleres" class="link" style="color: #14b8a6; font-weight: 600;">Talleres y Capacitaciones</a> - Aprende más sobre temas fiscales
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="12px">
+          🛠️ <a href="https://todoconta.com/tienda" class="link" style="color: #14b8a6; font-weight: 600;">Herramientas Digitales</a> - Software y plantillas
+        </mj-text>
+        
+        <mj-text color="#6b7280">
+          💼 <a href="https://todoconta.com/servicios" class="link" style="color: #14b8a6; font-weight: 600;">Otros Servicios</a> - Descubre todo lo que ofrecemos
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Related Services -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          Servicios relacionados que podrían interesarte
+        </mj-text>
+        
+        <mj-text color="#6b7280" align="center" padding-bottom="32px">
+          Basándonos en el servicio que contrataste, estos servicios complementarios podrían ser útiles para tu negocio:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Card 1 -->
+    <mj-section background-color="#ffffff" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="20px">
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="8px"
+        >
+          [RELATED_SERVICE_1]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="14px" padding-bottom="12px">
+          [RELATED_SERVICE_1_DESC]
+        </mj-text>
+        
+        <mj-text>
+          <a href="[RELATED_SERVICE_1_LINK]" class="link" style="color: #14b8a6; font-weight: 600; font-size: 14px;">Más información →</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Card 2 -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="20px">
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="8px"
+        >
+          [RELATED_SERVICE_2]
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="14px" padding-bottom="12px">
+          [RELATED_SERVICE_2_DESC]
+        </mj-text>
+        
+        <mj-text>
+          <a href="[RELATED_SERVICE_2_LINK]" class="link" style="color: #14b8a6; font-weight: 600; font-size: 14px;">Más información →</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Support Section -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-size="20px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¿Necesitas ayuda adicional?
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="16px">
+          Si tienes alguna pregunta o necesitas asistencia adicional, nuestro equipo está aquí para ayudarte.
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="8px">
+          📧 <a href="mailto:soporte@todoconta.com" style="color: #92400e; font-weight: 600;">soporte@todoconta.com</a>
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="8px">
+          📱 <a href="https://wa.me/5215544753602" style="color: #92400e; font-weight: 600;">+52 55 4475 3602</a>
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" font-size="14px">
+          Horario: Lunes a Viernes 9:00 - 18:00 CST
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Thank You -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¡Gracias por confiar en Todoconta! 🙏
+        </mj-text>
+        
+        <mj-text color="#6b7280" align="center" padding-bottom="24px">
+          Tu satisfacción es nuestra prioridad. Esperamos seguir siendo tu aliado en temas fiscales y contables.
+        </mj-text>
+        
+        <mj-button 
+          background-color="transparent" 
+          color="#14b8a6"
+          border="2px solid #14b8a6"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="8px"
+          href="[FEEDBACK_LINK]"
+          padding="0"
+          inner-padding="12px 32px"
+        >
+          Compartir mi Experiencia
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

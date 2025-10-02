@@ -1,0 +1,330 @@
+<mjml>
+  <mj-head>
+    <mj-title>¡Oferta Especial! - Todoconta</mj-title>
+    <mj-preview>No te pierdas esta oferta exclusiva en nuestros servicios contables</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#6b7280" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; }
+      .link:hover { color: #0d9488; }
+      .discount-badge { background: #d4a64a; color: #1f2937; padding: 8px 16px; border-radius: 20px; font-weight: 700; display: inline-block; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../components/header.mjml" />
+    
+    <!-- Hero Section with Offer -->
+    <mj-section background-color="#0f172a" padding="48px 20px">
+      <mj-column>
+        <mj-text 
+          color="#fb923c" 
+          font-size="14px" 
+          font-weight="700"
+          text-transform="uppercase"
+          letter-spacing="1px"
+          align="center"
+          padding-bottom="12px"
+        >
+          ⚡ Oferta por tiempo limitado
+        </mj-text>
+        
+        <mj-text 
+          color="#ffffff" 
+          font-size="36px" 
+          font-weight="800"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          [OFFER_TITLE]
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1" 
+          font-size="18px"
+          align="center"
+          padding-bottom="24px"
+        >
+          Aprovecha hasta [DISCOUNT_PERCENTAGE]% de descuento en servicios seleccionados
+        </mj-text>
+        
+        <!-- Discount Badge -->
+        <mj-text align="center" padding-bottom="24px">
+          <span style="background: #d4a64a; color: #1f2937; padding: 12px 24px; border-radius: 24px; font-weight: 700; font-size: 24px; display: inline-block;">
+            [DISCOUNT_PERCENTAGE]% OFF
+          </span>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="[CTA_LINK]"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Aprovechar Oferta
+        </mj-button>
+        
+        <mj-text 
+          color="#94a3b8" 
+          font-size="14px"
+          align="center"
+          padding-top="16px"
+        >
+          ⏰ Válido hasta: [EXPIRY_DATE]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Featured Services/Products -->
+    <mj-section background-color="#ffffff" padding="48px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="28px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="32px"
+        >
+          Servicios en Promoción
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Card 1 -->
+    <mj-section background-color="#ffffff" padding="0 20px 24px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="24px">
+        <mj-text 
+          color="#14b8a6" 
+          font-size="12px" 
+          font-weight="700"
+          text-transform="uppercase"
+          padding-bottom="8px"
+        >
+          🎯 Más Popular
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="12px"
+        >
+          [SERVICE_1_NAME]
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="16px">
+          [SERVICE_1_DESCRIPTION]
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$[ORIGINAL_PRICE_1]</span>
+          <span style="color: #14b8a6; font-weight: 700; font-size: 28px; margin-left: 12px;">$[DISCOUNTED_PRICE_1]</span>
+          <span style="color: #6b7280; font-size: 16px;"> MXN</span>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="6px"
+          href="[SERVICE_1_LINK]"
+          padding="0"
+          inner-padding="12px 32px"
+          width="100%"
+        >
+          Contratar Ahora
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Card 2 -->
+    <mj-section background-color="#ffffff" padding="0 20px 24px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="24px">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="12px"
+        >
+          [SERVICE_2_NAME]
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="16px">
+          [SERVICE_2_DESCRIPTION]
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$[ORIGINAL_PRICE_2]</span>
+          <span style="color: #14b8a6; font-weight: 700; font-size: 28px; margin-left: 12px;">$[DISCOUNTED_PRICE_2]</span>
+          <span style="color: #6b7280; font-size: 16px;"> MXN</span>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="6px"
+          href="[SERVICE_2_LINK]"
+          padding="0"
+          inner-padding="12px 32px"
+          width="100%"
+        >
+          Contratar Ahora
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Service Card 3 -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#f8fafc" border-radius="12px" padding="24px">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="12px"
+        >
+          [SERVICE_3_NAME]
+        </mj-text>
+        
+        <mj-text color="#6b7280" padding-bottom="16px">
+          [SERVICE_3_DESCRIPTION]
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          <span style="color: #9ca3af; text-decoration: line-through; font-size: 18px;">$[ORIGINAL_PRICE_3]</span>
+          <span style="color: #14b8a6; font-weight: 700; font-size: 28px; margin-left: 12px;">$[DISCOUNTED_PRICE_3]</span>
+          <span style="color: #6b7280; font-size: 16px;"> MXN</span>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          border-radius="6px"
+          href="[SERVICE_3_LINK]"
+          padding="0"
+          inner-padding="12px 32px"
+          width="100%"
+        >
+          Contratar Ahora
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why Choose Us -->
+    <mj-section background-color="#ecfdf5" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="24px"
+        >
+          ¿Por qué elegir Todoconta?
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="12px">
+          ✅ <strong>Experiencia comprobada</strong> - Más de 10 años en el mercado
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="12px">
+          ✅ <strong>Atención personalizada</strong> - Cada cliente es único
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="12px">
+          ✅ <strong>Tecnología de punta</strong> - Herramientas modernas y eficientes
+        </mj-text>
+        
+        <mj-text color="#047857">
+          ✅ <strong>Soporte continuo</strong> - Estamos aquí cuando nos necesites
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Urgency Section -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-size="20px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="16px"
+        >
+          ⏰ ¡No dejes pasar esta oportunidad!
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="24px">
+          Esta oferta especial termina el <strong>[EXPIRY_DATE]</strong>. Aprovecha ahora y ahorra en los servicios que tu negocio necesita.
+        </mj-text>
+        
+        <mj-button 
+          background-color="#d4a64a" 
+          color="#1f2937"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="[CTA_LINK]"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Ver Todas las Ofertas
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Contact Section -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¿Tienes preguntas sobre nuestras ofertas?
+        </mj-text>
+        
+        <mj-text color="#6b7280" align="center" padding-bottom="16px">
+          Nuestro equipo está listo para ayudarte a elegir el servicio perfecto para tu negocio.
+        </mj-text>
+        
+        <mj-text color="#6b7280" align="center" padding-bottom="8px">
+          📧 <a href="mailto:ventas@todoconta.com" class="link" style="color: #14b8a6;">ventas@todoconta.com</a>
+        </mj-text>
+        
+        <mj-text color="#6b7280" align="center">
+          📱 <a href="https://wa.me/5215544753602" class="link" style="color: #14b8a6;">+52 55 4475 3602</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>
