@@ -1,0 +1,597 @@
+<mjml>
+  <mj-head>
+    <mj-title>Cómo resolví un problema del SAT en 8 minutos (te muestro el prompt exacto)</mj-title>
+    <mj-preview>Antier te prometí mostrarte algo práctico que pudieras usar hoy mismo. Aquí está. Y es real.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola 👋
+        </mj-text>
+        
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          Antier (sorry, no alcancé a enviarlo antes) te prometí mostrarte algo práctico que pudieras usar hoy mismo.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Aquí está. Y es real.
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Hace 15 días uno de mis clientes recibió la peor notificación posible:
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          El SAT le canceló sus certificados de sello digital.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          La razón: no había enviado (o más bien, no había <em>verificado la aceptación</em>) de sus reportes volumétricos de enero a noviembre 2024.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Alert Box -->
+    <mj-section background-color="#fee2e2" padding="20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b"
+          font-weight="700"
+          align="center"
+        >
+          ⚠️ Sin sellos digitales = sin facturas = negocio paralizado
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="24px 20px">
+      <mj-column>
+        <mj-text padding-bottom="24px">
+          Era una gasolinera. Imagínate la urgencia.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Before/After Comparison -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Lo que normalmente tomaría hacer:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          1️⃣ Leer el oficio completo del SAT <strong>(30-45 minutos)</strong>
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          2️⃣ Revisar el Código Fiscal de la Federación <strong>(otros 30 minutos)</strong>
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="8px">
+          3️⃣ Redactar el escrito de aclaración formal <strong>(1-2 horas)</strong>
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          4️⃣ Revisar que no falte nada legal <strong>(30 minutos)</strong>
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e"
+          font-size="20px"
+          font-weight="800"
+          align="center"
+        >
+          Total: 3-4 horas de trabajo bajo presión
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What I Did with AI -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Lo que hice con IA:
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          Le di toda la información a <strong>Claude</strong> (un LLM similar a ChatGPT) y en <strong style="font-size: 20px;">8 minutos</strong> tenía:
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          ✓ El resumen completo del caso
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          ✓ Los fundamentos legales exactos
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          ✓ El escrito de aclaración redactado profesionalmente
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="24px">
+          ✓ Los pasos a seguir
+        </mj-text>
+        
+        <mj-text 
+          color="#047857"
+          font-size="20px"
+          font-weight="800"
+          align="center"
+        >
+          Resultado: Hoy, 2 de octubre, el SAT aceptó la aclaración y levantó la restricción. Caso cerrado.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="24px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Te adjunto los documentos reales (con datos sensibles omitidos):
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          📄 La aclaración que presentamos
+        </mj-text>
+        
+        <mj-text>
+          📄 La respuesta favorable del SAT
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Prompt Section -->
+    <mj-section background-color="#0f172a" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff"
+          font-size="24px"
+          font-weight="700"
+          align="center"
+          padding-bottom="24px"
+        >
+          🎯 El Prompt que Usé<br>(Tú También Puedes Usarlo)
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          align="center"
+          padding-bottom="24px"
+        >
+          Copia esto y ajústalo a tu caso:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Prompt Box -->
+    <mj-section background-color="#1e293b" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          Soy contador especializado en fiscal en México. Tengo experiencia en casos del SAT pero necesito ayuda para analizar este caso específico y redactar la respuesta formal.
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #14b8a6;">CONTEXTO DEL PROBLEMA:</strong><br>
+          [Describe brevemente qué pasó: restricción de CSD, multa, requerimiento, etc.] <br><br>
+
+          <i>Cliente recibió cancelación de certificados de sello digital. 
+Ya tenemos los acuses de aceptación de los reportes volumétricos 
+que el SAT señalaba como faltantes (enero-noviembre 2024).
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #14b8a6;">DOCUMENTOS QUE TENGO:</strong><br>
+          [Lista los oficios, notificaciones o documentos que recibiste]
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #14b8a6;">ACCIÓN QUE NECESITO REALIZAR:</strong><br>
+          [Ejemplo: "Presentar un escrito de aclaración", "Responder un requerimiento", etc.]
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #14b8a6;">INFORMACIÓN ADICIONAL:</strong><br>
+          - RFC: [Tu RFC o del cliente]<br>
+          - Razón Social: [Nombre de la empresa]<br>
+          - Fecha de notificación: [Fecha]<br>
+          - Número de oficio: [Si aplica]
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #14b8a6;">Por favor:</strong><br>
+          1. Resume la situación en términos claros y concisos<br>
+          2. Identifica los fundamentos legales aplicables<br>
+          3. Dame los pasos específicos que debo seguir<br>
+          4. Redacta el documento formal que necesito presentar al SAT<br>
+          5. Señala cualquier fecha límite o plazo importante
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+        >
+          <strong style="color: #14b8a6;">Formato:</strong> Profesional, formal, listo para presentar ante la autoridad.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why It Works -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          💡 Por Qué Funciona Este Prompt
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>Estructura clara:</strong> Le dices exactamente qué necesitas
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>Contexto completo:</strong> La IA entiende el panorama general
+        </mj-text>
+        
+        <mj-text padding-bottom="12px">
+          <strong>Entregables específicos:</strong> No solo consejos, sino documentos listos
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          <strong>Formato profesional:</strong> Listo para copiar y presentar
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Advanced Version -->
+    <mj-section background-color="#f8fafc" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ⚡ Mejora el Prompt (Nivel Avanzado)
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Si quieres resultados AÚN mejores, agrega esto al final:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Advanced Prompt Box -->
+    <mj-section background-color="#1e293b" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+          padding-bottom="12px"
+        >
+          <strong style="color: #d4a64a;">ESTILO DE REDACCIÓN:</strong><br>
+          - Lenguaje formal pero comprensible<br>
+          - Párrafos cortos (máximo 4 líneas)<br>
+          - Citas textuales de artículos cuando sea necesario<br>
+          - Sin tecnicismos innecesarios al explicar
+        </mj-text>
+        
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="14px"
+          line-height="160%"
+        >
+          <strong style="color: #d4a64a;">VALIDACIÓN:</strong><br>
+          - Verifica que todos los fundamentos legales estén vigentes<br>
+          - Confirma que no falte ningún requisito formal<br>
+          - Señala si hay inconsistencias en mi información
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Use Cases -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          🎯 Casos Donde Puedes Usar Este Mismo Approach
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ✅ Responder requerimientos del SAT
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ✅ Aclaraciones de discrepancias fiscales
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ✅ Contestar auditorías
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ✅ Redactar consultas formales
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          ✅ Preparar recursos de revocación
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          ✅ Documentar juntas con clientes
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+        >
+          Lo que antes te tomaba horas → ahora son minutos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- This is Just the Beginning -->
+    <mj-section background-color="#ecfdf5" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="22px"
+          font-weight="700"
+          align="center"
+          padding-bottom="20px"
+        >
+          🚀 Esto Es Solo El Principio
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          Este prompt funciona. Lo sé porque lo usé en un caso real hace 15 días.
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          Pero en el <strong>Módulo 2 del taller</strong> (16 de octubre) vamos 10 niveles más arriba:
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          • Crearás asistentes personalizados que ya conocen tu práctica contable
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          • Diseñarás flujos automatizados para tus casos más frecuentes
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          • Aprenderás a combinar múltiples IAs para resultados imposibles
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="24px">
+          • Te llevarás plantillas listas que solo tienes que ajustar
+        </mj-text>
+        
+        <mj-text 
+          color="#047857"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+        >
+          No solo resolverás un problema puntual.<br>
+          Crearás sistemas que trabajan por ti 24/7.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Quick Reminder -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="20px"
+        >
+          📅 Recordatorio Rápido
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="8px">
+          <strong>El taller empieza en 10 días</strong> (14 de octubre)
+        </mj-text>
+        
+        <mj-text color="#92400e" align="center" padding-bottom="24px">
+          <strong>Los precios promocionales terminan mañana</strong> (5 de octubre)
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="6px">
+          🎯 Plan Básico: <strong>$450 MXN</strong>
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="6px">
+          🏆 Plan Pro: <strong>$850 MXN</strong> ← Recomendado
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="24px">
+          💎 Plan Premium: <strong>$2,500 MXN</strong>
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://todoconta.com/ia-contadores?utm_source=newsletter&utm_medium=email&utm_campaign=workshop_oct2024"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Ver Programa Completo y Reservar
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Tomorrow Preview -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Mas tarde te comparto otro caso práctico (este involucra análisis de estados financieros).
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Pero por ahora, guarda ese prompt. Úsalo. Verás la diferencia.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          Con cariño y números 📊
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Triple P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          ¿Notaste que el prompt incluye "Fundamentos legales"? Eso es crítico. No solo quieres una respuesta bonita. Quieres que sea <strong>legalmente sólida</strong>. La IA puede darte ambas cosas si se lo pides correctamente.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          El caso real del que te hablé duró 15 días porque el SAT tiene sus tiempos. Pero mi trabajo (redactar la aclaración) me tomó 8 minutos. El resto fue esperar. Esa es la diferencia entre trabajar MÁS y trabajar INTELIGENTE.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPPD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          Si usas este prompt y te funciona, respóndeme este correo. Me encantaría saber cómo te fue 😊
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
