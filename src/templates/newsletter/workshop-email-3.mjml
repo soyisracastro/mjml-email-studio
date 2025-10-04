@@ -1,0 +1,778 @@
+<mjml>
+  <mj-head>
+    <mj-title>Cómo un contador recupera 6 horas cada semana (sin exagerar)</mj-title>
+    <mj-preview>Esta mañana te mostré cómo resolví un caso del SAT en 8 minutos. Ahora quiero mostrarte algo diferente.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola de nuevo 👋
+        </mj-text>
+        
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          Esta mañana te mostré cómo resolví un caso del SAT en 8 minutos.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Ahora quiero mostrarte algo diferente.
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          No es magia. No es automatización mientras duermes. Es algo mejor: un sistema que multiplica tu velocidad cada vez que lo usas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Case Study Header -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          📊 El Caso Real de Carlos (Nombre Cambiado)
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          Hace un mes, Carlos (contador que probó el contenido beta) me escribió:
+        </mj-text>
+        
+        <mj-text 
+          color="#047857"
+          font-style="italic"
+          padding-bottom="24px"
+          background-color="#d1fae5"
+          css-class="quote-box"
+        >
+          "Israel, creé un asistente especializado en análisis de estados financieros. Esta semana me ahorró 6 horas."
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What the Assistant Does -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Qué hace su asistente?
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Cada vez que Carlos lo necesita:
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          1️⃣ Le comparte el estado financiero (PDF, Excel, lo que sea)
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          2️⃣ El asistente analiza y entrega:
+        </mj-text>
+        
+        <mj-text padding-bottom="6px" padding-left="20px">
+          • Indicadores clave calculados
+        </mj-text>
+        
+        <mj-text padding-bottom="6px" padding-left="20px">
+          • Alertas rojas identificadas
+        </mj-text>
+        
+        <mj-text padding-bottom="6px" padding-left="20px">
+          • Resumen ejecutivo profesional
+        </mj-text>
+        
+        <mj-text padding-bottom="24px" padding-left="20px">
+          • Recomendaciones accionables
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Time Comparison -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+        >
+          Lo que antes le tomaba 45-60 minutos por cliente<br>
+          → Ahora 5-10 minutos
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="24px 20px">
+      <mj-column>
+        <mj-text padding-bottom="8px">
+          <strong>¿Es automatización?</strong> No.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Carlos sigue teniendo que llamar al asistente cada vez.
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          <strong>¿Vale la pena?</strong> Absolutamente.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Porque convirtió una tarea de 1 hora en una de 10 minutos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Real Numbers -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          💰 Los Números Reales
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          <strong>Clientes que atiende:</strong> 15/mes
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="8px">
+          <strong>Tiempo ahorrado por cliente:</strong> 40 minutos
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="24px">
+          <strong style="font-size: 18px;">Total recuperado: 10 horas/mes</strong>
+        </mj-text>
+        
+        <mj-text 
+          color="#047857"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Esas 10 horas las está usando para:
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="6px">
+          • Conseguir 2-3 clientes nuevos
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="6px">
+          • Crear plantillas para vender (Entre $350-$500 MXN)
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="24px">
+          • Ofrecer "análisis financiero" como servicio premium (y utilizar la IA como asistente)
+        </mj-text>
+        
+        <mj-text 
+          color="#047857"
+          font-size="24px"
+          font-weight="800"
+          align="center"
+        >
+          Ingreso extra mensual: ~$8,500 MXN
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#14b8a6"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+        >
+          No porque trabaje mientras duerme.<br>
+          Sino porque trabaja 6x más rápido cuando trabaja.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Prompt Section -->
+    <mj-section background-color="#0f172a" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff"
+          font-size="24px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          🎯 El Prompt que Puedes Usar Hoy
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          align="center"
+          padding-bottom="24px"
+        >
+          Te voy a dar la versión que Carlos adaptó para su práctica.
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          padding-bottom="20px"
+        >
+          Tienes DOS formas de usarlo:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Option 1 -->
+    <mj-section background-color="#1e293b" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#fb923c"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          OPCIÓN 1: Rápido (en cualquier chat)
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="8px">
+          1. Abre ChatGPT, Claude o Gemini
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          2. Copia y pega esto:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Prompt Box -->
+    <mj-section background-color="#0f172a" padding="20px" border="2px solid #14b8a6">
+      <mj-column>
+        <mj-text 
+          color="#e2e8f0"
+          font-family="'SF Mono', 'Monaco', monospace"
+          font-size="13px"
+          line-height="160%"
+        >
+          Eres mi asistente experto en análisis de estados financieros para empresas mexicanas.
+          <br><br>
+          <strong style="color: #14b8a6;">CUANDO TE COMPARTA ESTADOS FINANCIEROS:</strong>
+          <br><br>
+          <strong style="color: #fb923c;">1. CALCULA INDICADORES CLAVE:</strong><br>
+          - Liquidez: razón circulante, prueba ácida<br>
+          - Rentabilidad: ROE, ROA, margen neto<br>
+          - Endeudamiento: pasivo/capital<br>
+          - Operación: rotación inventarios, CxC, CxP
+          <br><br>
+          <strong style="color: #fb923c;">2. IDENTIFICA ALERTAS:</strong><br>
+          🔴 Crítico: capital negativo, liquidez &lt;0.8<br>
+          🟡 Atención: disminución márgenes &gt;10%, deuda &gt;60%<br>
+          🟢 Saludable: indicadores dentro de rangos
+          <br><br>
+          <strong style="color: #fb923c;">3. ENTREGA FORMATO:</strong>
+          <br><br>
+          RESUMEN EJECUTIVO (3-5 bullets)<br>
+          - Lo crítico que el cliente debe saber YA
+          <br><br>
+          TABLA DE INDICADORES<br>
+          | Indicador | Valor Actual | Periodo Anterior | Estado |
+          <br><br>
+          ALERTAS (si existen)<br>
+          - Lista priorizada por criticidad
+          <br><br>
+          RECOMENDACIONES ESPECÍFICAS<br>
+          1. [Acción concreta]<br>
+          2. [Acción concreta]<br>
+          3. [Acción concreta]
+          <br><br>
+          <strong style="color: #14b8a6;">ESTILO:</strong><br>
+          - Directo, sin fluff<br>
+          - Profesional pero comprensible<br>
+          - Enfócate en lo ACCIONABLE<br>
+          - Listo para compartir con cliente
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#1e293b" padding="20px">
+      <mj-column>
+        <mj-text color="#cbd5e1" padding-bottom="8px">
+          3. Adjunta tu estado financiero
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          4. Presiona Enter
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          Listo. El prompt ya incluye todo.
+        </mj-text>
+        
+        <mj-text color="#10b981" padding-bottom="8px">
+          <strong>Ventaja:</strong> No necesitas configurar nada
+        </mj-text>
+        
+        <mj-text color="#f87171">
+          <strong>Desventaja:</strong> Tienes que pegar el prompt cada vez
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Option 2 -->
+    <mj-section background-color="#1e293b" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#fb923c"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          OPCIÓN 2: Profesional (asistente permanente)
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          Crea un asistente que guarde estas instrucciones para siempre:
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="12px">
+          <strong style="color: #14b8a6;">En ChatGPT:</strong><br>
+          • Ve a "Explore GPTs" → "Create"<br>
+          • Pega el prompt en "Instructions"<br>
+          • Dale un nombre: "Analista Financiero [Tu Nombre]"<br>
+          • Guarda
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="12px">
+          <strong style="color: #14b8a6;">En Gemini:</strong><br>
+          • Abre Gemini → Explorar Gems<br>
+          • "+Nueva Gem"<br>
+          • Pega el prompt en "Instrucciones"<br>
+          • Dale un nombre: "Analista Financiero [Tu Nombre]"<br>
+          • Guarda
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          <strong style="color: #14b8a6;">En Claude:</strong><br>
+          • Abre Claude → "New Project"<br>
+          • Agrega las instrucciones en "Project Knowledge"<br>
+          • Nombra tu proyecto<br>
+          • Guarda
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Ahora cada vez que lo uses:
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="6px">
+          1. Abre tu asistente
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="6px">
+          2. Adjunta el documento
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="6px">
+          3. Escribe: "Analiza"
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          4. Listo
+        </mj-text>
+        
+        <mj-text color="#10b981" padding-bottom="8px">
+          <strong>Ventaja:</strong> Una vez configurado, super rápido
+        </mj-text>
+        
+        <mj-text color="#f87171">
+          <strong>Desventaja:</strong> Algunos requieren suscripción de pago
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Difference -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          ⚡ La Diferencia Entre Esto y "Usar IA Normal"
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#fee2e2" border-radius="8px" padding="20px">
+        <mj-text 
+          color="#991b1b"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          ❌ Usar IA normal:
+        </mj-text>
+        
+        <mj-text color="#991b1b" font-size="14px" padding-bottom="4px">
+          • "Analízame este balance"
+        </mj-text>
+        
+        <mj-text color="#991b1b" font-size="14px" padding-bottom="4px">
+          • Respuesta genérica
+        </mj-text>
+        
+        <mj-text color="#991b1b" font-size="14px" padding-bottom="4px">
+          • Tienes que refinar
+        </mj-text>
+        
+        <mj-text color="#991b1b" font-size="14px">
+          • Repites el proceso cada vez
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#d1fae5" border-radius="8px" padding="20px">
+        <mj-text 
+          color="#047857"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          ✅ Usar un asistente configurado:
+        </mj-text>
+        
+        <mj-text color="#047857" font-size="14px" padding-bottom="4px">
+          • Ya sabe QUÉ analizar
+        </mj-text>
+        
+        <mj-text color="#047857" font-size="14px" padding-bottom="4px">
+          • Ya sabe CÓMO presentarlo
+        </mj-text>
+        
+        <mj-text color="#047857" font-size="14px" padding-bottom="4px">
+          • Ya sabe para QUIÉN es
+        </mj-text>
+        
+        <mj-text color="#047857" font-size="14px">
+          • Resultados consistentes siempre
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280"
+          font-style="italic"
+          align="center"
+        >
+          Es como la diferencia entre pedirle a alguien "ayúdame con esto" vs tener un checklist específico que siguen cada vez.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Workshop Module -->
+    <mj-section background-color="#0f172a" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          🚀 En el Taller Vamos Más Allá
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          En el <strong style="color: #fb923c;">Módulo 2 (16 de octubre)</strong> te enseño a crear estos asistentes especializados en:
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          <strong style="color: #14b8a6;">📱 ChatGPT Custom GPTs</strong><br>
+          • Asistentes que guardan instrucciones permanentes<br>
+          • Ideales para: análisis recurrentes, interpretación fiscal<br>
+          • Requiere: ChatGPT Plus ($20/mes)
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          <strong style="color: #14b8a6;">💎 Gemini Gems</strong><br>
+          • Versiones personalizadas con instrucciones fijas<br>
+          • Ideales para: tareas repetitivas, consultas rápidas<br>
+          • Requiere: Gemini gratuito o Advanced
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="16px">
+          <strong style="color: #14b8a6;">📚 Claude Projects</strong><br>
+          • Contexto largo que persiste entre conversaciones<br>
+          • Ideales para: casos complejos, auditorías multi-documento<br>
+          • Requiere: Claude Pro ($20/mes)
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          <strong style="color: #d4a64a;">📋 Sistema Universal de Prompts</strong> ⭐<br>
+          • Funciona en CUALQUIER IA (gratis o pago)<br>
+          • Tu biblioteca personal organizada<br>
+          • No dependes de una sola herramienta
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Casos prácticos que haremos:
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="6px">
+          1. Asistente intérprete de disposiciones SAT
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="6px">
+          2. Analista de estados financieros (como el de Carlos)
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          3. Tu asistente personalizado para TU necesidad específica
+        </mj-text>
+        
+        <mj-text 
+          color="#fb923c"
+          font-size="20px"
+          font-weight="800"
+          align="center"
+        >
+          Sales con 3-5 asistentes funcionando.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Urgency Section -->
+    <mj-section background-color="#fee2e2" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b"
+          font-size="22px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          📅 Quedan 2 Días de Precio Promocional
+        </mj-text>
+        
+        <mj-text color="#991b1b" align="center" padding-bottom="8px">
+          <strong>El taller empieza:</strong> 14 de octubre
+        </mj-text>
+        
+        <mj-text color="#991b1b" align="center" padding-bottom="16px">
+          <strong>Los precios suben:</strong> 5 de octubre a las 11:59 PM
+        </mj-text>
+        
+        <mj-text 
+          color="#991b1b"
+          font-size="18px"
+          align="center"
+          padding-bottom="16px"
+        >
+          Mañana sube de $850 a $2,250 MXN (Plan Pro).
+        </mj-text>
+        
+        <mj-text 
+          color="#991b1b"
+          font-size="20px"
+          font-weight="800"
+          align="center"
+        >
+          Son $1,400 MXN de diferencia por el mismo contenido.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Button -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://todoconta.com/ia-contadores"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Inscribirme con Precio Promocional
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Payment Options -->
+    <mj-section background-color="#f8fafc" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          💳 Formas de Pago
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Transferencia directa:
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • <strong>Banco:</strong> BBVA BANCOMER
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • <strong>Cuenta:</strong> 2851186442
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • <strong>CLABE:</strong> 012266028511864426
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          • <strong>Titular:</strong> Israel Castro Urieta
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Envía comprobante: WhatsApp <strong>5544753602</strong> o responde este correo.
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Pago con tarjeta:
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Si deseas realizar el pago con tarjeta: WhatsApp <strong>5544753602</strong> o responde este correo y te envío el enlace de pago.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Tomorrow Preview -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Mañana te envío el último correo antes del aumento.
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-weight="700"
+        >
+          Pero si ya sabes que quieres entrar, no esperes.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          Con cariño y números 📊
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Triple P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          "¿Pero esto no se puede hacer con Excel normal?" Sí, todo se PUEDE hacer manual. También PUEDES escribir tus facturas a mano. La pregunta es: <strong>¿cuánto vale tu tiempo?</strong>
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          El prompt que te di funciona. Pruébalo con un cliente esta tarde. Si te ahorra aunque sea 20 minutos, ya valió la pena leer este correo.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPPD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          En el Módulo 3 te muestro cómo crear automatizaciones REALES (con n8n + IA) que SÍ trabajan mientras duermes. Pero primero hay que dominar los asistentes básicos. Un paso a la vez.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer  -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
