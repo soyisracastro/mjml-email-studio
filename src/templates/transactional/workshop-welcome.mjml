@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>¡Bienvenido al Taller! - Todoconta</mj-title>
+    <mj-title>¡Te doy la bienvenida al Taller! - Todoconta</mj-title>
     <mj-preview>Tu inscripción está confirmada. Tus accesos + lo que sigue</mj-preview>
     <mj-attributes>
       <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
@@ -30,7 +30,7 @@
           align="center"
           padding-bottom="8px"
         >
-          ¡Bienvenido al Taller! 👋
+          ¡Te doy la bienvenida al Taller! 👋
         </mj-text>
         <mj-text 
           color="#e0f2fe" 
@@ -88,10 +88,6 @@
             <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Tu inversión:</td>
             <td style="padding: 14px 0; color: #14b8a6; font-weight: 700; font-size: 18px; text-align: right;">${{monto}} MXN</td>
           </tr>
-          <tr>
-            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Folio de registro:</td>
-            <td style="padding: 14px 0; color: #1f2937; font-weight: 600; text-align: right;">{{order_number}}</td>
-          </tr>
         </mj-table>
       </mj-column>
     </mj-section>
@@ -129,7 +125,7 @@
           href="{{link_session_1}}"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
-          align="left"
+          align="center"
         >
           🔗 Enlace Sesión 1
         </mj-button>
@@ -150,7 +146,7 @@
           href="{{link_session_2}}"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
-          align="left"
+          align="center"
         >
           🔗 Enlace Sesión 2
         </mj-button>
@@ -171,7 +167,7 @@
           href="{{link_session_3}}"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
-          align="left"
+          align="center"
         >
           🔗 Enlace Sesión 3
         </mj-button>
@@ -192,7 +188,7 @@
           href="{{link_session_4}}"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
-          align="left"
+          align="center"
         >
           🔗 Enlace Sesión 4
         </mj-button>
@@ -213,7 +209,7 @@
           href="{{link_session_5}}"
           padding="0"
           inner-padding="10px 24px"
-          align="left"
+          align="center"
         >
           🔗 Enlace Sesión Q&A
         </mj-button>
@@ -436,61 +432,19 @@
         </mj-text>
 
         <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
-          <strong>Mañana (lunes):</strong> Te envío el primer adelanto del Módulo 1
+          <strong>Mañana:</strong> Te envío el primer adelanto del Módulo 1 (tranqui, que sólo será para ir calentando motores).
         </mj-text>
         <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
-          <strong>Miércoles:</strong> Caso práctico que puedes probar
+          <strong>Jueves:</strong> Caso práctico que puedes probar
         </mj-text>
         <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
           <strong>Viernes:</strong> Preparación técnica + primeros recursos
         </mj-text>
         <mj-text color="#1f2937" font-size="15px">
-          <strong>Y en el grupo de WhatsApp:</strong> Actualizaciones diarias
+          <strong>Y en el grupo de WhatsApp:</strong> Actualizaciones un poco mas frecuentes (aunque la magia 🪄 está en colaborar, si sabes de algo interesante, compártelo).
         </mj-text>
       </mj-column>
-    </mj-section>
-
-    <!-- Available Resources -->
-    <mj-section background-color="#f0f9ff" padding="32px 20px">
-      <mj-column>
-        <mj-text 
-          color="#075985" 
-          font-size="22px" 
-          font-weight="700"
-          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
-          padding-bottom="16px"
-        >
-          🎁 Recursos Que Ya Están Disponibles
-        </mj-text>
-
-        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="16px">
-          En la carpeta de recursos encontrarás:
-        </mj-text>
-
-        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
-          📄 Guía de preparación técnica
-        </mj-text>
-        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
-          📄 Lista de herramientas que usaremos
-        </mj-text>
-        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="20px">
-          📄 Plantilla de objetivos personales (llénala antes del taller)
-        </mj-text>
-
-        <mj-button 
-          background-color="#0284c7" 
-          color="#ffffff"
-          font-size="15px"
-          font-weight="600"
-          border-radius="8px"
-          href="{{link_recursos}}"
-          padding="0"
-          inner-padding="14px 32px"
-        >
-          📂 Acceder a la Carpeta de Recursos
-        </mj-button>
-      </mj-column>
-    </mj-section>
+    </mj-section>    
 
     <!-- Questions/Support -->
     <mj-section background-color="#ffffff" padding="32px 20px">
@@ -506,7 +460,7 @@
         </mj-text>
         
         <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
-          Si tienes cualquier pregunta antes del 14:
+          Si tienes cualquier pregunta antes/después del 14:
         </mj-text>
 
         <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
@@ -560,22 +514,22 @@
     <!-- Closing Message -->
     <mj-section background-color="#ffffff" padding="32px 20px">
       <mj-column>
-        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="16px">
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="16px">
           Gracias de nuevo por estar aquí.
         </mj-text>
         
-        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="16px">
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="16px">
           Nos vemos en el grupo de WhatsApp y el 14 de octubre en la primera sesión.
         </mj-text>
         
-        <mj-text color="#1f2937" font-size="18px" font-weight="600" align="center" padding-bottom="24px">
+        <mj-text color="#1f2937" font-size="18px" font-weight="600" padding-bottom="24px">
           Esto va a estar bueno.
         </mj-text>
 
-        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="8px">
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="8px">
           Con cariño y números 📊
         </mj-text>
-        <mj-text color="#1f2937" font-size="16px" font-weight="600" align="center">
+        <mj-text color="#1f2937" font-size="16px" font-weight="600">
           – Israel Castro
         </mj-text>
       </mj-column>
