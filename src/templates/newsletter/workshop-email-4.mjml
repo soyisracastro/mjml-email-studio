@@ -1,0 +1,693 @@
+<mjml>
+  <mj-head>
+    <mj-title>Termina en 4 horas. Esta es tu última oportunidad.</mj-title>
+    <mj-preview>Son las 8 de la noche del 5 de octubre. A las 11:59 PM los precios suben.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola 👋
+        </mj-text>
+        
+        <!-- Opening -->
+        <mj-text padding-bottom="16px">
+          Son las 8 de la noche del 5 de octubre.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          A las 11:59 PM los precios suben.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Este es el último correo sobre el precio promocional.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Simple Reality -->
+    <mj-section background-color="#fee2e2" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          ⏰ La Realidad Simple
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="8px">
+          <strong>En 4 horas:</strong>
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="4px">
+          • El Plan Pro sube de $850 a $2,250 MXN
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="24px">
+          • El Plan Premium sube de $2,500 a $6,500 MXN
+        </mj-text>
+        
+        <mj-text 
+          color="#991b1b"
+          font-size="22px"
+          font-weight="800"
+          align="center"
+          padding-bottom="16px"
+        >
+          Son $1,400 y $4,000 MXN de diferencia.
+        </mj-text>
+        
+        <mj-text 
+          color="#991b1b"
+          align="center"
+        >
+          Por el mismo contenido. Las mismas 8 horas. Los mismos recursos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What's at Stake -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          🎯 Lo Que Está En Juego
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          No te voy a presionar con tácticas agresivas.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          Simplemente quiero que pienses en esto:
+        </mj-text>
+        
+        <mj-text 
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Hace 3 días te mostré:
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          • Cómo resolví un caso del SAT en 8 minutos (algo que toma 3-4 horas)
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          • Un prompt que te ahorra 40 minutos por análisis financiero
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          • Casos reales de contadores generando $8,500 MXN extra al mes
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-size="18px"
+          font-weight="700"
+        >
+          No son promesas. Son ejemplos reales de lo que pasa cuando dominas estas herramientas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Honest Question -->
+    <mj-section background-color="#0f172a" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          💭 La Pregunta Honesta
+        </mj-text>
+        
+        <mj-text color="#cbd5e1" padding-bottom="24px">
+          En 12 meses habrá dos tipos de contadores:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Type A -->
+    <mj-section background-color="#d1fae5" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Tipo A: Aprendió a usar IA como herramienta estratégica
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="6px">
+          • Recupera 10-15 horas cada semana
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="6px">
+          • Ofrece servicios premium que otros no pueden
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="6px">
+          • Cobra más porque entrega más valor
+        </mj-text>
+        
+        <mj-text color="#047857">
+          • Tiene tiempo para crecer su práctica
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Type B -->
+    <mj-section background-color="#fee2e2" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Tipo B: Sigue trabajando como siempre
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="6px">
+          • Compite por precio
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="6px">
+          • Pierde clientes que buscan "modernización"
+        </mj-text>
+        
+        <mj-text color="#991b1b">
+          • Trabaja las mismas horas (o más) por menos dinero
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#0f172a" padding="20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff"
+          font-size="22px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          ¿De qué lado quieres estar?
+        </mj-text>
+        
+        <mj-text 
+          color="#cbd5e1"
+          align="center"
+        >
+          No es una pregunta retórica. Es la realidad del mercado.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Let's Do the Math -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          📊 Hagamos Las Cuentas (Sin Exagerar)
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          <strong>Inversión hoy:</strong> $850 MXN (Plan Pro)
+        </mj-text>
+        
+        <mj-text 
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Escenario conservador:
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          • Ahorras 5 horas/semana usando lo que aprenderás
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          • Usas 3 de esas horas para conseguir 1 cliente nuevo/mes
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          • Cliente promedio: $3,000 MXN/mes
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6"
+          font-size="24px"
+          font-weight="800"
+          align="center"
+          padding-bottom="24px"
+        >
+          Resultado: Recuperas tu inversión en 9 días.
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          Y eso sin contar:
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • Plantillas que puedes vender
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • Servicios premium que puedes ofrecer
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • Consultorías IA a otros contadores
+        </mj-text>
+        
+        <mj-text>
+          • Tiempo que recuperas para tu vida personal
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What's Included -->
+    <mj-section background-color="#f8fafc" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          🚀 Lo Que Incluye El Taller
+        </mj-text>
+        
+        <mj-text 
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          8 horas de contenido práctico:
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          📅 <strong>Módulo 1 (14 oct):</strong> Fundamentos y mentalidad IA-First
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          📅 <strong>Módulo 2 (16 oct):</strong> Asistentes especializados (GPTs, Gemas, Projects)
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          📅 <strong>Módulo 3 (21 oct):</strong> Ecosistema completo de herramientas
+        </mj-text>
+        
+        <mj-text padding-bottom="6px">
+          📅 <strong>Módulo 4 (23 oct):</strong> Monetización y plan de implementación
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          📅 <strong>Sesión Q&A (24 oct):</strong> Resuelve tus dudas específicas
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan Pro -->
+    <mj-section background-color="#f8fafc" padding="0 20px 16px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="2px solid #14b8a6">
+        <mj-text 
+          color="#14b8a6" 
+          font-size="12px" 
+          font-weight="700"
+          text-transform="uppercase"
+          padding-bottom="8px"
+        >
+          🏆 Recomendado
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Plan Pro
+        </mj-text>
+        
+        <mj-text 
+          color="#14b8a6" 
+          font-size="36px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $850 <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ 8 horas de taller en vivo
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Grabaciones ILIMITADAS de por vida
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Plantillas y código trabajado en clase
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ 6 meses de actualizaciones
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          ✅ Soporte por email (30 días)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Plan Premium -->
+    <mj-section background-color="#f8fafc" padding="0 20px 32px">
+      <mj-column width="100%" background-color="#ffffff" border-radius="12px" padding="24px" border="1px solid #e5e7eb">
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          💎 Plan Premium
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-size="36px" 
+          font-weight="800"
+          padding-bottom="16px"
+        >
+          $2,500 <span style="font-size: 18px; font-weight: 500; color: #6b7280;">MXN</span>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="8px">
+          <strong>Incluye todo lo anterior más:</strong>
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Sesión 1-on-1 de 60 minutos
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Revisión personalizada de tu flujo
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Plan de implementación para TU práctica
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ Comunidad privada de contadores IA
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="6px">
+          ✅ 1 año de actualizaciones
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          ✅ Soporte prioritario (respuesta en 24h)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Section -->
+    <mj-section background-color="#ffffff" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="22px"
+          font-weight="700"
+          align="center"
+          padding-bottom="24px"
+        >
+          💳 Inscríbete Antes de las 11:59 PM
+        </mj-text>
+        
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://todoconta.com/ia-contadores"
+          padding="0 0 24px 0"
+          inner-padding="16px 48px"
+        >
+          Pagar con tarjeta aquí
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Bank Details -->
+    <mj-section background-color="#f8fafc" padding="24px 20px" border-left="4px solid #14b8a6">
+      <mj-column>
+        <mj-text 
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Transferencia directa (sin comisiones):
+        </mj-text>
+        
+        <mj-text>
+          <strong>Banco:</strong> BBVA BANCOMER<br>
+          <strong>Cuenta:</strong> 2851186442<br>
+          <strong>CLABE:</strong> 012266028511864426<br>
+          <strong>Titular:</strong> Israel Castro Urieta
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ffffff" padding="24px 20px 32px">
+      <mj-column>
+        <mj-text padding-bottom="8px">
+          <strong>Envía tu comprobante:</strong>
+        </mj-text>
+        
+        <mj-text padding-bottom="4px">
+          • WhatsApp: <strong>5544753602</strong>
+        </mj-text>
+        
+        <mj-text>
+          • O responde este correo
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- No Pressure -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ⚠️ Sin Presión, Pero Con Claridad
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          No voy a decirte que "te vas a arrepentir" o que "es tu última oportunidad en la vida".
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Pero sí te voy a decir esto:
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          El precio de $850 termina a las 11:59 PM.
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Después será $2,250.
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Si ya sabes que quieres aprender esto, <strong>no tiene sentido pagar $1,400 más mañana por lo mismo</strong>.
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          Si aún tienes dudas, responde este correo. Estoy disponible hasta medianoche para resolver cualquier pregunta.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Guarantee -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          🛡️ Garantía de 30 Días
+        </mj-text>
+        
+        <mj-text color="#047857" padding-bottom="16px">
+          Si tomas el taller y en 30 días no ves resultados medibles (tiempo ahorrado, nuevas oportunidades, mejor flujo de trabajo), te devuelvo tu dinero.
+        </mj-text>
+        
+        <mj-text color="#047857">
+          Sin preguntas incómodas. Sin letra pequeña.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Simple Decision -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          🎯 Decisión Simple
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          <strong>Opción A:</strong> Entras hoy con $850 MXN
+        </mj-text>
+        
+        <mj-text padding-bottom="8px">
+          <strong>Opción B:</strong> Pagas $2,250 MXN mañana (o no entras)
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          <strong>Opción C:</strong> Sigues trabajando como siempre
+        </mj-text>
+        
+        <mj-text 
+          color="#6b7280"
+          font-style="italic"
+          align="center"
+        >
+          Solo tú sabes cuál tiene más sentido para ti.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Nos vemos el 14 de octubre.
+        </mj-text>
+        
+        <mj-text padding-bottom="16px">
+          O no.
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Tú decides.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="0 20px 32px">
+      <mj-column>
+        <mj-text 
+          color="#6b7280" 
+          font-style="italic"
+          padding-bottom="8px"
+        >
+          Con cariño y números 📊
+        </mj-text>
+        
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Triple P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Si estás leyendo esto a las 11:00 PM y quieres entrar, envíame WhatsApp directo al <strong>5544753602</strong>. Aunque sean 11:50 PM, te ayudo a procesar tu inscripción.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Algunos me han preguntado "¿pero el taller se va a repetir?"<br><br>
+          Sí, probablemente. Pero no sé cuándo. Y definitivamente no al mismo precio.
+        </mj-text>
+        
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PPPD:
+        </mj-text>
+        
+        <mj-text color="#92400e">
+          La ventana cierra en 4 horas. Después de eso, el precio es el precio.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
