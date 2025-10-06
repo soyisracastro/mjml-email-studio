@@ -219,6 +219,48 @@ Ver [`newsletter/workshop-example.mjml`](src/templates/newsletter/workshop-examp
 - Respuestas que necesitan el branding de Todoconta
 - Emails que no requieren tracking o métricas
 
+### 6. **Transaccional - Bienvenida al Taller** 🆕
+**Archivo:** `transactional/workshop-welcome.mjml`
+
+**Uso:** Email de bienvenida para participantes del taller Pro/Premium de IA
+
+**Características:**
+- ✨ **Confirmación completa** - Plan, fecha, horario, monto, folio
+- ✨ **Calendario completo** - Todas las fechas con enlaces a sesiones en vivo
+- ✨ **Accesos inmediatos** - Grupo de WhatsApp y carpeta de recursos
+- ✨ **Preparación previa** - Tareas y contenido antes del taller
+- ✨ **Comunicación continua** - Plan de actualizaciones semanales
+- ✨ **Tono personal** - Mensaje cercano y motivador de Israel
+
+**Variables requeridas:**
+- `{{nombre}}` - Nombre del participante
+- `{{plan_name}}` - Plan Básico/Pro/Premium
+- `{{monto}}` - Monto pagado
+- `{{order_number}}` - Folio de registro
+- `{{link_session_1}}` - Enlace sesión 14 octubre
+- `{{link_session_2}}` - Enlace sesión 16 octubre
+- `{{link_session_3}}` - Enlace sesión 21 octubre
+- `{{link_session_4}}` - Enlace sesión 23 octubre
+- `{{link_session_5}}` - Enlace sesión Q&A 24 octubre
+- `{{link_whatsapp}}` - Enlace grupo de WhatsApp
+- `{{link_recursos}}` - Enlace carpeta de recursos
+
+**Documentación completa:** Ver [`WORKSHOP_WELCOME_PLACEHOLDERS.md`](WORKSHOP_WELCOME_PLACEHOLDERS.md) para:
+- Ejemplo de datos en CSV
+- Ejemplo de objeto JSON
+- Instrucciones para AWS SES
+- Scripts de envío masivo
+
+**Cómo usar con AWS SES:**
+1. Compila el template: `npm run build`
+2. Crea el template en AWS SES con el HTML compilado
+3. Prepara tus datos en CSV o JSON
+4. Envía usando AWS SDK o CLI
+
+**Archivos de ejemplo incluidos:**
+- `workshop-welcome-test-data.json` - Datos de prueba individuales
+- `workshop-welcome-test-data.csv` - Datos para envíos masivos
+
 ---
 
 **Cómo usar:**
@@ -501,9 +543,16 @@ Si tienes preguntas o necesitas ayuda:
 
 ## 📝 Changelog
 
+### v1.1.0 (Octubre 2025)
+- ✨ Nueva plantilla: Workshop Welcome (Bienvenida al Taller)
+- ✨ Documentación completa con guía de placeholders para AWS SES
+- ✨ Archivos de ejemplo: JSON y CSV para testing
+- ✨ Soporte para envíos masivos con AWS SDK
+- ✨ 11 placeholders dinámicos para personalización completa
+
 ### v1.0.0 (2024)
 - ✨ Sistema inicial de plantillas
-- ✨ 4 plantillas base (Transaccional, Promocional, Seguimiento, Newsletter)
+- ✨ 6 plantillas base (Transaccional, Promocional, Seguimiento, Newsletter, Gmail)
 - ✨ Componentes reutilizables
 - ✨ Sistema de build automatizado
 - ✨ Integración con design system

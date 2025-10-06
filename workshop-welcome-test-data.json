@@ -1,0 +1,13 @@
+{
+  "nombre": "Juan Pérez",
+  "plan_name": "Plan Pro",
+  "monto": "2997",
+  "order_number": "TC-2025-001",
+  "link_session_1": "https://zoom.us/j/123456789?pwd=session1",
+  "link_session_2": "https://zoom.us/j/123456789?pwd=session2",
+  "link_session_3": "https://zoom.us/j/123456789?pwd=session3",
+  "link_session_4": "https://zoom.us/j/123456789?pwd=session4",
+  "link_session_5": "https://zoom.us/j/123456789?pwd=session5",
+  "link_whatsapp": "https://chat.whatsapp.com/InviteCodeExample",
+  "link_recursos": "https://drive.google.com/drive/folders/carpeta-recursos-taller"
+}

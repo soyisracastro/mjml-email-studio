@@ -1,0 +1,600 @@
+<mjml>
+  <mj-head>
+    <mj-title>¡Bienvenido al Taller! - Todoconta</mj-title>
+    <mj-preview>Tu inscripción está confirmada. Tus accesos + lo que sigue</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#374151" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 600; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+      .schedule-item { background-color: #f9fafb; border-left: 4px solid #14b8a6; padding: 16px; margin-bottom: 12px; border-radius: 4px; }
+      .checklist-item { padding: 8px 0; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Hero Section -->
+    <mj-section background-color="#14b8a6" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff" 
+          font-size="36px" 
+          font-weight="800"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="8px"
+        >
+          ¡Bienvenido al Taller! 👋
+        </mj-text>
+        <mj-text 
+          color="#e0f2fe" 
+          font-size="20px"
+          align="center"
+          font-weight="600"
+        >
+          Tus accesos + lo que sigue
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Greeting -->
+    <mj-section background-color="#ffffff" padding="32px 20px 20px">
+      <mj-column>
+        <mj-text color="#1f2937" font-size="18px" line-height="160%">
+          Hola <strong>{{nombre}}</strong>,
+        </mj-text>
+        <mj-text color="#1f2937" font-size="20px" font-weight="700" padding-top="12px">
+          Tu inscripción está confirmada.
+        </mj-text>
+        <mj-text color="#4b5563" font-size="16px" line-height="170%">
+          Gracias por confiar en este proceso. Estoy genuinamente emocionado de que formes parte de esto.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Registration Confirmation -->
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="20px"
+        >
+          ✅ Confirmación de Tu Registro
+        </mj-text>
+        
+        <mj-table padding-bottom="24px">
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Plan contratado:</td>
+            <td style="padding: 14px 0; color: #1f2937; font-weight: 600; text-align: right;">{{plan_name}}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Fecha de inicio:</td>
+            <td style="padding: 14px 0; color: #1f2937; font-weight: 600; text-align: right;">14 de octubre, 2025</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Horario:</td>
+            <td style="padding: 14px 0; color: #1f2937; font-weight: 600; text-align: right;">5:30 PM (CST México)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Tu inversión:</td>
+            <td style="padding: 14px 0; color: #14b8a6; font-weight: 700; font-size: 18px; text-align: right;">${{monto}} MXN</td>
+          </tr>
+          <tr>
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Folio de registro:</td>
+            <td style="padding: 14px 0; color: #1f2937; font-weight: 600; text-align: right;">{{order_number}}</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Schedule Section -->
+    <mj-section background-color="#f9fafb" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📅 Las Fechas Completas
+        </mj-text>
+        
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="24px">
+          Guarda estas fechas en tu calendario:
+        </mj-text>
+
+        <!-- Session 1 -->
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Martes 14 de octubre | 5:30-7:00 PM
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Módulo 1: Fundamentos de IA y Mentalidad IA-First
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          border-radius="6px"
+          href="{{link_session_1}}"
+          padding="0 0 24px 0"
+          inner-padding="10px 24px"
+          align="left"
+        >
+          🔗 Enlace Sesión 1
+        </mj-button>
+
+        <!-- Session 2 -->
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Jueves 16 de octubre | 5:30-7:30 PM
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Módulo 2: Prompts y Asistentes Especializados
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          border-radius="6px"
+          href="{{link_session_2}}"
+          padding="0 0 24px 0"
+          inner-padding="10px 24px"
+          align="left"
+        >
+          🔗 Enlace Sesión 2
+        </mj-button>
+
+        <!-- Session 3 -->
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Martes 21 de octubre | 5:30-8:00 PM
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Módulo 3: Herramientas Avanzadas y Ecosistema
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          border-radius="6px"
+          href="{{link_session_3}}"
+          padding="0 0 24px 0"
+          inner-padding="10px 24px"
+          align="left"
+        >
+          🔗 Enlace Sesión 3
+        </mj-button>
+
+        <!-- Session 4 -->
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Jueves 23 de octubre | 5:30-7:30 PM
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Módulo 4: Monetización y Consultoría IA
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          border-radius="6px"
+          href="{{link_session_4}}"
+          padding="0 0 24px 0"
+          inner-padding="10px 24px"
+          align="left"
+        >
+          🔗 Enlace Sesión 4
+        </mj-button>
+
+        <!-- Session 5 -->
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Viernes 24 de octubre | 10:00-11:00 AM
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Sesión Especial de Q&A
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          border-radius="6px"
+          href="{{link_session_5}}"
+          padding="0"
+          inner-padding="10px 24px"
+          align="left"
+        >
+          🔗 Enlace Sesión Q&A
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Access Links -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          🔗 Tus Accesos
+        </mj-text>
+        
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px">
+          Grupo de WhatsApp (IMPORTANTE):
+        </mj-text>
+        <mj-button 
+          background-color="#25D366" 
+          color="#ffffff"
+          font-size="15px"
+          font-weight="600"
+          border-radius="8px"
+          href="{{link_whatsapp}}"
+          padding="0 0 20px 0"
+          inner-padding="14px 32px"
+        >
+          📲 Unirme al Grupo de WhatsApp
+        </mj-button>
+
+        <mj-text color="#1f2937" font-weight="700" font-size="16px" padding-bottom="8px" padding-top="12px">
+          Carpeta de recursos:
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="12px">
+          Estaré trabajando en la ubicación del contenido en esta semana (haremos una mezcla de OneDrive, Notion y/o sitio web)
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="14px" font-style="italic" padding-top="16px" padding-bottom="8px">
+          Nota: Los enlaces de cada sesión también te llegarán 24 horas y 1 hora antes de cada clase.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- WhatsApp Benefits -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#065f46" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📲 Únete al Grupo de WhatsApp (Hazlo Ahora)
+        </mj-text>
+        
+        <mj-text color="#065f46" font-size="15px" padding-bottom="16px">
+          El grupo de WhatsApp es donde sucede la magia adicional:
+        </mj-text>
+
+        <mj-text color="#047857" font-size="15px" padding-bottom="8px">
+          ✅ Adelantos de contenido antes de cada módulo
+        </mj-text>
+        <mj-text color="#047857" font-size="15px" padding-bottom="8px">
+          ✅ Ejemplos prácticos que puedes probar
+        </mj-text>
+        <mj-text color="#047857" font-size="15px" padding-bottom="8px">
+          ✅ Noticias diarias de IA (el mundo cambia rápido)
+        </mj-text>
+        <mj-text color="#047857" font-size="15px" padding-bottom="8px">
+          ✅ Dudas rápidas entre sesiones
+        </mj-text>
+        <mj-text color="#047857" font-size="15px" padding-bottom="16px">
+          ✅ Red de contadores con tu misma mentalidad
+        </mj-text>
+
+        <mj-text color="#065f46" font-size="15px" font-weight="600" padding-bottom="20px">
+          El mundo de la IA se mueve TODOS LOS DÍAS. Lo que es cierto hoy puede cambiar mañana. Por eso compartiré actualizaciones constantes en el grupo para que siempre estés al día.
+        </mj-text>
+
+        <mj-button 
+          background-color="#25D366" 
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+          border-radius="8px"
+          href="{{link_whatsapp}}"
+          padding="0"
+          inner-padding="16px 40px"
+        >
+          👉 UNIRME AL GRUPO DE WHATSAPP
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- What to Expect -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          🎯 Qué Esperar De Aquí Al 14 de Octubre
+        </mj-text>
+        
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="20px">
+          No vamos a esperar hasta el taller para empezar.
+        </mj-text>
+
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Entre hoy y el 14 de octubre te estaré enviando:
+        </mj-text>
+
+        <mj-text color="#1f2937" font-weight="700" font-size="15px" padding-bottom="4px">
+          1. Adelantos de contenido
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Pequeñas píldoras de lo que veremos en cada módulo
+        </mj-text>
+
+        <mj-text color="#1f2937" font-weight="700" font-size="15px" padding-bottom="4px">
+          2. Casos prácticos adicionales
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Ejemplos reales que podrás probar antes de la primera sesión
+        </mj-text>
+
+        <mj-text color="#1f2937" font-weight="700" font-size="15px" padding-bottom="4px">
+          3. Preparación técnica
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Cómo tener listas tus cuentas de ChatGPT/Claude/Gemini
+        </mj-text>
+
+        <mj-text color="#1f2937" font-weight="700" font-size="15px" padding-bottom="4px">
+          4. Noticias relevantes
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Si sale algo importante en el mundo IA, lo sabrás inmediatamente
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="15px" font-weight="600" font-style="italic">
+          La idea: Que llegues al primer módulo con contexto y listo para aprovechar al máximo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Homework -->
+    <mj-section background-color="#fef3c7" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📝 Tarea Antes Del 14 de Octubre
+        </mj-text>
+        
+        <mj-text color="#92400e" font-size="15px" padding-bottom="16px">
+          <em>(Opcional pero recomendada)</em>
+        </mj-text>
+
+        <mj-text color="#92400e" font-size="15px" padding-bottom="16px">
+          Si quieres llegar preparado:
+        </mj-text>
+
+        <mj-text color="#92400e" font-weight="700" font-size="15px" padding-bottom="8px">
+          1. Crea tus cuentas (si no las tienes):
+        </mj-text>
+        <mj-text color="#92400e" font-size="15px" padding-bottom="4px">
+          • ChatGPT: <a href="https://chat.openai.com" class="link" style="color: #14b8a6;">chat.openai.com</a>
+        </mj-text>
+        <mj-text color="#92400e" font-size="15px" padding-bottom="4px">
+          • Claude: <a href="https://claude.ai" class="link" style="color: #14b8a6;">claude.ai</a>
+        </mj-text>
+        <mj-text color="#92400e" font-size="15px" padding-bottom="16px">
+          • Gemini: <a href="https://gemini.google.com" class="link" style="color: #14b8a6;">gemini.google.com</a>
+        </mj-text>
+        <mj-text color="#92400e" font-size="14px" font-style="italic" padding-bottom="20px">
+          Las versiones gratuitas son suficientes para empezar.
+        </mj-text>
+
+        <mj-text color="#92400e" font-weight="700" font-size="15px" padding-bottom="8px">
+          2. Piensa en 3 tareas repetitivas de tu práctica
+        </mj-text>
+        <mj-text color="#92400e" font-size="15px" padding-bottom="20px">
+          Esas que te quitan tiempo cada semana. Las vamos a automatizar.
+        </mj-text>
+
+        <mj-text color="#92400e" font-weight="700" font-size="15px" padding-bottom="8px">
+          3. Únete al grupo de WhatsApp
+        </mj-text>
+        <mj-text color="#92400e" font-size="15px">
+          Ahí empezaremos a compartir recursos inmediatamente.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- This Week -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          💡 Lo Que Viene Esta Semana
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
+          <strong>Mañana (lunes):</strong> Te envío el primer adelanto del Módulo 1
+        </mj-text>
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
+          <strong>Miércoles:</strong> Caso práctico que puedes probar
+        </mj-text>
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
+          <strong>Viernes:</strong> Preparación técnica + primeros recursos
+        </mj-text>
+        <mj-text color="#1f2937" font-size="15px">
+          <strong>Y en el grupo de WhatsApp:</strong> Actualizaciones diarias
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Available Resources -->
+    <mj-section background-color="#f0f9ff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#075985" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          🎁 Recursos Que Ya Están Disponibles
+        </mj-text>
+
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="16px">
+          En la carpeta de recursos encontrarás:
+        </mj-text>
+
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
+          📄 Guía de preparación técnica
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
+          📄 Lista de herramientas que usaremos
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="20px">
+          📄 Plantilla de objetivos personales (llénala antes del taller)
+        </mj-text>
+
+        <mj-button 
+          background-color="#0284c7" 
+          color="#ffffff"
+          font-size="15px"
+          font-weight="600"
+          border-radius="8px"
+          href="{{link_recursos}}"
+          padding="0"
+          inner-padding="14px 32px"
+        >
+          📂 Acceder a la Carpeta de Recursos
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Questions/Support -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          ❓ ¿Dudas? Estoy Aquí
+        </mj-text>
+        
+        <mj-text color="#4b5563" font-size="15px" padding-bottom="16px">
+          Si tienes cualquier pregunta antes del 14:
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
+          📧 <strong>Email:</strong> <a href="mailto:israel@todoconta.com" class="link">israel@todoconta.com</a>
+        </mj-text>
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
+          📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5215544753602" class="link">5544753602</a>
+        </mj-text>
+        <mj-text color="#1f2937" font-size="15px" padding-bottom="16px">
+          💬 <strong>Grupo:</strong> <a href="{{link_whatsapp}}" class="link">Link al grupo de WhatsApp</a>
+        </mj-text>
+
+        <mj-text color="#6b7280" font-size="14px" font-style="italic">
+          Respondo en máximo 24 horas (usualmente menos).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Next Steps -->
+    <mj-section background-color="#dbeafe" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1e3a8a" 
+          font-size="22px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          🚀 Lo Que Sigue
+        </mj-text>
+        
+        <mj-text color="#1e40af" font-size="16px" font-weight="600" padding-bottom="16px">
+          Tu siguiente paso AHORA MISMO:
+        </mj-text>
+
+        <mj-text color="#1e40af" font-size="15px" padding-bottom="8px">
+          1. ✅ Guarda las fechas en tu calendario
+        </mj-text>
+        <mj-text color="#1e40af" font-size="15px" padding-bottom="8px">
+          2. ✅ Únete al grupo de WhatsApp
+        </mj-text>
+        <mj-text color="#1e40af" font-size="15px" padding-bottom="8px">
+          3. ✅ Revisa la carpeta de recursos
+        </mj-text>
+        <mj-text color="#1e40af" font-size="15px">
+          4. ✅ (Opcional) Crea tus cuentas de IA si no las tienes
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing Message -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="16px">
+          Gracias de nuevo por estar aquí.
+        </mj-text>
+        
+        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="16px">
+          Nos vemos en el grupo de WhatsApp y el 14 de octubre en la primera sesión.
+        </mj-text>
+        
+        <mj-text color="#1f2937" font-size="18px" font-weight="600" align="center" padding-bottom="24px">
+          Esto va a estar bueno.
+        </mj-text>
+
+        <mj-text color="#4b5563" font-size="16px" align="center" padding-bottom="8px">
+          Con cariño y números 📊
+        </mj-text>
+        <mj-text color="#1f2937" font-size="16px" font-weight="600" align="center">
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Premium Note -->
+    <mj-section background-color="#f3e8ff" padding="28px 20px">
+      <mj-column>
+        <mj-text color="#6b21a8" font-size="15px" padding-bottom="12px">
+          <strong>PD:</strong> Si contrataste el Plan Premium, te contactaré en los próximos días para agendar tu sesión 1-on-1 para que me cuentes sobre tus actividades diarias y ver qué podemos optimizar. Estate atento.
+        </mj-text>
+        
+        <mj-text color="#6b21a8" font-size="15px">
+          <strong>PPD:</strong> Revisa tu carpeta de spam por si acaso. A veces los correos con muchos links se van ahí. Agrega <a href="mailto:israel@todoconta.com" class="link" style="color: #14b8a6;">israel@todoconta.com</a> a tus contactos para evitarlo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
