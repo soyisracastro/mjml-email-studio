@@ -1,0 +1,36 @@
+{
+  "name": "todoconta",
+  "displayName": "Todoconta",
+  "description": "Blog para difundir información contable y fiscal en México",
+  "author": "Israel Castro",
+  "sender": {
+    "name": "Israel Castro - Todoconta",
+    "email": "israel@todoconta.com",
+    "replyTo": "israel@todoconta.com"
+  },
+  "aws": {
+    "region": "us-east-1",
+    "templatePrefix": "todoconta-",
+    "sourceEmail": "israel@todoconta.com"
+  },
+  "website": "https://todoconta.com",
+  "social": {
+    "facebook": "todoconta",
+    "twitter": "todoconta",
+    "linkedin": "company/todoconta",
+    "instagram": "todoconta"
+  },
+  "contact": {
+    "email": "contacto@todoconta.com",
+    "phone": "+52 55 4475 3602",
+    "whatsapp": "5215544753602"
+  },
+  "branding": {
+    "logo": "https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/isotipo-dark.png",
+    "logoWidth": "50px"
+  },
+  "legal": {
+    "privacyPolicy": "https://todoconta.com/privacidad",
+    "termsAndConditions": "https://todoconta.com/terminos"
+  }
+}

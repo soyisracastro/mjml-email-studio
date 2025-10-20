@@ -1,572 +1,419 @@
-# 📧 Sistema de Plantillas de Email - Todoconta
+# 📧 MJML Email Studio
 
-Sistema completo de plantillas de email responsivas creadas con MJML, diseñadas para mantener consistencia con el design system de Todoconta y optimizadas para su uso con Sendy.
-
-## 📋 Tabla de Contenidos
-
-- [Características](#características)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Plantillas Disponibles](#plantillas-disponibles)
-- [Personalización](#personalización)
-- [Compilación](#compilación)
-- [Integración con Sendy](#integración-con-sendy)
-- [Variables Dinámicas](#variables-dinámicas)
-- [Testing](#testing)
-- [Troubleshooting](#troubleshooting)
+Sistema multi-proyecto para crear plantillas de email profesionales y responsivas usando MJML. Gestiona múltiples proyectos con diferentes design systems desde un solo repositorio.
 
 ---
 
 ## ✨ Características
 
-- ✅ **Responsive Design** - Compatible con todos los dispositivos
-- ✅ **Design System Integrado** - Colores, tipografías y espaciados consistentes
-- ✅ **Componentes Reutilizables** - Header, Footer, Buttons modulares
-- ✅ **Optimizado para Sendy** - Variables y estructura compatible
-- ✅ **Cross-Client Compatible** - Funciona en Gmail, Outlook, Apple Mail, etc.
-- ✅ **Fácil Personalización** - Variables claramente definidas
-- ✅ **Build Automatizado** - Scripts para compilar MJML a HTML
+- 🎨 **Multi-Proyecto** - Gestiona emails para múltiples marcas/proyectos
+- 🎯 **Design System por Proyecto** - Cada proyecto tiene su propio sistema de diseño
+- 🔧 **Scripts Compartidos** - Herramientas reutilizables para todos los proyectos
+- 📦 **Build Inteligente** - Compila proyectos individuales o todos a la vez
+- ☁️ **AWS SES Ready** - Scripts integrados para envíos masivos
+- 📱 **100% Responsive** - Compatible con todos los clientes de email
+- 🚀 **Generador de Proyectos** - Crea nuevos proyectos en segundos
+
+---
+
+## 🚀 Quick Start
+
+### 1. Instalación
+
+```bash
+git clone <repo-url> mjml-email-studio
+cd mjml-email-studio
+npm install
+```
+
+### 2. Crear tu Primer Proyecto
+
+```bash
+npm run new:project
+```
+
+Sigue el asistente interactivo para configurar tu proyecto.
+
+### 3. Compilar Templates
+
+```bash
+# Compilar proyecto específico
+npm run build -- --project=tu-proyecto
+
+# Compilar todos los proyectos
+npm run build:all
+```
+
+Los archivos HTML compilados estarán en `dist/{nombre-proyecto}/`
 
 ---
 
 ## 📁 Estructura del Proyecto
 
 ```
-emails/
-├── src/
-│   ├── components/              # Componentes reutilizables
-│   │   ├── header.mjml         # Header con logo
-│   │   ├── footer.mjml         # Footer con links y contacto
-│   │   └── button.mjml         # Estilos de botones
-│   │
-│   ├── templates/              # Plantillas completas
-│   │   ├── transactional/      # Emails transaccionales
-│   │   │   └── purchase-confirmation.mjml
-│   │   ├── promotional/        # Emails promocionales
-│   │   │   └── special-offer.mjml
-│   │   ├── follow-up/          # Emails de seguimiento
-│   │   │   └── post-service-feedback.mjml
-│   │   ├── newsletter/         # Newsletters y boletines
-│   │   │   ├── personal-newsletter.mjml
-│   │   │   ├── workshop-example.mjml
-│   │   │   └── workshop-update.mjml
-│   │   └── gmail/              # Templates para Gmail 🆕
-│   │       └── simple-template.mjml
-│   │
-│   └── config/
-│       └── design-tokens.json  # Variables del design system
+mjml-email-studio/
 │
-├── dist/                       # HTML compilado (generado)
-├── scripts/
-│   └── build.js               # Script de compilación
-├── package.json
-├── mjml.config.js
-├── README.md
-├── QUICK_START.md
-├── TESTING_GUIDE.md
-└── GMAIL_TEMPLATE_GUIDE.md    # Guía para Gmail 🆕
+├── projects/                       # 📂 Tus proyectos
+│   ├── todoconta/                  # Proyecto de ejemplo
+│   │   ├── config/
+│   │   │   ├── design-tokens.json  # Sistema de diseño
+│   │   │   └── project.json        # Configuración del proyecto
+│   │   ├── components/             # Componentes reutilizables
+│   │   │   ├── header.mjml
+│   │   │   └── footer.mjml
+│   │   ├── templates/              # Templates MJML
+│   │   │   ├── transactional/
+│   │   │   ├── promotional/
+│   │   │   └── newsletter/
+│   │   ├── data/                   # Datos de prueba
+│   │   └── docs/                   # Documentación específica
+│   │
+│   └── tu-proyecto/                # Tu nuevo proyecto aquí
+│       └── ...
+│
+├── shared/                         # 🔧 Recursos compartidos
+│   ├── scripts/
+│   │   ├── build.js                # Compilador multi-proyecto
+│   │   ├── prepare-ses-template.js # Preparar para AWS SES
+│   │   └── send-bulk-templated.js  # Envío masivo
+│   └── utils/
+│       └── generate-project.js     # Generador de proyectos
+│
+├── dist/                           # 📦 Salida compilada
+│   ├── todoconta/
+│   └── tu-proyecto/
+│
+├── docs/                           # 📚 Documentación global
+│   ├── QUICK_START.md
+│   ├── CREATING_PROJECTS.md
+│   └── DESIGN_TOKENS_GUIDE.md
+│
+└── package.json
 ```
 
 ---
 
-## 🚀 Instalación
+## 💻 Comandos Principales
 
-### 1. Instalar dependencias
+### Desarrollo
 
 ```bash
-cd emails
-npm install
+# Crear nuevo proyecto
+npm run new:project
+
+# Compilar proyecto específico
+npm run build -- --project=nombre-proyecto
+
+# Compilar todos los proyectos
+npm run build:all
 ```
 
-### 2. Verificar instalación
+### AWS SES
 
 ```bash
-npm run build
-```
+# Preparar template para SES
+npm run prepare:ses -- --project=nombre-proyecto --template=ruta/template --name=template-v1
 
-Esto compilará todas las plantillas MJML a HTML en la carpeta `dist/`.
+# Enviar emails masivos
+npm run send:bulk -- --project=nombre-proyecto --template=template-v1 --data=data/recipients.csv
+```
 
 ---
 
-## 💻 Uso
+## 📦 Proyectos Incluidos
 
-### Compilar todas las plantillas
+### Todoconta (Ejemplo)
+
+Proyecto completo con múltiples templates:
+- ✅ Emails transaccionales (confirmaciones, bienvenida)
+- ✅ Emails promocionales (ofertas, descuentos)
+- ✅ Newsletters personalizadas
+- ✅ Templates para Gmail
+- ✅ Sistema completo de seguimiento
+
+**Ver:** [`projects/todoconta/`](projects/todoconta/)
+
+---
+
+## 🎨 Creando un Nuevo Proyecto
+
+### Opción 1: Generador Automático (Recomendado)
 
 ```bash
-npm run build
+npm run new:project
 ```
 
-### Compilar en modo watch (desarrollo)
+El generador te pedirá:
+- Nombre del proyecto (ej: `despacho-contable`)
+- Nombre para mostrar (ej: `Despacho Contable`)
+- Descripción
+- Email del remitente
+- Sitio web
+- Color primario
 
-```bash
-npm run build:watch
-```
+Y creará automáticamente:
+- ✅ Estructura completa de carpetas
+- ✅ `project.json` con tu configuración
+- ✅ `design-tokens.json` basado en tu color primario
+- ✅ Componentes base (header, footer)
+- ✅ Template de bienvenida de ejemplo
+- ✅ Documentación inicial
 
-### Compilar para producción (minificado)
+### Opción 2: Manual
 
-```bash
-npm run build:prod
-```
-
----
-
-## 📧 Plantillas Disponibles
-
-### 1. **Transaccional - Confirmación de Compra**
-**Archivo:** `transactional/purchase-confirmation.mjml`
-
-**Uso:** Enviar después de una compra exitosa
-
-**Variables:**
-- `[PRODUCT_NAME]` - Nombre del producto
-- `[PLAN_NAME]` - Nombre del plan
-- `[ORDER_NUMBER]` - Número de orden
-- `[PURCHASE_DATE]` - Fecha de compra
-- `[AMOUNT]` - Monto pagado
-- `[DOWNLOAD_LINK]` - Link de descarga
-
-**Ejemplo de uso en Sendy:**
-```html
-<!-- Copiar el contenido de dist/transactional/purchase-confirmation.html -->
-<!-- Reemplazar variables con las de Sendy: [Name], [Email], etc. -->
-```
+Ver la guía completa: [**Creating Projects Guide**](docs/CREATING_PROJECTS.md)
 
 ---
 
-### 2. **Promocional - Oferta Especial**
-**Archivo:** `promotional/special-offer.mjml`
+## 🎨 Sistema de Design Tokens
 
-**Uso:** Campañas de descuentos y promociones
-
-**Variables:**
-- `[OFFER_TITLE]` - Título de la oferta
-- `[DISCOUNT_PERCENTAGE]` - Porcentaje de descuento
-- `[EXPIRY_DATE]` - Fecha de expiración
-- `[CTA_LINK]` - Link del call-to-action
-- `[SERVICE_X_NAME]` - Nombre del servicio
-- `[SERVICE_X_DESCRIPTION]` - Descripción del servicio
-- `[ORIGINAL_PRICE_X]` - Precio original
-- `[DISCOUNTED_PRICE_X]` - Precio con descuento
-- `[SERVICE_X_LINK]` - Link al servicio
-
----
-
-### 3. **Seguimiento - Feedback Post-Servicio**
-**Archivo:** `follow-up/post-service-feedback.mjml`
-
-**Uso:** Solicitar feedback después de un servicio
-
-**Variables:**
-- `[CUSTOMER_NAME]` - Nombre del cliente
-- `[SERVICE_NAME]` - Nombre del servicio
-- `[SERVICE_DATE]` - Fecha del servicio
-- `[REFERENCE_NUMBER]` - Número de referencia
-- `[FEEDBACK_LINK]` - Link al formulario de feedback
-- `[RELATED_SERVICE_X]` - Servicios relacionados
-- `[RELATED_SERVICE_X_DESC]` - Descripción
-- `[RELATED_SERVICE_X_LINK]` - Link
-
-### 4. **Newsletter - Boletín Personal**
-**Archivo:** `newsletter/personal-newsletter.mjml`
-
-**Uso:** Enviar newsletters personales, anuncios de talleres, contenido educativo
-
-**Características:**
-- ✨ Área de contenido completamente flexible para escribir libremente
-- ✨ Secciones opcionales para precios/planes (3 niveles)
-- ✨ Espacio para firma personalizada
-- ✨ Sección de P.S. (postdata) para mensajes finales
-- ✨ Instrucciones de pago bancario integradas
-- ✨ Secciones destacadas para puntos clave
-
-**Variables:**
-- `[Name]` - Nombre del suscriptor
-- Todo el contenido es personalizable directamente en el MJML
-
-**Ejemplo completo:** 
-Ver [`newsletter/workshop-example.mjml`](src/templates/newsletter/workshop-example.mjml) para un ejemplo real completo basado en un taller de IA para contadores, incluyendo:
-- Introducción personal
-- Lista de beneficios
-- 3 planes de precios
-- Instrucciones de pago bancario
-- Firma personalizada con P.S.
-
-### 5. **Gmail Template** - Template Personal Simple 🆕
-**Archivo:** `gmail/simple-template.mjml`
-
-**Uso:** Template minimalista para usar directamente en Gmail como borrador o plantilla personal
-
-**Características:**
-- ✨ **Sin elementos de marketing** - No incluye unsubscribe, links legales, etc.
-- ✨ **Header simple** - Solo logo y línea divisoria
-- ✨ **Footer minimalista** - Solo información de contacto básica
-- ✨ **Área de contenido limpia** - Espacio en blanco para escribir libremente
-- ✨ **Optimizado para Gmail** - Compatible con el editor de Gmail
-- ✨ **Fácil de personalizar** - Edita directamente en Gmail después de importar
-
-**Cómo usar:**
-1. Compila el template: `npm run build`
-2. Copia el HTML de `dist/gmail/simple-template.html`
-3. En Gmail: Redactar → Vista HTML → Pegar
-4. Guarda como borrador o plantilla de Gmail
-
-**Guía completa:** Ver [`GMAIL_TEMPLATE_GUIDE.md`](GMAIL_TEMPLATE_GUIDE.md) para instrucciones detalladas paso a paso.
-
-**Ideal para:**
-- Emails personales desde tu cuenta de Gmail
-- Comunicación rápida con clientes
-- Respuestas que necesitan el branding de Todoconta
-- Emails que no requieren tracking o métricas
-
-### 6. **Transaccional - Bienvenida al Taller** 🆕
-**Archivo:** `transactional/workshop-welcome.mjml`
-
-**Uso:** Email de bienvenida para participantes del taller Pro/Premium de IA
-
-**Características:**
-- ✨ **Confirmación completa** - Plan, fecha, horario, monto, folio
-- ✨ **Calendario completo** - Todas las fechas con enlaces a sesiones en vivo
-- ✨ **Accesos inmediatos** - Grupo de WhatsApp y carpeta de recursos
-- ✨ **Preparación previa** - Tareas y contenido antes del taller
-- ✨ **Comunicación continua** - Plan de actualizaciones semanales
-- ✨ **Tono personal** - Mensaje cercano y motivador de Israel
-
-**Variables requeridas:**
-- `{{nombre}}` - Nombre del participante
-- `{{plan_name}}` - Plan Básico/Pro/Premium
-- `{{monto}}` - Monto pagado
-- `{{order_number}}` - Folio de registro
-- `{{link_session_1}}` - Enlace sesión 14 octubre
-- `{{link_session_2}}` - Enlace sesión 16 octubre
-- `{{link_session_3}}` - Enlace sesión 21 octubre
-- `{{link_session_4}}` - Enlace sesión 23 octubre
-- `{{link_session_5}}` - Enlace sesión Q&A 24 octubre
-- `{{link_whatsapp}}` - Enlace grupo de WhatsApp
-- `{{link_recursos}}` - Enlace carpeta de recursos
-
-**Documentación completa:** Ver [`WORKSHOP_WELCOME_PLACEHOLDERS.md`](WORKSHOP_WELCOME_PLACEHOLDERS.md) para:
-- Ejemplo de datos en CSV
-- Ejemplo de objeto JSON
-- Instrucciones para AWS SES
-- Scripts de envío masivo
-
-**Cómo usar con AWS SES:**
-1. Compila el template: `npm run build`
-2. Crea el template en AWS SES con el HTML compilado
-3. Prepara tus datos en CSV o JSON
-4. Envía usando AWS SDK o CLI
-
-**Archivos de ejemplo incluidos:**
-- `workshop-welcome-test-data.json` - Datos de prueba individuales
-- `workshop-welcome-test-data.csv` - Datos para envíos masivos
-
----
-
-**Cómo usar:**
-1. Abre `personal-newsletter.mjml`
-2. Reemplaza los textos entre `[CORCHETES]` con tu contenido
-3. Elimina las secciones opcionales que no necesites
-4. Compila con `npm run build`
-
----
-
----
-
-## 🎨 Personalización
-
-### Modificar Colores y Estilos
-
-Edita el archivo [`src/config/design-tokens.json`](src/config/design-tokens.json):
+Cada proyecto tiene su propio sistema de diseño en `config/design-tokens.json`:
 
 ```json
 {
   "colors": {
-    "primary": "#14b8a6",
+    "primary": "#3B82F6",
     "background": "#f6f7fb",
     "textPrimary": "#1f2937"
+  },
+  "fonts": {
+    "primary": "'Inter', -apple-system, sans-serif"
+  },
+  "spacing": {
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px"
   }
 }
 ```
 
-### Modificar Componentes
+**Aprende más:** [**Design Tokens Guide**](docs/DESIGN_TOKENS_GUIDE.md)
 
-Los componentes están en [`src/components/`](src/components/):
+---
 
-- **Header:** Cambiar logo, agregar navegación
-- **Footer:** Actualizar links, redes sociales, información legal
-- **Buttons:** Ajustar estilos de botones
+## 🔨 Workflow Completo
 
-### Crear Nueva Plantilla
+### 1. Crear Proyecto
 
-1. Crea un nuevo archivo `.mjml` en la carpeta correspondiente
-2. Incluye los componentes base:
+```bash
+npm run new:project
+```
+
+### 2. Personalizar Design System
+
+Edita `projects/tu-proyecto/config/design-tokens.json`
+
+### 3. Actualizar Logo
+
+Edita `projects/tu-proyecto/components/header.mjml`
+
+### 4. Crear Templates
+
+Crea archivos `.mjml` en `projects/tu-proyecto/templates/`
+
+### 5. Compilar
+
+```bash
+npm run build -- --project=tu-proyecto
+```
+
+### 6. Probar Localmente
+
+Abre `dist/tu-proyecto/tu-template.html` en el navegador
+
+### 7. Subir a AWS SES (Opcional)
+
+```bash
+# Preparar template
+npm run prepare:ses -- --project=tu-proyecto --template=welcome --name=welcome-v1
+
+# Subir a AWS
+aws ses create-template --cli-input-json file://projects/tu-proyecto/docs/ses-welcome.json
+
+# Enviar masivamente
+npm run send:bulk -- --project=tu-proyecto --template=welcome-v1 --data=data/users.csv
+```
+
+---
+
+## 📧 Componentes MJML
+
+Cada proyecto puede tener sus propios componentes en `projects/{proyecto}/components/`:
+
+### Header (`header.mjml`)
+Logo y barra superior con colores de marca
+
+### Footer (`footer.mjml`)
+Información de contacto, redes sociales, links legales
+
+### Buttons (`button.mjml`)
+Estilos de botones consistentes con el design system
+
+### Uso en Templates
 
 ```xml
 <mjml>
-  <mj-head>
-    <mj-title>Tu Título</mj-title>
-    <mj-preview>Preview text</mj-preview>
-  </mj-head>
-  
-  <mj-body background-color="#f6f7fb">
-    <!-- Incluir header -->
+  <mj-body>
     <mj-include path="../components/header.mjml" />
     
     <!-- Tu contenido aquí -->
     
-    <!-- Incluir footer -->
     <mj-include path="../components/footer.mjml" />
   </mj-body>
 </mjml>
-```
-
-3. Compila con `npm run build`
-
----
-
-## 🔨 Compilación
-
-### Script de Build
-
-El script [`scripts/build.js`](scripts/build.js) compila automáticamente todos los archivos `.mjml` a HTML.
-
-**Características:**
-- Compila recursivamente todas las plantillas
-- Mantiene la estructura de carpetas
-- Minifica el HTML para producción
-- Muestra errores y warnings
-
-### Opciones de Compilación
-
-```javascript
-// En mjml.config.js
-module.exports = {
-  beautify: true,      // HTML legible
-  minify: false,       // Sin minificar
-  validationLevel: 'soft'  // Validación flexible
-};
-```
-
----
-
-## 📮 Integración con Sendy
-
-### Paso 1: Compilar la plantilla
-
-```bash
-npm run build:prod
-```
-
-### Paso 2: Copiar el HTML
-
-Abre el archivo HTML generado en `dist/` y copia todo el contenido.
-
-### Paso 3: Crear campaña en Sendy
-
-1. Ve a **Campaigns** → **Create new campaign**
-2. Pega el HTML en el editor
-3. Reemplaza las variables personalizadas con las de Sendy:
-
-**Mapeo de Variables:**
-
-| Plantilla | Sendy |
-|-----------|-------|
-| `[CUSTOMER_NAME]` | `[Name]` |
-| `[Email]` | `[Email]` |
-| Variables personalizadas | Crear en Sendy |
-
-### Paso 4: Variables de Sendy
-
-Sendy incluye estas variables por defecto:
-- `[Name]` - Nombre del suscriptor
-- `[Email]` - Email del suscriptor
-- `[Unsubscribe]` - Link de desuscripción (ya incluido en footer)
-- `[Webversion]` - Ver en navegador
-
-### Paso 5: Probar
-
-Usa la función "Send a test email" de Sendy antes de enviar la campaña.
-
----
-
-## 🔄 Variables Dinámicas
-
-### Variables Comunes
-
-Todas las plantillas usan estas variables que debes reemplazar:
-
-```
-[CUSTOMER_NAME]      → Nombre del cliente
-[PRODUCT_NAME]       → Nombre del producto/servicio
-[ORDER_NUMBER]       → Número de orden
-[PURCHASE_DATE]      → Fecha de compra
-[AMOUNT]             → Monto
-[DOWNLOAD_LINK]      → Link de descarga
-[CTA_LINK]           → Call-to-action link
-[FEEDBACK_LINK]      → Link de feedback
-```
-
-### Cómo Reemplazar Variables
-
-**Opción 1: Manualmente en Sendy**
-```html
-<!-- Antes -->
-<p>Hola [CUSTOMER_NAME]</p>
-
-<!-- Después -->
-<p>Hola [Name]</p>
-```
-
-**Opción 2: Script de Reemplazo**
-Puedes crear un script para automatizar el reemplazo:
-
-```javascript
-const html = fs.readFileSync('template.html', 'utf8');
-const replaced = html
-  .replace(/\[CUSTOMER_NAME\]/g, '[Name]')
-  .replace(/\[Email\]/g, '[Email]');
 ```
 
 ---
 
 ## 🧪 Testing
 
-### Clientes de Email Recomendados para Probar
+### Testing Local
+
+```bash
+# Compilar
+npm run build -- --project=tu-proyecto
+
+# Abrir en navegador
+open dist/tu-proyecto/templates/tu-template.html
+```
+
+### Email Clients Recomendados
 
 - ✅ Gmail (Desktop & Mobile)
 - ✅ Outlook 2016/2019/365
 - ✅ Apple Mail (iOS & macOS)
 - ✅ Yahoo Mail
 - ✅ Outlook.com
-- ✅ Thunderbird
 
 ### Herramientas de Testing
 
-**Gratuitas:**
-- [Litmus](https://litmus.com/) - 7 días gratis
-- [Email on Acid](https://www.emailonacid.com/) - Trial disponible
+- [Litmus](https://litmus.com/) - Testing profesional
+- [Email on Acid](https://www.emailonacid.com/) - Testing exhaustivo
 - [Mailtrap](https://mailtrap.io/) - Testing en desarrollo
-- [Putsmail](https://putsmail.com/) - Envío de pruebas
+- [Putsmail](https://putsmail.com/) - Envíos de prueba
 
-**Checklist de Testing:**
-- [ ] Imágenes se cargan correctamente
-- [ ] Links funcionan
-- [ ] Botones son clickeables
-- [ ] Texto es legible en todos los clientes
-- [ ] Responsive en móvil
-- [ ] Variables se reemplazan correctamente
+---
+
+## 📚 Documentación
+
+| Guía | Descripción |
+|------|-------------|
+| [**Quick Start**](docs/QUICK_START.md) | Referencia rápida de comandos |
+| [**Creating Projects**](docs/CREATING_PROJECTS.md) | Cómo crear nuevos proyectos |
+| [**Design Tokens**](docs/DESIGN_TOKENS_GUIDE.md) | Sistema de diseño y tokens |
+
+### Recursos Externos
+
+- [MJML Documentation](https://documentation.mjml.io/) - Documentación oficial
+- [MJML Try It Live](https://mjml.io/try-it-live) - Editor en línea
+- [Can I Email](https://www.caniemail.com/) - Compatibilidad CSS
+
+---
+
+## 🔧 Configuración Avanzada
+
+### mjml.config.js
+
+Configuración global de MJML:
+
+```javascript
+module.exports = {
+  beautify: true,
+  minify: false,
+  validationLevel: 'soft',
+  fonts: {
+    'Inter': 'https://fonts.googleapis.com/css2?family=Inter',
+    'Plus Jakarta Sans': 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans'
+  }
+};
+```
+
+### AWS Configuration
+
+Configura cada proyecto en `config/project.json`:
+
+```json
+{
+  "aws": {
+    "region": "us-east-1",
+    "templatePrefix": "tu-proyecto-",
+    "sourceEmail": "hello@tuproyecto.com"
+  }
+}
+```
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Problema: Las imágenes no se muestran
+### Build Errors
 
-**Solución:**
-- Asegúrate de usar URLs absolutas (no relativas)
-- Verifica que las imágenes estén públicamente accesibles
-- Usa HTTPS para las URLs de imágenes
-
-```xml
-<!-- ❌ Incorrecto -->
-<mj-image src="/images/logo.png" />
-
-<!-- ✅ Correcto -->
-<mj-image src="https://todoconta.com/images/logo.png" />
-```
-
----
-
-### Problema: Los estilos no se aplican en Outlook
-
-**Solución:**
-- MJML ya maneja la compatibilidad con Outlook
-- Evita usar CSS avanzado (flexbox, grid)
-- Usa tablas para layouts (MJML lo hace automáticamente)
-
----
-
-### Problema: Error al compilar MJML
-
-**Solución:**
 ```bash
+# Verificar que el proyecto existe
+ls projects/tu-proyecto
+
 # Reinstalar dependencias
 rm -rf node_modules
 npm install
 
-# Verificar versión de Node.js (requiere v14+)
-node --version
-
-# Compilar con más información
-npm run build -- --verbose
+# Compilar con información detallada
+npm run build -- --project=tu-proyecto
 ```
 
----
+### MJML Validation
 
-### Problema: Variables no se reemplazan en Sendy
+- Verifica que todos los `<mj-include>` apunten a archivos existentes
+- Asegúrate de cerrar todas las etiquetas MJML
+- Usa `validationLevel: 'soft'` en `mjml.config.js`
 
-**Solución:**
-- Verifica que las variables estén en el formato correcto: `[Variable]`
-- Asegúrate de que las variables personalizadas estén creadas en Sendy
-- Revisa que no haya espacios: `[Name]` no `[ Name ]`
+### AWS SES
 
----
-
-## 📚 Recursos Adicionales
-
-### Documentación MJML
-- [MJML Documentation](https://documentation.mjml.io/)
-- [MJML Components](https://documentation.mjml.io/#standard-body-components)
-- [MJML Try It Live](https://mjml.io/try-it-live)
-
-### Email Design Best Practices
-- [Really Good Emails](https://reallygoodemails.com/)
-- [Email Design Reference](https://templates.mailchimp.com/)
-- [Can I Email](https://www.caniemail.com/) - Compatibilidad CSS
-
-### Sendy
-- [Sendy Documentation](https://sendy.co/api)
-- [Sendy Forum](https://sendy.co/forum)
+- Verifica que tu email esté verificado en SES
+- Configura AWS credentials: `aws configure`
+- Revisa la región en `project.json`
 
 ---
 
-## 🤝 Soporte
+## 🤝 Contribuir
 
-Si tienes preguntas o necesitas ayuda:
+Este es un sistema interno, pero si quieres sugerir mejoras:
 
-- 📧 Email: soporte@todoconta.com
-- 📱 WhatsApp: +52 55 4475 3602
-- 🌐 Web: https://todoconta.com
+1. Crea un nuevo proyecto de ejemplo
+2. Documenta tus cambios
+3. Comparte tu configuración de design tokens
 
 ---
 
 ## 📝 Changelog
 
-### v1.1.0 (Octubre 2025)
-- ✨ Nueva plantilla: Workshop Welcome (Bienvenida al Taller)
-- ✨ Documentación completa con guía de placeholders para AWS SES
-- ✨ Archivos de ejemplo: JSON y CSV para testing
-- ✨ Soporte para envíos masivos con AWS SDK
-- ✨ 11 placeholders dinámicos para personalización completa
+### v2.0.0 (2025)
+- 🎨 **Arquitectura multi-proyecto**
+- 🔧 **Scripts compartidos reutilizables**
+- 📦 **Generador automático de proyectos**
+- 📚 **Documentación completa**
+- ☁️ **Integración mejorada con AWS SES**
+- 🎯 **Design system por proyecto**
 
 ### v1.0.0 (2024)
-- ✨ Sistema inicial de plantillas
-- ✨ 6 plantillas base (Transaccional, Promocional, Seguimiento, Newsletter, Gmail)
-- ✨ Componentes reutilizables
-- ✨ Sistema de build automatizado
-- ✨ Integración con design system
-- ✨ Documentación completa
-- ✨ Plantilla de newsletter personal flexible
+- ✨ Sistema inicial para Todoconta
+- 📧 6 templates base
+- 🔨 Build automatizado
 
 ---
 
 ## 📄 Licencia
 
-© 2024 Todoconta. Todos los derechos reservados.
-
-Este sistema de plantillas es propiedad de Todoconta y está diseñado para uso interno.
+MIT License
 
 ---
 
-**¡Listo para crear emails increíbles! 🚀**
+## 🚀 Próximos Pasos
+
+1. **Explora el proyecto de ejemplo:** [`projects/todoconta/`](projects/todoconta/)
+2. **Lee la guía de inicio:** [Quick Start](docs/QUICK_START.md)
+3. **Crea tu primer proyecto:** `npm run new:project`
+4. **Personaliza tu design system:** [Design Tokens Guide](docs/DESIGN_TOKENS_GUIDE.md)
+
+---
+
+**¿Listo para crear emails increíbles? 🎨✨**

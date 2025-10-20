@@ -1,21 +1,23 @@
 {
-  "name": "todoconta-email-templates",
-  "version": "1.0.0",
-  "description": "Email templates for Todoconta using MJML",
+  "name": "mjml-email-studio",
+  "version": "2.0.0",
+  "description": "Multi-project MJML email template studio with design system support",
   "scripts": {
-    "build": "mjml src/templates/**/*.mjml -o dist/",
-    "build:watch": "mjml src/templates/**/*.mjml -o dist/ --watch",
-    "build:prod": "mjml src/templates/**/*.mjml -o dist/ --config.minify=true --config.beautify=false",
-    "preview": "node scripts/preview-server.js",
-    "test": "node scripts/test-emails.js"
+    "build": "node shared/scripts/build.js",
+    "build:all": "node shared/scripts/build.js",
+    "new:project": "node shared/utils/generate-project.js",
+    "prepare:ses": "node shared/scripts/prepare-ses-template.js",
+    "send:bulk": "node shared/scripts/send-bulk-templated.js"
   },
   "keywords": [
     "email",
     "templates",
     "mjml",
-    "todoconta"
+    "multi-project",
+    "design-system",
+    "aws-ses"
   ],
-  "author": "Todoconta",
+  "author": "MJML Email Studio",
   "license": "MIT",
   "devDependencies": {
     "mjml": "^4.15.3"
