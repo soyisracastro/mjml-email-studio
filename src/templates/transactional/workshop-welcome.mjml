@@ -88,6 +88,10 @@
             <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Tu inversión:</td>
             <td style="padding: 14px 0; color: #14b8a6; font-weight: 700; font-size: 18px; text-align: right;">${{monto}} MXN</td>
           </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 14px 0; color: #6b7280; font-size: 15px;">Registro:</td>
+            <td style="padding: 14px 0; color: #14b8a6; font-weight: 700; font-size: 18px; text-align: right;">{{order_number}}</td>
+          </tr>
         </mj-table>
       </mj-column>
     </mj-section>
@@ -122,7 +126,7 @@
           font-size="14px"
           font-weight="600"
           border-radius="6px"
-          href="{{link_session_1}}"
+          href="https://us02web.zoom.us/j/84269970625?pwd=xkYH0OL5xSU4ODko3C03nAnSG2Y5Pc.1"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
           align="center"
@@ -143,7 +147,7 @@
           font-size="14px"
           font-weight="600"
           border-radius="6px"
-          href="{{link_session_2}}"
+          href="https://us02web.zoom.us/j/87841680031?pwd=DzSmQ2rXcma1Nt1EoylDW2d0n2qNr7.1"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
           align="center"
@@ -164,7 +168,7 @@
           font-size="14px"
           font-weight="600"
           border-radius="6px"
-          href="{{link_session_3}}"
+          href="https://us02web.zoom.us/j/82553599958?pwd=a0H4mW8mlNvaooaERlGDkVeRQYinwv.1"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
           align="center"
@@ -185,7 +189,7 @@
           font-size="14px"
           font-weight="600"
           border-radius="6px"
-          href="{{link_session_4}}"
+          href="https://us02web.zoom.us/j/81119770860?pwd=mDbA7VIVydfV78MR9UP31JbLp2lf8m.1"
           padding="0 0 24px 0"
           inner-padding="10px 24px"
           align="center"
@@ -206,7 +210,7 @@
           font-size="14px"
           font-weight="600"
           border-radius="6px"
-          href="{{link_session_5}}"
+          href="https://us02web.zoom.us/j/88549211438?pwd=8QysIS0pkb76XTyMTHIsqz3IM53vKL.1"
           padding="0"
           inner-padding="10px 24px"
           align="center"
@@ -238,7 +242,7 @@
           font-size="15px"
           font-weight="600"
           border-radius="8px"
-          href="{{link_whatsapp}}"
+          href="https://chat.whatsapp.com/Hyp3LWigVJF69y3Kpf9Z5W?mode=wwc"
           padding="0 0 20px 0"
           inner-padding="14px 32px"
         >
@@ -301,7 +305,7 @@
           font-size="16px"
           font-weight="700"
           border-radius="8px"
-          href="{{link_whatsapp}}"
+          href="https://chat.whatsapp.com/Hyp3LWigVJF69y3Kpf9Z5W?mode=wwc"
           padding="0"
           inner-padding="16px 40px"
         >
@@ -435,9 +439,6 @@
           <strong>Mañana:</strong> Te envío el primer adelanto del Módulo 1 (tranqui, que sólo será para ir calentando motores).
         </mj-text>
         <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
-          <strong>Jueves:</strong> Caso práctico que puedes probar
-        </mj-text>
-        <mj-text color="#1f2937" font-size="15px" padding-bottom="8px">
           <strong>Viernes:</strong> Preparación técnica + primeros recursos
         </mj-text>
         <mj-text color="#1f2937" font-size="15px">
@@ -470,7 +471,7 @@
           📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5215544753602" class="link">5544753602</a>
         </mj-text>
         <mj-text color="#1f2937" font-size="15px" padding-bottom="16px">
-          💬 <strong>Grupo:</strong> <a href="{{link_whatsapp}}" class="link">Link al grupo de WhatsApp</a>
+          💬 <strong>Grupo:</strong> <a href="https://chat.whatsapp.com/Hyp3LWigVJF69y3Kpf9Z5W?mode=wwc" class="link">Link al grupo de WhatsApp</a>
         </mj-text>
 
         <mj-text color="#6b7280" font-size="14px" font-style="italic">

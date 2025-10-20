@@ -1,0 +1,386 @@
+<mjml>
+  <mj-head>
+    <mj-title>Mañana empezamos 🚀 - Preparación</mj-title>
+    <mj-preview>3 cosas importantes antes de la primera sesión</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#374151" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 600; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+      .checklist-box { background-color: #f0f9ff; border-left: 4px solid #0284c7; padding: 16px; border-radius: 4px; }
+      .important-box { background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 16px; border-radius: 4px; }
+      .confidential-box { background-color: #fef2f2; border-left: 4px solid #dc2626; padding: 16px; border-radius: 4px; }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Hero Section -->
+    <mj-section background-color="#14b8a6" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#ffffff" 
+          font-size="36px" 
+          font-weight="800"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          align="center"
+          padding-bottom="8px"
+        >
+          Mañana empezamos 🚀
+        </mj-text>
+        <mj-text 
+          color="#e0f2fe" 
+          font-size="18px"
+          align="center"
+          font-weight="600"
+        >
+          3 cosas importantes antes de la primera sesión
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Greeting -->
+    <mj-section background-color="#ffffff" padding="32px 20px 20px">
+      <mj-column>
+        <mj-text color="#1f2937" font-size="18px" line-height="160%">
+          Hola <strong>[Name]</strong> 👋
+        </mj-text>
+        <mj-text color="#1f2937" font-size="20px" font-weight="700" padding-top="16px">
+          Mañana 14 de octubre a las 5:30 PM nos vemos en la primera sesión.
+        </mj-text>
+        <mj-text color="#4b5563" font-size="16px" line-height="170%" padding-top="12px">
+          Estoy emocionado de arrancar. Ya somos 13 personas inscritas y el grupo de WhatsApp está activo.
+        </mj-text>
+        <mj-text color="#4b5563" font-size="16px" line-height="170%" padding-top="12px">
+          Para aprovechar al máximo el tiempo mañana y arrancar directo sin perder minutos en configuraciones, necesito pedirte <strong>3 cosas importantes:</strong>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Task 1: AI Accounts -->
+    <mj-section background-color="#f0f9ff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#075985" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          ✅ 1. Abre Tus Cuentas de IA (Hoy Mismo)
+        </mj-text>
+        
+        <mj-text color="#0c4a6e" font-size="16px" line-height="170%" padding-bottom="20px">
+          Por favor crea tus cuentas (versión gratuita) en estas 3 plataformas:
+        </mj-text>
+
+        <!-- ChatGPT -->
+        <mj-text color="#1f2937" font-size="17px" font-weight="700" padding-bottom="8px">
+          ChatGPT:
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="4px">
+          → <a href="https://chat.openai.com" class="link" style="color: #14b8a6;">chat.openai.com</a>
+        </mj-text>
+        <mj-text color="#6b7280" font-size="14px" padding-bottom="20px">
+          (Solo necesitas un correo)
+        </mj-text>
+
+        <!-- Claude -->
+        <mj-text color="#1f2937" font-size="17px" font-weight="700" padding-bottom="8px">
+          Claude:
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="4px">
+          → <a href="https://claude.ai" class="link" style="color: #14b8a6;">claude.ai</a>
+        </mj-text>
+        <mj-text color="#6b7280" font-size="14px" padding-bottom="20px">
+          (Correo o cuenta de Google)
+        </mj-text>
+
+        <!-- Gemini -->
+        <mj-text color="#1f2937" font-size="17px" font-weight="700" padding-bottom="8px">
+          Gemini:
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="4px">
+          → <a href="https://gemini.google.com" class="link" style="color: #14b8a6;">gemini.google.com</a>
+        </mj-text>
+        <mj-text color="#6b7280" font-size="14px" padding-bottom="24px">
+          (Si tienes Gmail, ya tienes acceso)
+        </mj-text>
+
+        <!-- Important Notes -->
+        <mj-text color="#075985" font-size="16px" font-weight="700" padding-bottom="12px">
+          Importante:
+        </mj-text>
+        
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
+          ✅ <strong>Versión gratuita está perfecto</strong> para empezar
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="8px">
+          ✅ Si ya tienes alguna en versión de pago (Plus, Pro, Advanced), mejor, pero <strong>NO es necesario</strong>
+        </mj-text>
+        <mj-text color="#0c4a6e" font-size="15px" padding-bottom="16px">
+          ✅ Haz esto HOY para que mañana solo tengas que hacer login
+        </mj-text>
+
+        <mj-text color="#075985" font-size="15px" font-weight="600" font-style="italic">
+          ¿Por qué estas 3? Porque trabajaremos con las tres en diferentes módulos y quiero que veas las diferencias en tiempo real.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Task 2: Facturación -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="16px"
+        >
+          📄 2. Facturación (Solo Si La Solicitaste)
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="16px" font-weight="700" padding-bottom="8px">
+          Si ya me enviaste tu Constancia de Situación Fiscal:
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" line-height="170%" padding-bottom="20px">
+          Tu factura debería llegarte hoy. Sorry por la demora.
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="16px" font-weight="700" padding-bottom="8px">
+          Si aún NO me la has enviado y necesitas factura:
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" line-height="170%" padding-bottom="20px">
+          Responde este correo con tu Constancia de Situación Fiscal adjunta.
+        </mj-text>
+
+        <mj-text color="#1f2937" font-size="16px" font-weight="700" padding-bottom="8px">
+          Si NO necesitas factura:
+        </mj-text>
+        <mj-text color="#4b5563" font-size="15px" line-height="170%">
+          Ignora este punto 😊
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Task 3: Confidentiality Agreement - MOST IMPORTANT -->
+    <mj-section background-color="#fef2f2" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="8px"
+        >
+          🔒 3. Acuerdo de Confidencialidad
+        </mj-text>
+        <mj-text 
+          color="#dc2626" 
+          font-size="16px" 
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          (IMPORTANTE - TODOS)
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="16px" line-height="170%" padding-bottom="16px">
+          Voy a compartir casos reales con datos sensibles durante el taller. Para poder hacerlo sin censuras que limiten tu aprendizaje, necesito que firmes un compromiso de confidencialidad.
+        </mj-text>
+
+        <mj-text color="#991b1b" font-size="17px" font-weight="700" padding-bottom="12px">
+          ¿Qué comprometes?
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="8px">
+          • No divulgar información específica de casos que veas en el taller
+        </mj-text>
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="8px">
+          • No compartir datos de contribuyentes que aparezcan en ejemplos
+        </mj-text>
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="24px">
+          • Usar conceptos y técnicas, pero NO datos reales
+        </mj-text>
+
+        <mj-text color="#991b1b" font-size="17px" font-weight="700" padding-bottom="12px">
+          Cómo firmarlo:
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="8px">
+          <strong>1.</strong> Abre el documento:
+        </mj-text>
+        <mj-button 
+          background-color="#dc2626" 
+          color="#ffffff"
+          font-size="15px"
+          font-weight="600"
+          border-radius="8px"
+          href="https://docs.google.com/document/d/1djFMWh-K_Cei9t56kVRd76z9pGdSvy2ww80toRay9l8/edit?usp=sharing"
+          padding="0 0 20px 0"
+          inner-padding="12px 28px"
+          align="left"
+        >
+          📄 Abrir Acuerdo de Confidencialidad
+        </mj-button>
+
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="8px">
+          <strong>2.</strong> Llena tu nombre y fecha
+        </mj-text>
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="8px">
+          <strong>3.</strong> Descárgalo como PDF
+        </mj-text>
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="16px">
+          <strong>4.</strong> Fírmalo:
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="15px" padding-left="20px" padding-bottom="8px">
+          • Con firma digital (si tu dispositivo lo permite), o
+        </mj-text>
+        <mj-text color="#7f1d1d" font-size="15px" padding-left="20px" padding-bottom="20px">
+          • Imprime → Firma a mano → Toma foto
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="15px" padding-bottom="20px">
+          <strong>5.</strong> Envíamelo respondiendo este correo
+        </mj-text>
+
+        <mj-text color="#991b1b" font-size="17px" font-weight="700" padding-bottom="8px">
+          Deadline: Mañana antes de las 5:00 PM
+        </mj-text>
+
+        <mj-text color="#7f1d1d" font-size="15px" line-height="170%" font-style="italic">
+          Es un paso extra, lo sé. Pero me permite mostrarte casos reales sin censura, y eso hace toda la diferencia en tu aprendizaje.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Summary Checklist -->
+    <mj-section background-color="#dbeafe" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1e3a8a" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="20px"
+        >
+          📋 Resumen: Lo Que Necesito De Ti HOY
+        </mj-text>
+
+        <mj-text color="#1e40af" font-size="16px" padding-bottom="12px">
+          ☐ Crear cuentas en ChatGPT, Claude y Gemini (gratuitas)
+        </mj-text>
+        <mj-text color="#1e40af" font-size="16px" padding-bottom="12px">
+          ☐ Si necesitas factura: enviar Constancia de Situación Fiscal
+        </mj-text>
+        <mj-text color="#1e40af" font-size="16px" padding-bottom="24px">
+          ☐ Firmar y enviar acuerdo de confidencialidad
+        </mj-text>
+
+        <mj-text color="#1e3a8a" font-size="18px" font-weight="700">
+          Deadline: Antes de las 5:00 PM de mañana (antes de que empecemos)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Session Details -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#065f46" 
+          font-size="24px" 
+          font-weight="700"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          padding-bottom="20px"
+        >
+          🎯 Nos Vemos Mañana
+        </mj-text>
+
+        <mj-text color="#047857" font-size="16px" padding-bottom="8px">
+          <strong>Fecha:</strong> 14 de octubre
+        </mj-text>
+        <mj-text color="#047857" font-size="16px" padding-bottom="8px">
+          <strong>Hora:</strong> 5:30 PM (Tiempo del Centro de México)
+        </mj-text>
+        <mj-text color="#047857" font-size="16px" padding-bottom="20px">
+          <strong>Link:</strong> <a href="https://us02web.zoom.us/j/84269970625?pwd=xkYH0OL5xSU4ODko3C03nAnSG2Y5Pc.1" class="link" style="color: #14b8a6;">Enlace Zoom</a>
+        </mj-text>
+
+        <mj-button 
+          background-color="#0284c7" 
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://us02web.zoom.us/j/84269970625?pwd=xkYH0OL5xSU4ODko3C03nAnSG2Y5Pc.1"
+          padding="0 0 24px 0"
+          inner-padding="16px 40px"
+        >
+          🎥 Unirse a la Sesión de Zoom
+        </mj-button>
+
+        <mj-text color="#047857" font-size="16px" padding-bottom="8px">
+          <strong>Grupo de WhatsApp:</strong>
+        </mj-text>
+        <mj-button 
+          background-color="#25D366" 
+          color="#ffffff"
+          font-size="15px"
+          font-weight="600"
+          border-radius="8px"
+          href="https://chat.whatsapp.com/Hyp3LWigVJF69y3Kpf9Z5W?mode=wwc"
+          padding="0 0 20px 0"
+          inner-padding="14px 32px"
+        >
+          📲 Unirme al Grupo (si aún no lo hiciste)
+        </mj-button>
+
+        <mj-text color="#047857" font-size="15px" line-height="170%">
+          Te mando el link de la sesión también 1 hora antes por WhatsApp como recordatorio.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Motivational Closing -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="16px">
+          Prepara café ☕, abre tu laptop 💻, y llega con ganas de aprender.
+        </mj-text>
+        
+        <mj-text color="#1f2937" font-size="18px" font-weight="700" padding-bottom="24px">
+          Esto va a estar bueno.
+        </mj-text>
+
+        <mj-text color="#4b5563" font-size="16px" padding-bottom="8px">
+          Con cariño y números 📊
+        </mj-text>
+        <mj-text color="#1f2937" font-size="16px" font-weight="600">
+          – Israel Castro
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PS Notes -->
+    <mj-section background-color="#f9fafb" padding="28px 20px">
+      <mj-column>
+        <mj-text color="#6b7280" font-size="15px" padding-bottom="16px">
+          <strong>PD:</strong> Si por alguna razón no puedes conectarte mañana en vivo, no te preocupes. La grabación estará disponible 24 horas después. Pero si puedes estar en vivo, mejor - la energía del grupo y las preguntas en tiempo real hacen la diferencia.
+        </mj-text>
+        
+        <mj-text color="#6b7280" font-size="15px">
+          <strong>PPD:</strong> ¿No recibiste el link del grupo de WhatsApp? Responde este correo y te lo reenvío.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
