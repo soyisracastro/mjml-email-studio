@@ -1,0 +1,348 @@
+<mjml>
+  <mj-head>
+    <mj-title>🎁 Los recursos que te prometí de la Masterclass + Bonus</mj-title>
+    <mj-preview>Gracias por acompañarme en la masterclass "Por Qué el 90% de los Contadores Usa IA de Forma Incorrecta".</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Nombre] 👋
+        </mj-text>
+
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          Gracias por acompañarme en la masterclass "Por Qué el 90% de los Contadores Usa IA de Forma Incorrecta".
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          Si te perdiste la sesión en vivo o quieres repasarla, aquí tienes la grabación completa:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Video Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-image
+          src="https://img.youtube.com/vi/BqsxObAj54A/maxresdefault.jpg"
+          href="https://youtu.be/BqsxObAj54A"
+          border-radius="8px"
+          padding-bottom="0"
+          alt="Ver Grabación de la Masterclass"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Resources Intro -->
+    <mj-section background-color="#0f0518" padding="32px 20px 24px">
+      <mj-column>
+        <mj-text padding-bottom="8px">
+          Como prometí, aquí están los recursos adicionales:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Resources Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          📚 Lo que No Alcanzamos a Ver en Vivo
+        </mj-text>
+
+        <!-- Resource 1: Downloadables -->
+        <mj-text
+          color="#ffffff"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          1. Recursos Descargables (Adjuntos)
+        </mj-text>
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="24px"
+        >
+          Adjunto a este correo encontrarás un paquete completamente gratis con:
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="4px">
+          ✅ Los 2 Casos Prácticos Adicionales
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="4px">
+          ✅ Plantilla de Prompts Estructurados
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="4px">
+          ✅ Matriz de Decisión Completa
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="24px">
+          ✅ 10 Prompts Adicionales
+        </mj-text>
+
+        <!-- Resource 2: Perplexity -->
+        <mj-text
+          color="#ffffff"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          2. Perplexity Pro - 1 Año Gratis
+        </mj-text>
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="12px"
+        >
+          Usa este link para activar tu año gratis de Perplexity Pro:
+        </mj-text>
+        <mj-text padding-bottom="12px" font-weight="700">
+          👉 <a href="https://www.perplexity.ai/join/p/paypal-subscription" style="color: #a855f7; text-decoration: underline;">Activar Perplexity Pro Aquí</a>
+        </mj-text>
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-bottom="12px"
+          font-style="italic"
+        >
+          Esta promoción es limitada, así que actívala cuanto antes.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Deep Dive Section - Hero Style -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="14px"
+          font-weight="700"
+          text-transform="uppercase"
+          align="center"
+          padding-bottom="16px"
+        >
+          🚀 ¿Quieres Profundizar?
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="24px"
+          font-weight="800"
+          align="center"
+          line-height="140%"
+          padding-bottom="16px"
+        >
+          Reto 12 Días: <br /><span style="color: #a855f7">IA Aplicada para Contadores</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          align="center"
+          line-height="160%"
+          padding-bottom="32px"
+        >
+          Lo que viste hoy es solo el 10% de lo que cubrimos en el reto. En 12 sesiones prácticas dominarás ChatGPT, Claude, Gemini 3 + NotebookLM, Perplexity y flujos híbridos avanzados.
+        </mj-text>
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0 0 16px 0"
+          inner-padding="16px 48px"
+        >
+          ✅ Inscribirme Ahora
+        </mj-button>
+
+        <mj-text align="center" font-size="15px">
+          📖 <a href="https://todoconta.com/ia-contadores/reto-12-dias" style="color: #a855f7; text-decoration: underline; font-weight: 600;">Ver Detalles del Reto</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Challenge Details Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          🔥 ¿De qué trata el Reto de 12 Días?
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="16px"
+          line-height="160%"
+          padding-bottom="24px"
+        >
+          Transforma tu práctica contable con Inteligencia Artificial. No es teoría, son resultados inmediatos.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Lo que vas a lograr:
+        </mj-text>
+        <mj-text padding-bottom="8px">
+          ✅ Automatizar tareas repetitivas que te consumen horas
+        </mj-text>
+        <mj-text padding-bottom="8px">
+          ✅ Generar reportes financieros y análisis en minutos
+        </mj-text>
+        <mj-text padding-bottom="8px">
+          ✅ Crear estrategias fiscales personalizadas con IA
+        </mj-text>
+        <mj-text padding-bottom="8px">
+          ✅ Dominar ChatGPT, Claude y Gemini
+        </mj-text>
+        <mj-text padding-bottom="24px">
+          ✅ Usar IA respetando normativas y privacidad
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Estructura del Programa:
+        </mj-text>
+        <mj-text color="#9ca3af" padding-bottom="4px">
+          📅 <strong style="color: #ffffff;">Duración:</strong> 4 semanas (12 sesiones prácticas)
+        </mj-text>
+        <mj-text color="#9ca3af" padding-bottom="4px">
+          📅 <strong style="color: #ffffff;">Frecuencia:</strong> Lunes, Miércoles y Viernes
+        </mj-text>
+        <mj-text color="#9ca3af" padding-bottom="24px">
+          📅 <strong style="color: #ffffff;">Formato:</strong> 100% Online y flexible
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="dashed" border-color="rgba(255, 255, 255, 0.2)" padding-bottom="16px" />
+
+        <mj-text
+          color="#9ca3af"
+          font-size="15px"
+          padding-bottom="8px"
+        >
+          🏆 Bonus: Compites por premios (1er lugar: $3,600+ MXN en suscripciones + 3 sesiones 1:1 + auditoría IA)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Discount Reminder Section -->
+    <mj-section background-color="rgba(239, 68, 68, 0.1)" padding="40px 20px" border="2px solid #ef4444" border-radius="8px">
+      <mj-column>
+        <mj-text
+          color="#ef4444"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+          align="center"
+        >
+          ⏰ Recordatorio: Descuento de $1,000
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          padding-bottom="16px"
+          align="center"
+        >
+          Si te inscribes hoy usando el código <strong style="color: #ef4444;">GRABACION2025</strong>, el reto te queda en <strong style="color: #eab308;">$1,997 MXN</strong> en lugar de $2,997.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="24px"
+          align="center"
+        >
+          Este descuento vence este lunes.
+        </mj-text>
+
+        <mj-button
+          background-color="#dc2626"
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0 0 16px 0"
+          inner-padding="16px 48px"
+        >
+          👉 Inscríbete con descuento
+        </mj-button>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          align="center"
+        >
+          O usa este link: <a href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc" style="color: #a855f7; text-decoration: underline;">https://nas.io/todoconta/challenges/reto-12-ia-contadores</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Un abrazo,
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-top="24px"
+        >
+          P.D. Lo que viste hoy ya tiene valor por sí mismo. El reto es para quien quiera profundizar y convertir esto en una ventaja competitiva real. Tú decides.
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
