@@ -1,0 +1,312 @@
+<mjml>
+  <mj-head>
+    <mj-title>[GRATIS] Segunda fecha abierta - Masterclass IA (9 dic, 10:30am)</mj-title>
+    <mj-preview>El primer evento se agotó con +100 contadores. Abrimos nueva fecha para el 9 de diciembre.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          [NOMBRE],
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text padding-bottom="16px">
+          La masterclass del 5 de diciembre se llenó.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          120 contadores registrados.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          El cupo original era de 50, pero tuve que abrir 50 espacios más... y aún así no alcanzó.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Así que abrimos <span style="color: #eab308; font-weight: 700;">una segunda fecha</span> para quienes se quedaron fuera:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Masterclass Hero -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="14px"
+          font-weight="700"
+          text-transform="uppercase"
+          align="center"
+          padding-bottom="16px"
+        >
+          🎁 Masterclass GRATUITA - Nueva Fecha
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="26px"
+          font-weight="800"
+          align="center"
+          line-height="140%"
+          padding-bottom="24px"
+        >
+          "Por Qué el 90% de los Contadores <br /><span style="color: #a855f7">Usa IA de Forma Incorrecta"</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="18px"
+          font-weight="600"
+          align="center"
+          padding-bottom="24px"
+        >
+          9 de diciembre · 10:30 AM (CDMX)
+        </mj-text>
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://luma.com/py3441sd"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Regístrate GRATIS aquí
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why It Filled Up -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          ¿Por qué se llenó tan rápido?
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque esto NO es una plática teórica sobre IA.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Es una demostración en vivo de cómo uso la IA de forma estratégica en mi día a día como contador.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque seamos honestos...
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Wrong Way to Use AI -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#9ca3af"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          La mayoría de los contadores usa estas herramientas como un simple chat:
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → "¿Cómo calculo este impuesto?"
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → "Resume este documento"
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="20px">
+          → "Explícame esta NIF"
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="800"
+          align="center"
+        >
+          Pero eso NO es usar IA. Eso es desperdiciarla.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What You'll Learn -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          En 45 minutos verás:
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ Por qué el 90% usa IA como "calculadora cara"
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ El framework de 3 preguntas que cambió mi forma de trabajar
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ Demo en vivo: Cómo resuelvo consultas fiscales en minutos
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          ✅ Cuándo usar ChatGPT, Claude o Gemini 3 (ejemplos reales)
+        </mj-text>
+
+        <mj-text
+          color="#10b981"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          No te enseñaré TODO en 45 minutos. Pero sí te mostraré POR QUÉ vale la pena aprenderlo.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+        >
+          ¿Te interesa?
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-button
+          background-color="#a855f7"
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://luma.com/py3441sd"
+          padding="0 0 24px 0"
+          inner-padding="16px 48px"
+        >
+          Sí, quiero mi lugar gratis
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Important Details -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Detalles prácticos:
+        </mj-text>
+
+        <mj-text color="#eab308" padding-bottom="12px">
+         - Es 100% en vivo (verás mi pantalla)
+        </mj-text>
+
+        <mj-text color="#eab308" padding-bottom="12px">
+         - Quedará grabación disponible 48h (si no puedes asistir)
+        </mj-text>
+
+        <mj-text color="#eab308">
+         - Los asistentes recibirán un descuento especial para el Reto IA 12 Días (opcional)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Urgency Note -->
+    <mj-section background-color="#0f0518" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#ef4444"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          ⚠️ Importante:
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          align="center"
+        >
+          Si esta fecha también se llena, probablemente no haya una tercera. <br />Asegura tu lugar hoy.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Nos vemos el 9 de diciembre.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-top="24px"
+        >
+          P.D. Sólo 100 de los 120 del primer grupo ya están dentro. Si quieres ver lo mismo que ellos, esta es tu oportunidad.
+        </mj-text>
+
+        <mj-text
+      color="#6b7280"
+      font-size="12px"
+      align="center"
+      padding-top="32px"
+      padding-bottom="8px"
+    >
+      <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+    </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
