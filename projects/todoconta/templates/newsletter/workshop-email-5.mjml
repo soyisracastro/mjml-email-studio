@@ -1,0 +1,240 @@
+<mjml>
+  <mj-head>
+    <mj-title>🎁 Los recursos que te prometí de la Masterclass + Bonus</mj-title>
+    <mj-preview>Gracias por acompañarme en la masterclass "Por Qué el 90% de los Contadores Usa IA de Forma Incorrecta".</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#1f2937" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #14b8a6; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #0d9488; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+  
+<mj-body background-color="#f6f7fb">
+    <!-- Header -->
+    <mj-include path="../../components/header.mjml" />
+    
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text 
+          color="#1f2937" 
+          font-size="18px" 
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Nombre] 👋
+        </mj-text>
+        
+        <!-- Introduction -->
+        <mj-text padding-bottom="16px">
+          Gracias por acompañarme en la masterclass "Por Qué el 90% de los Contadores Usa IA de Forma Incorrecta".
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Como prometí, aquí están los recursos adicionales:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Resources Section -->
+    <mj-section background-color="#ecfdf5" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#047857"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          📚 Lo que No Alcanzamos a Ver en Vivo
+        </mj-text>
+        
+        <mj-text color="#047857" font-weight="700" padding-bottom="12px">
+          1. Los 2 Casos Prácticos Adicionales
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="20px">
+          [Aquí incluyes los casos que faltaron - puedes hacer un PDF con screenshots o descripciones]
+        </mj-text>
+
+        <mj-text color="#047857" font-weight="700" padding-bottom="12px">
+          2. Perplexity Pro - 1 Año Gratis
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="12px">
+          Usa este link para activar tu año gratis de Perplexity Pro:
+        </mj-text>
+        <mj-button 
+          background-color="#14b8a6" 
+          color="#ffffff"
+          href="[LINK_DE_PERPLEXITY]"
+          padding-bottom="12px"
+        >
+          👉 Activar Perplexity Pro
+        </mj-button>
+        <mj-text color="#047857" font-size="14px" padding-bottom="20px">
+          Esta promoción es limitada, así que actívala cuanto antes.
+        </mj-text>
+
+        <mj-text color="#047857" font-weight="700" padding-bottom="12px">
+          3. Plantilla de Prompts Estructurados
+        </mj-text>
+        <mj-text 
+            color="#047857"
+            font-family="'SF Mono', 'Monaco', monospace"
+            font-size="14px"
+            line-height="160%"
+            padding="12px"
+            background-color="#d1fae5"
+            border-radius="4px"
+            padding-bottom="20px"
+        >
+            [ROL] + [CONTEXTO] + [TAREA] + [FORMATO]
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="12px">
+          Ejemplos listos para copiar y pegar:
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="4px">
+          - Para análisis fiscal
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="4px">
+          - Para redacción de emails
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="20px">
+          - Para consultas normativas
+        </mj-text>
+
+        <mj-text color="#047857" font-weight="700" padding-bottom="12px">
+          4. Matriz de Decisión Completa
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="12px">
+          ¿Cuándo usar ChatGPT, Claude o Gemini?
+        </mj-text>
+        <mj-text color="#047857" padding-bottom="12px">
+          [Incluir la matriz expandida]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Prize Details Section -->
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          🏆 Detalles de Premios del Reto (Recordatorio)
+        </mj-text>
+
+        <mj-text font-weight="700" padding-bottom="8px">
+          Primer Lugar:
+        </mj-text>
+        <mj-text padding-bottom="4px">
+          - 3 meses de ChatGPT Plus o Claude Pro (tú eliges)
+        </mj-text>
+        <mj-text padding-bottom="4px">
+          - 3 sesiones 1:1 de 1 hora
+        </mj-text>
+        <mj-text padding-bottom="16px">
+          - Auditoría + implementación IA en tu despacho<br/>
+          Valor: $3,600+ MXN
+        </mj-text>
+
+        <mj-text font-weight="700" padding-bottom="8px">
+          Segundo Lugar:
+        </mj-text>
+        <mj-text padding-bottom="4px">
+          - 2 sesiones 1:1 de 1 hora
+        </mj-text>
+        <mj-text padding-bottom="16px">
+          - Kit de prompts avanzados<br/>
+          Valor: $2,000 MXN
+        </mj-text>
+
+        <mj-text font-weight="700" padding-bottom="8px">
+          Tercer Lugar:
+        </mj-text>
+        <mj-text padding-bottom="4px">
+          - 1 sesión 1:1 de 1 hora
+        </mj-text>
+        <mj-text padding-bottom="24px">
+          - Recursos premium<br/>
+          Valor: $1,000 MXN
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Discount Reminder Section -->
+    <mj-section background-color="#fee2e2" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#991b1b"
+          font-size="22px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          ⏰ Recordatorio: Descuento de $1,000 por 24 Horas
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="16px">
+          Si te inscribes hoy usando el código <strong>MASTERCLASS6DIC</strong> (o MASTERCLASS9DIC según la fecha), el reto te queda en <strong>$1,997 MXN</strong> en lugar de $2,997.
+        </mj-text>
+        
+        <mj-text color="#991b1b" padding-bottom="24px">
+          Este descuento vence [mañana a las 6 PM].
+        </mj-text>
+
+        <mj-button 
+          background-color="#dc2626" 
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/todoconta/challenges/reto-12-ia-contadores"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          👉 Inscríbete aquí
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- P.S. Section -->
+    <mj-section background-color="#fef3c7" padding="24px 20px">
+      <mj-column>
+        <mj-text 
+          color="#92400e" 
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          PD:
+        </mj-text>
+        
+        <mj-text color="#92400e" padding-bottom="16px">
+          Lo que viste hoy ya tiene valor por sí mismo. El reto es para quien quiera profundizar y convertir esto en una ventaja competitiva real. Tú decides.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#ffffff" padding="32px 20px">
+      <mj-column>
+        <mj-text 
+          color="#1f2937" 
+          font-weight="600"
+        >
+          Un abrazo,<br/>
+          Israel Castro | TodoConta
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-include path="../../components/footer.mjml" />
+  </mj-body>
+</mjml>
