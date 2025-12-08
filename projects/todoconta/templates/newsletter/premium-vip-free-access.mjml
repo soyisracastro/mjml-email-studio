@@ -1,0 +1,448 @@
+<mjml>
+  <mj-head>
+    <mj-title>Acceso VIP gratuito - Solo para 3 personas</mj-title>
+    <mj-preview>Fuiste de los primeros en confiar. Tu inversión: $0 (valor $2,997)</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- VIP Header -->
+    <mj-section background-color="#a855f7" padding="24px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="14px"
+          font-weight="700"
+          align="center"
+          text-transform="uppercase"
+          letter-spacing="1px"
+        >
+          💎 Acceso VIP Exclusivo
+        </mj-text>
+        <mj-text
+          color="#ffffff"
+          font-size="13px"
+          align="center"
+        >
+          Este email va solo para 3 personas
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          [Name],
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text
+          color="#a855f7"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Este email va solo para 3 personas.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="32px"
+        >
+          Tú eres una de ellas.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Cuando lanzamos el taller de IA en octubre, fuiste de los pocos que apostaron por la versión premium.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Eso me dice algo importante:
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          No solo querías aprender IA.
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Querías ir en serio.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+        >
+          Y esa confianza no la olvido.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- New Reto Announcement -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          He estado trabajando en algo nuevo:
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="14px"
+          font-weight="700"
+          text-transform="uppercase"
+          align="center"
+          padding-bottom="16px"
+        >
+          🔥 Nuevo Reto
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="24px"
+          font-weight="800"
+          align="center"
+          line-height="140%"
+          padding-bottom="16px"
+        >
+          Reto IA <span style="color: #a855f7">12 Días</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="18px"
+          font-weight="600"
+          align="center"
+          padding-bottom="32px"
+        >
+          5-30 enero 2026
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Tomé todo lo del taller anterior y lo expandí:
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ 12 días (vs 4)
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ Sesiones de 45 min (vs maratones de 2h)
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ 20+ casos prácticos específicos
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ✅ Plan de implementación de 30 días
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          ✅ Matriz completa de decisión
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="16px"
+          font-weight="600"
+          align="center"
+        >
+          Es lo que el taller anterior debió ser desde el principio,<br />
+          pero ahora estructurado correctamente.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Offer -->
+    <mj-section background-color="rgba(168, 85, 247, 0.15)" padding="48px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="22px"
+          font-weight="800"
+          text-transform="uppercase"
+          align="center"
+          padding-bottom="32px"
+        >
+          AQUÍ ESTÁ LA PARTE IMPORTANTE:
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="16px"
+          align="center"
+          padding-bottom="16px"
+        >
+          Valor del reto: <span style="text-decoration: line-through;">$2,997</span>
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          align="center"
+          padding-bottom="16px"
+        >
+          Tu inversión:
+        </mj-text>
+
+        <mj-text
+          color="#10b981"
+          font-size="48px"
+          font-weight="900"
+          align="center"
+          padding-bottom="16px"
+          line-height="100%"
+        >
+          $0
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="32px"
+        >
+          Sí, GRATIS. Acceso completo.
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Por qué?
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque fuiste de los primeros en confiar cuando nadie más lo hacía.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Y esa confianza merece reconocimiento real.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-bottom="8px"
+        >
+          Esto no es un descuento.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+        >
+          Es acceso VIP por ser pionero.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- How to Register -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          CÓMO INSCRIBIRTE:
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          1. Ve al registro aquí:
+        </mj-text>
+
+        <mj-button
+          background-color="#a855f7"
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0 0 24px 0"
+          inner-padding="14px 32px"
+        >
+          👉 Ir al registro
+        </mj-button>
+
+        <mj-text padding-bottom="24px">
+          2. Usa el código: <span style="color: #eab308; font-weight: 700; font-size: 18px;">FREEACCESS</span>
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          3. Si necesitas ayuda, aquí está el tutorial paso a paso:
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          👉 <a href="https://youtu.be/VHI8UPMiRdw" style="color: #a855f7; text-decoration: underline; font-weight: 600;">Ver tutorial de registro</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Reto Details -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          DETALLES DEL RETO:
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          📅 5-30 enero 2026
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ⏰ A partir de las 9:00 AM (CDMX) / Asíncrono
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          🗓️ Lunes, Miércoles, Viernes (4 semanas)
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          📹 En vivo + grabaciones ilimitadas
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          💬 Grupo exclusivo de WhatsApp
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          🎯 Soporte directo por 60 días
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+        >
+          Más info: <a href="https://todoconta.com/ia-contadores/reto-12-dias" style="color: #a855f7; text-decoration: underline;">todoconta.com/ia-contadores/reto-12-dias</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Final Message -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Esto no lo voy a ofrecer a nadie más.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Solo a ustedes 3 que apostaron fuerte desde el principio.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Si decides no participar, lo entiendo completamente.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="32px"
+        >
+          Pero si decides estar, quiero que sepas que esta vez será la experiencia que mereces.
+        </mj-text>
+
+        <mj-text
+          color="#ef4444"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Código válido hasta: 20 diciembre
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-weight="700"
+        >
+          Lugares: Solo ustedes 3
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Nos vemos en enero,
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro,<br />
+          Todoconta
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-top="24px"
+        >
+          P.D. Si tienes cualquier duda o problema con el registro, solo responde este email o escríbeme por WhatsApp. Te ayudo personalmente.
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

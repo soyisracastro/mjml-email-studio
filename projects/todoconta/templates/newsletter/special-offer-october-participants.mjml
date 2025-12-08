@@ -1,0 +1,515 @@
+<mjml>
+  <mj-head>
+    <mj-title>Tu inversión de octubre cuenta - Reto IA 12 Días</mj-title>
+    <mj-preview>Los $850 que ya invertiste se aplican directamente. Precio especial: $1,647</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          [Name],
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text padding-bottom="16px">
+          Hace unas semanas compartimos 4 días intensos aprendiendo sobre IA juntos.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Fuimos 23 contadores los que se animaron a dar ese primer paso.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Tú fuiste uno de ellos.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Y quiero ser honesto contigo:
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Esa experiencia me enseñó MUCHO.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Vi qué funcionó increíble (los casos prácticos, el framework de 3 preguntas, los asistentes especializados).
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Y también vi qué necesitaba mejorar (sesiones más cortas, mejor ritmo, más casos específicos, menos teoría).
+        </mj-text>
+        
+        <mj-text padding-bottom="24px">
+          Tomé cada comentario, cada pregunta, cada <i>"¿y esto cómo lo aplico a mi caso?"</i> y lo convertí en algo nuevo:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- New Reto Announcement -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+
+        <mj-text
+          color="#eab308"
+          font-size="14px"
+          font-weight="700"
+          text-transform="uppercase"
+          align="center"
+          padding-bottom="16px"
+        >
+          🔥 Nuevo Reto
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="24px"
+          font-weight="800"
+          align="center"
+          line-height="140%"
+          padding-bottom="16px"
+        >
+          Reto 12 Días: <br /><span style="color: #a855f7">IA Aplicada para Contadores</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          align="center"
+          line-height="160%"
+          padding-bottom="32px"
+        >
+          En 12 sesiones prácticas dominarás ChatGPT, Claude, Gemini 3 + NotebookLM, Perplexity y flujos híbridos avanzados.
+        </mj-text>
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0 0 16px 0"
+          inner-padding="16px 48px"
+        >
+          ✅ Me uno al reto
+        </mj-button>
+
+        <mj-text
+          color="#9ca3af"
+          align="center"
+          font-size="12px"
+          line-height="160%"
+          padding-bottom="16px"
+        >
+          Utiliza el cupón <span style="color: #eab308; font-weight: 700;">PIONEROS</span> y aprovecha el super precio para ti.
+        </mj-text>
+
+        <mj-text align="center" font-size="15px">
+          📖 <a href="https://todoconta.com/ia-contadores/reto-12-dias" style="color: #a855f7; text-decoration: underline; font-weight: 600;">Ver Detalles del Reto</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What's Different -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Esto NO es el mismo taller con otro nombre.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Es lo que debió ser desde el inicio:
+        </mj-text>
+        <mj-text padding-bottom="12px">
+          ✅ <span style="color: #10b981; font-weight: 700;">12 días</span> (vs 4 días apresurados)
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          ✅ <span style="color: #10b981; font-weight: 700;">Sesiones de 45 min</span> (vs 2 horas maratónicas)
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          ✅ <span style="color: #10b981; font-weight: 700;">Lunes/Miércoles/Viernes</span> (vs dos semanas intensas)
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          ✅ <span style="color: #10b981; font-weight: 700;">Enfoque 100% casos prácticos</span> (vs teoría + práctica)
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          ✅ <span style="color: #10b981; font-weight: 700;">Matriz completa de 20+ casos</span> (vs ejemplos sueltos)
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          ✅ <span style="color: #10b981; font-weight: 700;">Plan de implementación de 30 días</span> (vs "aplícalo tú")
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+        >
+          Básicamente tomé todo lo que aprendí contigo<br />y lo estructuré de la forma correcta.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Special Price -->
+    <mj-section background-color="rgba(168, 85, 247, 0.1)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          AHORA BIEN:
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Tú ya invertiste $850.00 en octubre conmigo.
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Y esa inversión CUENTA.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="16px"
+          padding-bottom="8px"
+        >
+          Precio del reto: <span style="text-decoration: line-through;">$2,997</span>
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="16px"
+          padding-bottom="8px"
+        >
+          Early bird (hasta 20 dic): $2,497
+        </mj-text>
+
+        <mj-text
+          color="#10b981"
+          font-size="16px"
+          padding-bottom="8px"
+        >
+          Ya pagaste en octubre: -$850
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="14px"
+          padding-bottom="16px"
+        >
+          ───────────────────
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="32px"
+          font-weight="800"
+          align="center"
+          padding-bottom="16px"
+        >
+          TU PRECIO: $1,647
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          align="center"
+        >
+          Sí, leíste bien.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why This Matters -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Los $850 que ya me pagaste se aplican directamente.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          No es un "descuento".
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-weight="700"
+          padding-bottom="32px"
+        >
+          Es reconocer que fuiste de los primeros en confiar.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Por qué hago esto?
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque quiero que veas el resultado que debiste tener desde octubre.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Y porque los primeros 23 que confiaron en mí merecen ver la versión completa.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-bottom="8px"
+        >
+          NO tienes obligación de inscribirte.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-bottom="24px"
+        >
+          De hecho, si decides no hacerlo, está perfecto.
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          font-weight="700"
+        >
+          Pero si decides darme otra oportunidad,<br />te aseguro que esta vez será diferente.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Reto Details -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          DETALLES DEL RETO:
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          📅 5-30 enero 2026
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          ⏰ A partir de las 9:00 AM (CDMX) / Asíncrono
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          📹 En vivo + grabaciones ilimitadas
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          💎 Grupo exclusivo + soporte 60 días
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          Estructura:
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Días 1-3: Fundamentos (mentalidad IA-First)
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Días 4-6: Dominio individual (ChatGPT, Claude, Gemini)
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Días 7-9: Ecosistema híbrido (NotebookLM, Perplexity)
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Días 10-11: Casos avanzados reales
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="24px">
+          → Día 12: Monetización + Plan 30 días
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- How to Enroll -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          PARA INSCRIBIRTE CON TU PRECIO ESPECIAL:
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          1. Ve a: <a href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"><span style="color: #a855f7; font-weight: 700;">Reto 12 Días: IA Aplicada para Contadores</span></a>
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          2. Usa código: <span style="color: #eab308; font-weight: 700;">PIONEROS</span>
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          3. Tu precio: <span style="color: #10b981; font-weight: 700;">$1,647</span> (en lugar de $2,997 del precio original)
+        </mj-text>
+
+        <mj-text
+          color="#ef4444"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          Código válido hasta: 20 diciembre
+        </mj-text>
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0"
+          inner-padding="16px 48px"
+        >
+          Inscribirme con precio especial
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Final Message -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Una última cosa:
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Si decides no inscribirte, no hay problema.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Pero quiero que sepas que los $850 que invertiste en octubre no fueron en vano.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Probablemente ya aplicaste algo de lo que vimos.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Y ese conocimiento se queda contigo.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+        >
+          Este reto es para quien quiera profundizar más.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Tú decides.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          padding-bottom="8px"
+        >
+          Gracias por haber sido de los primeros
+        </mj-text>
+        
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro,<br />
+          Todoconta
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-top="24px"
+        >
+          P.D. Si tienes dudas, responde este email. Te contesto personalmente.
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

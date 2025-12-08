@@ -1,0 +1,425 @@
+<mjml>
+  <mj-head>
+    <mj-title>Últimas horas: $1,000 de descuento termina HOY</mj-title>
+    <mj-preview>Termina a las 24:00 hrs. Este es el mayor descuento que existirá para el Reto 12 Días.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Urgency Header -->
+    <mj-section background-color="#ef4444" padding="24px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="800"
+          align="center"
+          text-transform="uppercase"
+        >
+          ⏰ ÚLTIMO DÍA
+        </mj-text>
+        <mj-text
+          color="#ffffff"
+          font-size="14px"
+          align="center"
+        >
+          El descuento de $1,000 termina HOY a las 24:00 hrs
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          [Name],
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text padding-bottom="16px">
+          Si estuviste en la masterclass del 5 de diciembre, sabes de qué va esto.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Hoy es el último día para usar tu descuento de <span style="color: #eab308; font-weight: 700;">$1,000 pesos</span> en el Reto 12 Días.
+        </mj-text>
+
+        <mj-text
+          color="#ef4444"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          A las 24:00 hrs de hoy, este cupón desaparece.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Y con él, el mayor descuento que existirá para este reto.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Price Reminder -->
+    <mj-section background-color="rgba(234, 179, 8, 0.1)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#9ca3af"
+          font-size="16px"
+          align="center"
+          padding-bottom="8px"
+        >
+          Precio regular: <span style="text-decoration: line-through;">$2,997</span>
+        </mj-text>
+
+        <mj-text
+          color="#10b981"
+          font-size="16px"
+          align="center"
+          padding-bottom="8px"
+        >
+          Tu descuento asistentes: -$1,000
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="14px"
+          align="center"
+          padding-bottom="16px"
+        >
+          ───────────────────
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="32px"
+          font-weight="800"
+          align="center"
+          padding-bottom="8px"
+        >
+          TU PRECIO HOY: $1,997
+        </mj-text>
+
+        <mj-text
+          color="#ef4444"
+          font-size="14px"
+          font-weight="700"
+          align="center"
+        >
+          Cupón GRABACION2025 válido hasta: HOY 24:00 hrs
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why This Matters -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Por qué actuar hoy?
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque este no es solo el mejor precio.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Es también tu oportunidad de estar entre los primeros en implementar lo que viste en la masterclass (y mucho más).
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          De hecho, déjame compartirte algo que pasó esta mañana...
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Real Conversation -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Conversación real de hoy (8 dic):
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          font-style="italic"
+          padding-bottom="24px"
+        >
+          Daniel es uno de los 23 contadores que tomó el taller de octubre. Esto me escribió esta mañana:
+        </mj-text>
+
+        <!-- Message Screenshot Placeholder -->
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      background-color="rgba(255, 255, 255, 0.05)"
+      padding="0 20px"
+    >
+      <mj-column
+        background-color="rgba(0, 0, 0, 0.3)"
+        border-left="3px solid #a855f7"
+        padding="16px"
+      >
+        <mj-text
+          color="#ffffff"
+          font-size="15px"
+          line-height="160%"
+          padding="0"
+        >
+          <span style="color: #9ca3af; font-size: 13px;">Daniel Souza · 11:41 AM</span><br />
+          "Haz usado tu redactor fiscal que vimos en el curso en Claude con el nuevo modelo?
+          los resultados vs el modelo anterior están perrones"
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="24px 20px 16px">
+      <mj-column>
+
+        <mj-text padding-top="24px" padding-bottom="16px">
+          Le pregunté: <span style="color: #a855f7; font-style: italic;">"¿Cuánto tiempo estimas que estás ahorrando con esa herramienta?"</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      background-color="rgba(255, 255, 255, 0.05)"
+      padding="0 20px 24px"
+    >
+      <mj-column
+        background-color="rgba(0, 0, 0, 0.3)"
+        border-left="3px solid #a855f7"
+        padding="16px"
+      >
+        <mj-text
+          color="#ffffff"
+          font-size="15px"
+          line-height="160%"
+          padding="0"
+        >
+          <span style="color: #9ca3af; font-size: 13px;">Daniel Souza · 12:08 PM</span><br />
+          "mínimo 2 horas, pero aparte del ahorro el resultado. 
+          La estructura y la redacción de las respuestas mejoraron un chorro""
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Point -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          El punto es simple:
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Daniel tomó un taller de 4 días en octubre.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Implementó UN solo asistente (el redactor fiscal).
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Y sin modificar nada, solo porque Claude mejoró su modelo, <span style="color: #10b981; font-weight: 700;">ahora ahorra mínimo 2 horas por caso</span> con mejor calidad.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Imagina lo que podrás hacer con 12 días completos.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Con 20+ casos prácticos.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Con un plan de implementación de 30 días que te guía paso a paso.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Reto Details Brief -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          Reto 12 Días: IA Aplicada para Contadores
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          align="center"
+          padding-bottom="24px"
+        >
+          5-30 enero 2026 · A partir de las 9:00 AM (CDMX) / Asíncrono
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → 12 sesiones prácticas (45 min c/u)
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → ChatGPT, Claude, Gemini 3 + ecosistema híbrido
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Matriz de 20+ casos reales para contadores
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          → Plan de implementación de 30 días
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="24px">
+          → Grupo exclusivo + soporte 60 días
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Final CTA -->
+    <mj-section background-color="#0f0518" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#ef4444"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="16px"
+        >
+          Quedan menos de 12 horas.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          align="center"
+          padding-bottom="24px"
+        >
+          Usa el cupón <span style="color: #eab308; font-weight: 700;">GRABACION2025</span> para tu precio de $1,997
+        </mj-text>
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+          padding="0 0 16px 0"
+          inner-padding="16px 48px"
+        >
+          Inscribirme ahora
+        </mj-button>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          align="center"
+          padding-bottom="24px"
+        >
+          <a href="https://todoconta.com/ia-contadores/reto-12-dias" style="color: #a855f7; text-decoration: underline;">Ver todos los detalles del reto</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Final Note -->
+    <mj-section background-color="rgba(239, 68, 68, 0.1)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Nota importante:
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="16px">
+          Después de hoy, el precio regular será $2,997.
+        </mj-text>
+
+        <mj-text color="#9ca3af">
+          Pero tu descuento de asistente ($1,000) <span style="color: #ef4444; font-weight: 700;">solo es válido HOY</span>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Nos vemos del otro lado.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro,<br />
+          Todoconta
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-top="24px"
+        >
+          P.D. Si tienes dudas de último momento, responde este email. Te contesto personalmente (mientras haya tiempo).
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
