@@ -1,0 +1,134 @@
+<mjml>
+  <mj-head>
+    <mj-title>📎 Olvidé adjuntar los recursos (aquí están)</mj-title>
+    <mj-preview>Disculpa - el correo anterior se fue sin los archivos adjuntos. Aquí están.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          [Name],
+        </mj-text>
+
+        <!-- Apology -->
+        <mj-text padding-bottom="16px">
+          Error mío.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          El correo anterior se fue sin los archivos adjuntos 🤦‍♂️
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-weight="700"
+          padding-bottom="8px"
+        >
+          Aquí están los recursos que te prometí:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Resources Box -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-text color="#eab308" padding-bottom="6px">
+          ✅ Los 2 Casos Prácticos Adicionales
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="6px">
+          ✅ Plantilla de Prompts Estructurados
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="6px">
+          ✅ Matriz de Decisión Completa
+        </mj-text>
+        <mj-text color="#eab308">
+          ✅ 10 Prompts Adicionales
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Video Reminder -->
+    <mj-section background-color="#0f0518" padding="32px 20px 24px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Y por si no la viste, aquí está la grabación completa de la masterclass:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Video Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-image
+          src="https://img.youtube.com/vi/BqsxObAj54A/maxresdefault.jpg"
+          href="https://youtu.be/BqsxObAj54A"
+          border-radius="8px"
+          padding-bottom="16px"
+          alt="Ver Grabación de la Masterclass"
+        />
+
+        <mj-button
+          background-color="#a855f7"
+          color="#ffffff"
+          font-size="16px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://youtu.be/BqsxObAj54A"
+          padding="0"
+          inner-padding="12px 32px"
+        >
+          ▶️ Ver Grabación
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Disculpa el error.
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

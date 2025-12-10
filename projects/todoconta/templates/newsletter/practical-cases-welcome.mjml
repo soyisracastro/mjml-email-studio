@@ -1,0 +1,196 @@
+<mjml>
+  <mj-head>
+    <mj-title>📥 Tu PDF: 3 Casos Prácticos de IA para Contadores</mj-title>
+    <mj-preview>Aquí está tu PDF con los recursos que solicitaste</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name,fallback=Contador/a] 👋
+        </mj-text>
+
+        <!-- Introduction -->
+        <mj-text padding-bottom="24px">
+          Aquí está tu PDF con los recursos que solicitaste:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PDF Cover Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px 24px">
+      <mj-column>
+        <mj-image
+          src="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/Casos+pra%CC%81cticos_+3+flujos+hi%CC%81bridos+que+te+ahorrara%CC%81n+horas.png"
+          border-radius="8px"
+          padding-bottom="0"
+          alt="Portada: Casos prácticos - 3 flujos híbridos que te ahorrarán horas"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Download Button Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="0px 20px 40px">
+      <mj-column>
+        <mj-button
+          background-color="#a855f7"
+          color="#ffffff"
+          font-size="18px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/Casos+pra%CC%81cticos_+3+flujos+hi%CC%81bridos+que+te+ahorrara%CC%81n+horas.pdf"
+          padding="0 0 0 0"
+          inner-padding="16px 48px"
+        >
+          📥 Descargar PDF Ahora
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PDF Contents Section -->
+    <mj-section background-color="#0f0518" padding="32px 20px 24px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="20px"
+        >
+          Dentro encontrarás:
+        </mj-text>
+
+        <mj-text color="#eab308" padding-bottom="8px">
+          ✓ Caso 2: Revisión CFDI Masiva (5h → 15 min)
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="8px">
+          ✓ Caso 3: Respuesta a Requerimiento SAT (2h → 10 min)
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="8px">
+          ✓ 10 plantillas de prompts listas para copiar/pegar
+        </mj-text>
+        <mj-text color="#eab308" padding-bottom="0px">
+          ✓ Matriz de decisión completa
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Quick Tip Section -->
+    <mj-section background-color="rgba(168, 85, 247, 0.1)" padding="32px 20px" border="2px solid #a855f7" border-radius="8px">
+      <mj-column>
+        <mj-text
+          color="#a855f7"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="12px"
+        >
+          💡 Tip rápido
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          padding-bottom="0px"
+        >
+          Empieza por el Caso 2 si tienes clientes con muchas facturas por revisar. Es el que más tiempo ahorra.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Video Section -->
+    <mj-section background-color="#0f0518" padding="40px 20px 16px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="dashed" border-color="rgba(255, 255, 255, 0.2)" padding-bottom="32px" />
+
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          PD: ¿Viste el video del Caso 1 (Arquitecto López)?
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="24px"
+        >
+          Si no, aquí está:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Video Thumbnail Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-image
+          src="https://img.youtube.com/vi/fokb3vN5jaQ/maxresdefault.jpg"
+          href="https://youtu.be/fokb3vN5jaQ"
+          border-radius="8px"
+          padding-bottom="24px"
+          alt="Ver Video del Caso 1: Arquitecto López"
+        />
+
+        <mj-button
+          background-color="#eab308"
+          color="#000000"
+          font-size="16px"
+          font-weight="700"
+          border-radius="8px"
+          href="https://youtu.be/fokb3vN5jaQ"
+          padding="0 0 0 0"
+          inner-padding="14px 40px"
+        >
+          ▶️ Ver Video del Caso 1
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Saludos,
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
