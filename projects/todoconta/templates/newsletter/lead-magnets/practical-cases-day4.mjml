@@ -1,0 +1,300 @@
+<mjml>
+  <mj-head>
+    <mj-title>No tengo tiempo para aprender IA (te entiendo)</mj-title>
+    <mj-preview>La objeción #1 que escucho: Israel, todo esto está muy bien, pero NO TENGO TIEMPO para aprenderlo.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+      .bordered-section { border: 2px solid #a855f7; border-radius: 8px; }
+      .bordered-section-green { border: 2px solid #10b981; border-radius: 8px; }
+      .bordered-section-yellow { border: 2px solid #eab308; border-radius: 8px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name,fallback=Contador/a] 👋
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          La objeción #1 que escucho:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Objection Quote Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-style="italic"
+          font-size="18px"
+          line-height="160%"
+          align="center"
+          padding-bottom="0px"
+        >
+          "Israel, todo esto está muy bien, pero NO TENGO TIEMPO para aprenderlo."
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Understanding Section -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          Te entiendo perfectamente.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Entre declaraciones, clientes urgentes, y el SAT cambiando reglas cada mes... ¿quién tiene tiempo de "estudiar IA"?
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="0px"
+        >
+          Aquí está la buena noticia:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Good News Section -->
+    <mj-wrapper background-color="rgba(168, 85, 247, 0.1)" padding="40px 20px" css-class="bordered-section">
+      <mj-section background-color="transparent" padding="0">
+        <mj-column>
+          <mj-text
+            font-size="18px"
+            padding-bottom="16px"
+          >
+            No necesitas "estudiar" IA.
+          </mj-text>
+
+          <mj-text
+            color="#a855f7"
+            font-size="20px"
+            font-weight="700"
+            padding-bottom="0px"
+          >
+            Necesitas COPIAR flujos que ya funcionan.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Real Example Header -->
+    <mj-section background-color="#0f0518" padding="40px 20px 24px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          Ejemplo real de uno de mis alumnos
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="0px"
+        >
+          (contador en Guadalajara, 8 clientes)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image Section - Before/After Visual -->
+    <mj-section background-color="#0f0518" padding="32px 20px 40px">
+      <mj-column>
+        <mj-image
+          src="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/emails/lead-magnets/practical-cases-day4.jpeg"
+          alt="Antes vs Después: Contador estresado con facturas vs Contador trabajando eficientemente con IA"
+          border-radius="8px"
+          padding-bottom="0px"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Before Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#ef4444"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ❌ Antes:
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="8px">
+          • 4 horas revisando facturas de un cliente
+        </mj-text>
+
+        <mj-text color="#9ca3af" padding-bottom="0px">
+          • Encontraba 2-3 errores al azar
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- After Section -->
+    <mj-wrapper background-color="rgba(16, 185, 129, 0.1)" padding="32px 20px" css-class="bordered-section-green">
+      <mj-section background-color="transparent" padding="0">
+        <mj-column>
+          <mj-text
+            color="#10b981"
+            font-size="18px"
+            font-weight="700"
+            padding-bottom="16px"
+          >
+            ✅ Después (usando el Caso 2 del PDF):
+          </mj-text>
+
+          <mj-text color="#10b981" padding-bottom="8px">
+            • 15 minutos con Gemini + Claude
+          </mj-text>
+
+          <mj-text color="#10b981" padding-bottom="0px">
+            • Detecta TODOS los errores + valida RFC contra lista 69-B
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- The Question Section -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          ¿Tuvo que "estudiar" algo?
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          No.
+        </mj-text>
+
+        <mj-text padding-bottom="0px">
+          Copió el flujo del PDF, ajustó los nombres, y listo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#0f0518" padding="0px 20px 32px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="dashed" border-color="rgba(255, 255, 255, 0.2)" padding-bottom="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- The Point Section -->
+    <mj-wrapper background-color="rgba(234, 179, 8, 0.1)" padding="40px 20px" css-class="bordered-section-yellow">
+      <mj-section background-color="transparent" padding="0">
+        <mj-column>
+          <mj-text
+            color="#eab308"
+            font-size="20px"
+            font-weight="700"
+            padding-bottom="20px"
+          >
+            Los 3 casos que tienes son exactamente eso:
+          </mj-text>
+
+          <mj-text
+            font-size="18px"
+            padding-bottom="0px"
+          >
+            Flujos para COPIAR, no para estudiar.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Call to Action - Reply -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          Si ya los probaste, cuéntame: ¿funcionaron?
+        </mj-text>
+
+        <mj-text
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Si no los has probado... ¿qué te detiene?
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="17px"
+          font-weight="600"
+          padding-bottom="0px"
+        >
+          Responde este email, en serio quiero saber.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="0px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Saludos,
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

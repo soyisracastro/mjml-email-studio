@@ -1,0 +1,227 @@
+<mjml>
+  <mj-head>
+    <mj-title>Por qué creé estos casos prácticos (spoiler: frustración)</mj-title>
+    <mj-preview>¿Ya pudiste revisar el PDF que te envié hace unos días?</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Main Content -->
+    <mj-section background-color="#0f0518" padding="48px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name,fallback=Contador/a] 👋
+        </mj-text>
+
+        <!-- Opening Question -->
+        <mj-text padding-bottom="24px">
+          ¿Ya pudiste revisar el PDF que te envié hace unos días?
+        </mj-text>
+
+        <mj-text
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          Te cuento por qué lo creé...
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Story Section -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="40px 20px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Hace unos meses, un contador me escribió frustrado:
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-style="italic"
+          padding-bottom="24px"
+          font-size="17px"
+          line-height="160%"
+        >
+          "Israel, ya tomé 3 cursos de ChatGPT. Sé hacer prompts. Pero cuando llego a mi despacho... no sé QUÉ preguntarle ni CUÁNDO usarlo."
+        </mj-text>
+
+        <mj-text
+          font-weight="600"
+          padding-bottom="0px"
+        >
+          Ahí me cayó el veinte.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Problem Section -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          El problema no es CÓMO usar la IA.
+        </mj-text>
+
+        <mj-text
+          color="#a855f7"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="24px"
+        >
+          El problema es CUÁNDO usar CUÁL herramienta para CADA tarea específica.
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Por eso creé la <strong style="color: #eab308;">Mentalidad IA-First</strong>.
+        </mj-text>
+
+        <mj-text padding-bottom="8px">
+          No se trata de dominar ChatGPT.
+        </mj-text>
+
+        <mj-text
+          font-weight="600"
+          padding-bottom="0px"
+        >
+          Se trata de tener la herramienta correcta para cada situación:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image Section - AI Tools Concept -->
+    <mj-section background-color="#0f0518" padding="32px 20px 40px">
+      <mj-column>
+        <mj-image
+          src="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/emails/lead-magnets/practical-cases-day2.jpeg"
+          alt="Herramientas de IA organizadas como caja de herramientas para contadores - ChatGPT, Claude, Gemini, Perplexity"
+          border-radius="8px"
+          padding-bottom="0px"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Tools Matrix Section -->
+    <mj-section background-color="rgba(168, 85, 247, 0.1)" padding="32px 20px" border="2px solid #a855f7" border-radius="8px">
+      <mj-column>
+        <mj-text padding-bottom="12px">
+          <span style="color: #9ca3af;">¿Análisis profundo de contrato?</span> → <strong>Claude</strong>
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          <span style="color: #9ca3af;">¿Búsqueda actualizada de normativa SAT?</span> → <strong>Perplexity</strong>
+        </mj-text>
+
+        <mj-text padding-bottom="12px">
+          <span style="color: #9ca3af;">¿Email rápido al cliente?</span> → <strong>ChatGPT</strong>
+        </mj-text>
+
+        <mj-text padding-bottom="0px">
+          <span style="color: #9ca3af;">¿Integración con Google Workspace?</span> → <strong>Gemini</strong>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PDF Reminder Section -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          Los 3 casos que tienes en el PDF siguen este principio.
+        </mj-text>
+
+        <mj-text
+          color="#eab308"
+          font-weight="600"
+          padding-bottom="0px"
+        >
+          Cada uno te muestra CUÁNDO usar QUÉ.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#0f0518" padding="0px 20px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="dashed" border-color="rgba(255, 255, 255, 0.2)" padding-bottom="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Call to Action - Reply -->
+    <mj-section background-color="rgba(234, 179, 8, 0.1)" padding="40px 20px" border="2px solid #eab308" border-radius="8px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="18px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          💬 Dime:
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-size="17px"
+          padding-bottom="12px"
+        >
+          ¿Cuál de los 3 casos te parece más útil para tu día a día?
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="15px"
+          padding-bottom="0px"
+        >
+          Solo responde este email, leo todas las respuestas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          padding-bottom="24px"
+        >
+          Saludos,
+        </mj-text>
+
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Israel Castro <br /> <span style="color: #9ca3af; font-weight: 400;">TodoConta</span>
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
