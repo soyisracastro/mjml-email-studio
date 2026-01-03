@@ -1,0 +1,691 @@
+<mjml>
+  <mj-head>
+    <mj-title>Última Oportunidad: Reto 12 Días - TodoConta</mj-title>
+    <mj-preview>Literal acabo de leer esto en Expansión: "Actualización y especialización, las armas de los contadores para sobrevivir..."</mj-preview>
+
+    <!-- Google Fonts: Manrope -->
+    <mj-font name="Manrope" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
+    <mj-font name="Georgia" href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" />
+
+    <mj-attributes>
+      <!-- Global Styles -->
+      <mj-all font-family="Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="17px" line-height="28px" color="#374151" padding="0" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      /* Signature font */
+      .signature {
+        font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+        font-size: 28px;
+        font-style: italic;
+        color: #111418;
+        margin-bottom: 4px;
+      }
+
+      /* Link styles */
+      a {
+        color: #137fec;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #0d5bb5;
+        text-decoration: underline;
+      }
+
+      /* Callout box */
+      .callout-box {
+        background-color: rgba(19, 127, 236, 0.08);
+        border: 1px solid rgba(19, 127, 236, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      /* Warning callout */
+      .warning-box {
+        background-color: rgba(245, 158, 11, 0.08);
+        border: 1px solid rgba(245, 158, 11, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      /* Highlight text */
+      .highlight {
+        background-color: #fef3c7;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+
+      /* Footer legal text */
+      .footer-legal {
+        font-size: 12px;
+        color: #9ca3af;
+        line-height: 1.5;
+      }
+      .footer-legal a {
+        color: #9ca3af;
+        text-decoration: underline;
+      }
+      .footer-legal a:hover {
+        color: #6b7280;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+    <!-- Email Container (max-width: 600px) -->
+    <mj-wrapper background-color="#ffffff" border-radius="16px" padding="0">
+
+      <!-- Logo Header -->
+      <mj-section padding-top="40px" padding-bottom="24px">
+        <mj-column>
+          <mj-text align="center" padding="0">
+            <table role="presentation" style="margin: 0 auto;">
+              <tr>
+                <td style="vertical-align: middle; padding-right: 8px;">
+                  <!-- TodoConta Logo SVG -->
+                  <svg width="28" height="28" viewBox="0 0 654 740" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M201.738 48.6024C205.73 49.5105 209.726 50.3947 213.722 51.2819C220.61 52.8141 227.493 54.3606 234.375 55.9171C244.361 58.1757 254.352 60.4112 264.345 62.6406C279.416 66.0034 294.485 69.3778 309.552 72.7607C331.649 77.7214 353.756 82.6345 375.868 87.5221C376.685 87.7025 377.501 87.883 378.342 88.0689C385.633 89.6804 392.924 91.2915 400.215 92.9021C411.169 95.3224 422.122 97.7498 433.075 100.181C439.054 101.508 445.033 102.836 451.013 104.163C451.733 104.322 452.453 104.482 453.194 104.647C471.315 108.668 489.442 112.66 507.581 116.595C513.398 117.859 519.212 119.129 525.027 120.4C530.083 121.504 535.141 122.595 540.202 123.673C543.173 124.309 546.14 124.958 549.107 125.611C551.03 126.03 552.957 126.433 554.883 126.835C569.327 130.046 581.5 136.592 590.165 148.854C600.666 165.84 598.427 182.86 594.2 201.346C593.797 203.167 593.394 204.989 592.993 206.81C592.107 210.822 591.21 214.831 590.306 218.838C588.803 225.5 587.323 232.167 585.844 238.835C583.69 248.54 581.527 258.244 579.358 267.946C574.764 288.502 570.21 309.066 565.659 329.631C563.918 337.494 562.178 345.357 560.437 353.22C559.995 355.219 559.552 357.217 559.11 359.215C554.189 381.444 549.259 403.672 544.328 425.899C537.065 458.64 529.811 491.382 522.572 524.128C520.873 531.816 519.172 539.503 517.47 547.19C516.758 550.406 516.046 553.621 515.334 556.836C514.864 558.959 514.394 561.081 513.924 563.203C510.89 576.906 507.865 590.611 504.846 604.317C502.277 615.986 499.702 627.653 497.122 639.319C495.667 645.903 494.214 652.487 492.768 659.073C491.432 665.16 490.088 671.245 488.739 677.329C488.246 679.56 487.756 681.791 487.268 684.023C479.185 720.981 479.185 720.981 463.79 731.417C442.953 744.401 421.921 739.194 399.304 733.978C395.833 733.182 392.356 732.41 388.88 731.635C382.914 730.303 376.951 728.956 370.991 727.599C362.342 725.63 353.688 723.684 345.032 721.745C334.572 719.401 324.113 717.054 313.656 714.694C312.464 714.425 312.464 714.425 311.247 714.151C310.059 713.883 310.059 713.883 308.847 713.609C291.033 709.589 273.212 705.608 255.38 701.671C254.204 701.411 253.028 701.151 251.816 700.884C246.016 699.603 240.215 698.323 234.415 697.044C224.216 694.795 214.019 692.537 203.822 690.28C187.03 686.564 170.238 682.852 153.445 679.142C143.017 676.838 132.59 674.534 122.163 672.229C115.965 670.859 109.766 669.489 103.567 668.121C90.7065 665.281 77.8471 662.435 64.9912 659.573C61.746 658.851 58.5001 658.131 55.2533 657.417C51.5747 656.607 47.899 655.785 44.2238 654.96C43.2621 654.75 42.3003 654.541 41.3095 654.325C26.4011 650.935 15.3489 644.346 6.79018 631.417C-3.02884 615.801 -0.374595 599.51 3.44643 582.546C3.85063 580.711 4.2538 578.876 4.65603 577.041C5.54248 573.008 6.43635 568.977 7.33559 564.946C8.85276 558.145 10.3514 551.339 11.8488 544.533C14.8499 530.905 17.8692 517.281 20.8919 503.658C22.6475 495.744 24.401 487.831 26.1544 479.917C26.8085 476.965 27.4627 474.013 28.1168 471.061C28.2791 470.329 28.4415 469.596 28.6088 468.841C29.7592 463.65 30.9099 458.458 32.0608 453.267C37.7187 427.744 43.3677 402.22 49.0133 376.695C50.5468 369.761 52.0806 362.828 53.6144 355.895C54.126 353.582 54.6376 351.27 55.1492 348.957C55.4021 347.814 55.655 346.671 55.9156 345.493C56.9329 340.894 57.9502 336.295 58.9675 331.697C62.0586 317.723 65.15 303.75 68.2415 289.776C69.0253 286.234 69.8091 282.691 70.5929 279.148C72.9287 268.589 75.2647 258.031 77.6014 247.473C78.8871 241.664 80.1726 235.855 81.4582 230.045C81.7134 228.892 81.9686 227.739 82.2316 226.55C85.9789 209.615 89.7199 192.679 93.4576 175.741C94.4777 171.119 95.4982 166.496 96.519 161.874C96.7329 160.906 96.7329 160.906 96.9511 159.918C97.6644 156.688 98.3778 153.458 99.0912 150.228C100.741 142.759 102.389 135.29 104.035 127.82C105.053 123.204 106.072 118.589 107.092 113.974C107.562 111.849 108.03 109.723 108.498 107.597C110.57 98.1843 112.65 88.7728 114.918 79.4051C115.356 77.5861 115.356 77.5861 115.803 75.7304C119.587 63.0224 127.747 54.3406 138.79 47.4166C159.226 37.4557 180.717 43.7944 201.738 48.6024ZM157.079 120.395C155.349 123.109 154.708 125.709 153.912 128.829C153.744 129.482 153.577 130.135 153.405 130.808C151.109 139.911 149.115 149.086 147.095 158.253C146.657 160.227 146.219 162.202 145.781 164.177C144.638 169.332 143.499 174.487 142.361 179.643C141.203 184.884 140.041 190.125 138.88 195.366C137.006 203.827 135.133 212.289 133.264 220.752C133.099 221.5 132.933 222.248 132.763 223.018C132.604 223.739 132.445 224.46 132.281 225.202C131.935 226.763 131.585 228.324 131.233 229.884C130.963 231.087 130.963 231.087 130.686 232.315C130.523 233.038 130.359 233.76 130.19 234.505C129.154 239.455 128.944 243.724 131.228 248.292C138.391 254.232 149.729 255.069 158.653 256.995C160.293 257.352 161.933 257.711 163.573 258.07C167.163 258.854 170.753 259.636 174.344 260.415C183.457 262.394 192.565 264.389 201.674 266.383C205.051 267.121 208.427 267.86 211.803 268.598C230.208 272.623 248.604 276.683 266.997 280.756C267.713 280.915 268.428 281.073 269.165 281.236C278.005 283.194 286.845 285.153 295.685 287.112C303.923 288.938 312.162 290.764 320.4 292.589C323.4 293.253 326.4 293.918 329.4 294.582C330.142 294.747 330.884 294.911 331.648 295.081C336.134 296.074 340.62 297.068 345.106 298.062C365.823 302.652 386.54 307.239 407.259 311.823C407.921 311.969 408.582 312.116 409.264 312.266C422.401 315.173 435.539 318.078 448.676 320.984C453.153 321.974 457.63 322.965 462.106 323.955C465.103 324.618 468.1 325.28 471.096 325.943C472.018 326.147 472.939 326.351 473.888 326.561C475.664 326.954 477.441 327.345 479.218 327.735C483.458 328.666 487.69 329.624 491.912 330.635C493.139 330.924 493.139 330.924 494.391 331.218C495.917 331.578 497.44 331.946 498.961 332.325C504.434 333.603 508.522 333.682 513.478 330.917C518.761 325.205 519.701 315.999 521.35 308.592C521.586 307.548 521.822 306.505 522.065 305.43C522.838 302.007 523.604 298.583 524.368 295.159C524.904 292.767 525.441 290.375 525.977 287.984C527.097 282.983 528.212 277.982 529.325 272.98C530.752 266.574 532.194 260.171 533.64 253.77C534.752 248.837 535.852 243.902 536.95 238.966C537.477 236.604 538.008 234.243 538.543 231.883C539.29 228.585 540.021 225.284 540.748 221.982C540.971 221.012 541.195 220.041 541.425 219.041C542.548 213.86 543.097 209.672 541.79 204.417C536.349 196.694 524.949 195.893 516.249 193.994C515.237 193.77 514.224 193.546 513.181 193.315C509.821 192.572 506.46 191.834 503.099 191.096C500.689 190.564 498.28 190.032 495.871 189.5C490.703 188.359 485.534 187.219 480.365 186.082C472.82 184.423 465.276 182.758 457.732 181.093C448.503 179.056 439.273 177.019 430.043 174.985C429.332 174.828 428.622 174.671 427.89 174.51C427.181 174.354 426.472 174.197 425.741 174.036C409.006 170.348 392.272 166.651 375.54 162.948C374.378 162.691 373.216 162.433 372.019 162.168C366.217 160.884 360.416 159.6 354.614 158.316C344.274 156.027 333.933 153.74 323.593 151.452C317.804 150.172 312.016 148.891 306.227 147.61C303.86 147.087 301.492 146.563 299.125 146.039C279.501 141.698 259.877 137.357 240.254 133.015C232.708 131.346 225.162 129.676 217.616 128.007C212.972 126.98 208.327 125.952 203.683 124.925C201.532 124.449 199.382 123.973 197.231 123.497C194.284 122.846 191.338 122.194 188.392 121.542C187.545 121.354 186.698 121.167 185.825 120.974C184.626 120.709 184.626 120.709 183.402 120.438C182.638 120.269 181.874 120.101 181.087 119.927C179.504 119.575 177.923 119.218 176.343 118.856C175.554 118.676 174.765 118.496 173.952 118.311C173.252 118.15 172.552 117.988 171.83 117.822C166.476 116.758 161.329 116.277 157.079 120.395ZM158.907 311.643C152.92 320.291 151.78 328.055 152.79 338.417C154.576 344.779 157.688 349.122 163.025 352.969C169.241 356.223 176.404 357.261 183.228 358.667C184.802 359.006 186.375 359.347 187.948 359.69C190.933 360.338 193.921 360.975 196.911 361.6C199.994 362.249 203.069 362.923 206.142 363.624C213.881 365.306 218.558 364.747 225.462 360.956C232.153 356.532 235.848 350.13 237.79 342.417C238.827 333.389 237.689 325.985 232.228 318.667C225.057 311.169 213.062 309.839 203.314 307.697C200.923 307.168 198.539 306.618 196.153 306.065C175.838 301.377 175.838 301.377 158.907 311.643ZM273.478 336.667C267.343 344.103 266.136 350.287 266.384 359.94C267.21 367.007 269.804 371.955 275.236 376.503C280.297 380.142 285.641 381.285 291.665 382.542C292.764 382.786 293.863 383.03 294.996 383.282C297.214 383.774 299.435 384.259 301.657 384.735C304.473 385.348 307.275 386.001 310.075 386.682C324.696 390.566 324.696 390.566 338.841 386.874C345.002 382.268 350.447 376.158 351.79 368.417C352.616 359.025 351.928 352.078 346.603 344.167C340.977 338.666 334.146 336.712 326.611 335.057C325.331 334.766 325.331 334.766 324.026 334.469C322.234 334.064 320.441 333.664 318.646 333.27C315.926 332.669 313.212 332.046 310.497 331.42C308.744 331.027 306.99 330.635 305.236 330.245C304.437 330.06 303.639 329.876 302.817 329.686C290.909 327.113 282.134 327.537 273.478 336.667ZM387.415 361.604C381.454 369.462 379.7 377.686 380.79 387.417C382.046 393.511 385.094 398.362 389.79 402.417C397.552 406.689 406.694 408.252 415.266 410.136C417.657 410.665 420.042 411.216 422.427 411.768C437.693 415.483 437.693 415.483 452.665 412.417C458.748 408.505 463.049 402.606 465.321 395.749C467.235 386.23 466.066 378.051 461.228 369.729C453.189 362.103 441.84 360.456 431.385 358.194C428.661 357.603 425.942 356.989 423.224 356.372C421.473 355.983 419.721 355.595 417.97 355.21C417.168 355.028 416.365 354.847 415.539 354.661C404.73 352.352 395.393 353.102 387.415 361.604ZM141.79 390.417C135.054 398.715 132.84 406.807 133.79 417.417C135.04 423.822 138.705 429.357 143.79 433.417C149.425 435.735 155.039 437.35 160.97 438.713C161.823 438.911 162.675 439.109 163.554 439.313C165.347 439.726 167.14 440.136 168.934 440.543C171.654 441.164 174.368 441.808 177.083 442.452C178.837 442.853 180.591 443.253 182.345 443.651C183.143 443.844 183.941 444.036 184.764 444.235C192.098 445.851 199.347 446.064 206.04 442.292C213.389 437.11 217.39 430.964 219.259 422.225C220.314 415.331 219.367 409.396 216.103 403.229C211.241 397.316 207.678 394.41 200.071 392.471C199.418 392.304 198.764 392.136 198.09 391.963C191.162 390.211 184.19 388.64 177.206 387.124C175.064 386.658 172.924 386.184 170.784 385.71C169.407 385.408 168.031 385.107 166.653 384.807C165.429 384.539 164.205 384.272 162.944 383.996C154.934 382.525 147.991 385.294 141.79 390.417ZM253.333 419.155C248.403 426.382 246.6 433.736 247.79 442.417C249.348 449.076 252.174 453.475 257.302 457.944C265.311 462.684 275.358 464.062 284.356 466.061C286.787 466.603 289.214 467.161 291.642 467.719C293.212 468.071 294.782 468.422 296.353 468.772C297.065 468.938 297.778 469.103 298.513 469.274C305.989 470.902 313.028 471.638 319.876 467.737C327.242 462.656 331.495 456.515 333.357 447.749C334.368 440.198 333.563 433.524 329.239 427.12C323.611 420.281 317.261 418.042 308.841 416.155C307.988 415.959 307.134 415.764 306.255 415.562C304.455 415.153 302.654 414.747 300.852 414.345C298.125 413.734 295.404 413.103 292.683 412.469C270.88 407.366 270.88 407.366 253.333 419.155ZM368.415 442.542C363.774 448.607 360.985 456.431 361.411 464.096C362.629 471.551 365.201 477.592 370.521 482.979C378.192 487.838 388.476 489.103 397.246 491.061C399.655 491.602 402.06 492.16 404.466 492.719C418.136 496.09 418.136 496.09 431.841 494.385C440.087 489.03 444.859 483.416 447.321 473.788C448.831 466.15 447.431 458.803 443.419 452.139C435.927 442.492 422.371 441.174 411.074 438.697C408.66 438.165 406.251 437.616 403.841 437.065C402.28 436.718 400.719 436.371 399.157 436.026C398.451 435.863 397.744 435.701 397.016 435.534C386.071 433.179 376.537 434.052 368.415 442.542ZM118.353 479.167C114.023 485.594 111.555 493.666 112.79 501.417C114.404 508.422 116.825 513.288 122.302 517.979C130.376 522.643 140.337 524.058 149.356 526.061C151.787 526.603 154.214 527.161 156.642 527.719C158.212 528.071 159.782 528.422 161.353 528.772C162.065 528.938 162.778 529.103 163.513 529.274C171.969 531.115 178.812 531.202 186.493 526.967C193.1 522.507 196.348 516.531 198.478 508.979C199.452 500.989 198.607 494.611 194.79 487.417C188.458 479.697 179.655 477.406 170.267 475.374C169.481 475.2 168.694 475.027 167.884 474.848C166.233 474.487 164.581 474.128 162.928 473.772C160.426 473.231 157.929 472.673 155.431 472.114C140.973 468.937 128.895 466.36 118.353 479.167ZM233.552 503.186C228.357 509.763 226.52 517.09 226.79 525.417C227.836 532.861 231.023 538.567 236.79 543.417C241.63 546.178 246.359 547.473 251.739 548.678C252.593 548.874 253.446 549.069 254.325 549.271C256.125 549.681 257.926 550.086 259.728 550.488C262.455 551.099 265.176 551.731 267.898 552.364C284.186 556.645 284.186 556.645 299.946 552.795C307.019 547.506 310.74 540.949 312.79 532.417C313.837 525.145 312.291 518.435 308.419 512.213C300.798 502.344 287.064 501.138 275.537 498.697C273.029 498.164 270.525 497.615 268.021 497.065C266.408 496.718 264.794 496.371 263.181 496.026C262.442 495.863 261.703 495.701 260.942 495.534C249.554 493.154 241.577 494.53 233.552 503.186ZM345.79 522.417C342.698 528.416 341.406 534.739 339.971 541.299C339.707 542.479 339.444 543.659 339.172 544.874C338.454 548.092 337.742 551.311 337.034 554.531C336.44 557.226 335.842 559.919 335.244 562.613C333.833 568.968 332.428 575.326 331.028 581.684C329.587 588.232 328.135 594.777 326.677 601.321C325.424 606.953 324.175 612.586 322.932 618.221C322.191 621.58 321.447 624.939 320.699 628.297C319.864 632.04 319.042 635.787 318.221 639.534C317.849 641.191 317.849 641.191 317.47 642.881C315.283 652.084 315.283 652.084 316.915 661.167C320.681 665.686 326.04 666.903 331.602 668.134C332.255 668.281 332.908 668.428 333.581 668.579C335.721 669.057 337.863 669.525 340.005 669.991C341.504 670.322 343.004 670.654 344.503 670.987C347.638 671.68 350.774 672.368 353.911 673.052C357.919 673.925 361.924 674.813 365.928 675.705C369.021 676.392 372.116 677.073 375.211 677.751C376.688 678.075 378.164 678.402 379.64 678.73C381.708 679.19 383.778 679.64 385.849 680.087C387.023 680.345 388.197 680.602 389.407 680.867C394.427 681.682 398.371 682.071 403.04 679.917C408.955 674.539 409.864 665.341 411.502 657.803C411.754 656.664 412.006 655.525 412.267 654.351C413.095 650.603 413.916 646.854 414.736 643.104C415.311 640.489 415.888 637.874 416.464 635.259C417.67 629.786 418.872 624.312 420.07 618.838C421.452 612.524 422.841 606.212 424.233 599.901C425.577 593.809 426.917 587.715 428.255 581.622C428.823 579.038 429.392 576.454 429.961 573.871C430.757 570.258 431.548 566.644 432.338 563.03C432.572 561.968 432.807 560.906 433.049 559.812C435.648 549.915 435.648 549.915 434.603 540.104C431.21 535.073 427.748 533.919 421.914 532.607C421.23 532.451 420.547 532.294 419.843 532.133C417.59 531.62 415.335 531.122 413.079 530.624C411.507 530.27 409.936 529.915 408.364 529.56C405.072 528.819 401.778 528.084 398.484 527.354C394.269 526.421 390.058 525.473 385.847 524.52C382.602 523.786 379.356 523.059 376.109 522.335C374.556 521.987 373.003 521.639 371.451 521.288C369.277 520.798 367.102 520.317 364.925 519.838C363.69 519.563 362.454 519.287 361.18 519.004C354.643 517.871 350.95 517.945 345.79 522.417ZM97.3332 560.081C92.3093 567.686 90.5177 575.793 92.2277 584.694C93.8627 590.672 96.9815 595.481 101.79 599.417C107.139 601.994 112.408 603.427 118.196 604.678C119.08 604.874 119.963 605.069 120.874 605.271C122.732 605.68 124.591 606.086 126.451 606.488C129.284 607.103 132.113 607.733 134.943 608.364C136.756 608.761 138.57 609.158 140.384 609.553C141.223 609.741 142.061 609.928 142.926 610.121C150.673 611.777 157.706 612.438 164.79 608.417C171.91 602.892 175.901 596.179 177.79 587.417C178.464 579.734 176.797 572.611 172.247 566.264C166.377 559.911 158.499 558.156 150.302 556.374C149.126 556.114 149.126 556.114 147.927 555.848C146.279 555.487 144.631 555.128 142.983 554.772C140.492 554.232 138.005 553.673 135.519 553.114C120.804 549.872 107.871 547.107 97.3332 560.081ZM211.005 585.589C206.656 592.134 204.878 599.603 205.79 607.417C207.372 614.419 209.838 619.299 215.302 623.979C223.376 628.644 233.337 630.058 242.356 632.061C244.787 632.603 247.214 633.161 249.642 633.719C251.212 634.071 252.782 634.422 254.353 634.772C255.065 634.938 255.778 635.103 256.513 635.274C264.836 637.086 271.854 637.282 279.427 633.089C286.61 628.007 290.236 620.935 291.79 612.417C292.539 605.675 291.325 599.274 287.79 593.417C281.219 585.498 273.927 583.53 264.103 581.604C262.83 581.331 261.557 581.059 260.245 580.778C257.697 580.235 255.146 579.706 252.592 579.19C247.66 578.187 242.747 577.099 237.833 576.01C226.577 573.816 218.22 576.394 211.005 585.589Z" fill="#135bec"/>
+                    <path d="M263.166 7.36744C267.547 8.37183 271.935 9.34982 276.322 10.3309C283.796 12.0059 291.267 13.6965 298.735 15.3984C309.464 17.843 320.198 20.2621 330.935 22.6737C335.829 23.7732 340.723 24.8735 345.618 25.9741C346.581 26.1907 347.545 26.4074 348.538 26.6307C355.315 28.1551 362.092 29.6841 368.867 31.2155C395.378 37.207 421.904 43.1151 448.457 48.918C454.135 50.1593 459.813 51.4063 465.49 52.6551C466.889 52.9629 466.889 52.9629 468.317 53.277C470.206 53.6925 472.095 54.108 473.983 54.5235C478.738 55.5695 483.492 56.615 488.247 57.6602C489.717 57.9836 489.717 57.9836 491.218 58.3134C498.169 59.8414 505.121 61.3665 512.073 62.8909C525.621 65.8619 539.168 68.8403 552.713 71.8301C559.324 73.2892 565.935 74.7446 572.549 76.1911C578.701 77.5366 584.851 78.8917 590.999 80.2539C593.262 80.7535 595.525 81.2497 597.79 81.742C634.849 89.8073 634.849 89.8073 647.099 107.6C658.773 127.039 653.139 147.944 648.388 168.686C647.804 171.299 647.223 173.912 646.643 176.525C645.393 182.144 644.129 187.76 642.857 193.374C640.988 201.616 639.142 209.863 637.302 218.111C635.003 228.412 632.7 238.713 630.387 249.011C630.115 250.219 630.115 250.219 629.838 251.452C629.657 252.258 629.476 253.065 629.289 253.897C624.596 274.783 619.951 295.679 615.329 316.581C614.98 318.16 614.631 319.739 614.282 321.318C612.889 327.617 611.496 333.916 610.104 340.216C607.666 351.245 605.224 362.274 602.781 373.302C602.523 374.466 602.523 374.466 602.259 375.655C601.397 379.547 600.534 383.44 599.671 387.332C597.987 394.931 596.303 402.53 594.62 410.129C594.457 410.862 594.295 411.595 594.128 412.351C589.185 434.661 584.248 456.973 579.313 479.284C578.058 484.957 576.803 490.629 575.548 496.302C570.849 517.538 566.152 538.775 561.462 560.014C559.126 570.594 556.788 581.174 554.45 591.754C552.786 599.286 551.123 606.819 549.461 614.352C548.439 618.982 547.416 623.611 546.393 628.241C545.92 630.38 545.448 632.519 544.977 634.658C535.52 677.57 535.52 677.57 519.755 688.526C513.272 692.414 507.484 695.585 499.79 695.417C500.002 694.497 500.213 693.577 500.431 692.629C506.366 666.798 512.134 640.93 517.849 615.049C518.031 614.223 518.214 613.397 518.402 612.545C520.733 601.99 523.061 591.433 525.389 580.877C528.974 564.62 532.564 548.365 536.153 532.109C537.022 528.173 537.891 524.237 538.76 520.301C547.673 479.929 556.61 439.563 565.555 399.199C566.466 395.087 567.378 390.975 568.289 386.864C568.558 385.649 568.558 385.649 568.833 384.41C570.44 377.158 572.047 369.906 573.653 362.654C574.351 359.507 575.048 356.36 575.746 353.212C580.585 331.376 585.42 309.539 590.251 287.702C590.398 287.04 590.544 286.378 590.695 285.696C593.548 272.8 596.4 259.904 599.252 247.008C599.734 244.829 600.216 242.65 600.698 240.47C601.83 235.356 602.959 230.242 604.082 225.126C605.885 216.928 607.699 208.735 609.635 200.567C610.409 197.3 611.17 194.03 611.93 190.759C612.438 188.605 612.967 186.456 613.497 184.307C616.686 170.879 618.26 156.074 611.79 143.417C611.378 142.568 610.965 141.72 610.54 140.846C604.263 129.184 594.41 122.343 581.9 118.537C578.702 117.733 575.496 117.008 572.275 116.307C571.001 116.02 569.727 115.733 568.415 115.437C564.709 114.602 561 113.784 557.29 112.968C553.734 112.184 550.18 111.39 546.626 110.596C533.641 107.698 520.649 104.83 507.656 101.964C501.461 100.598 495.266 99.2287 489.071 97.8599C481.261 96.1344 473.451 94.4089 465.641 92.6844C441.154 87.2776 416.67 81.8596 392.187 76.4394C383.328 74.4783 374.47 72.5179 365.611 70.5579C342.971 65.5486 320.331 60.5377 297.694 55.5175C296.698 55.2967 296.698 55.2967 295.682 55.0714C295.019 54.9243 294.355 54.7772 293.672 54.6257C285.177 52.7419 276.682 50.8595 268.187 48.9772C260.803 47.341 253.419 45.7031 246.035 44.0638C241.481 43.0531 236.927 42.0442 232.372 41.0357C230.288 40.5738 228.204 40.1112 226.12 39.6478C216.042 37.4074 205.957 35.2029 195.844 33.1253C195.037 32.9554 194.23 32.7856 193.398 32.6105C187.129 31.3438 181.191 30.9482 174.79 31.4166C176.251 21.5115 183.211 14.258 190.872 8.36187C213.114 -6.46579 239.158 1.83536 263.166 7.36744Z" fill="#135bec"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: middle;">
+                  <span style="font-family: Manrope, sans-serif; font-size: 18px; font-weight: 700; color: #111418; letter-spacing: -0.02em;">TodoConta</span>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Main Content Area -->
+      <mj-section padding="0 32px">
+        <mj-column>
+
+          <mj-text font-size="20px" font-weight="700" color="#111418" line-height="32px" padding-top="8px" padding-bottom="24px">
+              Hola, [Name]
+            </mj-text>
+
+          <!-- Opening Hook -->
+          <mj-text padding-top="8px" padding-bottom="24px">
+            Literal acabo de leer esto en <strong style="font-weight: 600;">Expansión</strong> (una de las revistas de negocios más importantes de México):
+          </mj-text>
+
+          <mj-text font-size="20px" font-weight="700" color="#111418" line-height="32px" padding-bottom="16px" align="center">
+            "Actualización y especialización, las armas de los contadores para sobrevivir a procesos digitalizados"
+          </mj-text>
+
+          <mj-text padding-bottom="40px">
+            No lo digo yo. Lo dice Expansión.
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- For Enrolled Students -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="16px">
+            <strong style="font-weight: 700; color: #111418;">Si ya te inscribiste al Reto:</strong> Ya estás del otro lado. Ya tomaste acción. Ese es literalmente el paso más importante. Nos vemos el lunes a las 9:00 AM. El resto de este correo no es para ti (pero léelo si quieres ver qué se están perdiendo los que todavía no se deciden).
+          </mj-text>
+
+          <mj-text padding-bottom="40px">
+            <strong style="font-weight: 700; color: #111418;">Si todavía no te has inscrito:</strong> Sigue leyendo.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Expert Quotes -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="16px">
+            El artículo cita a Virginia Ríos, directora de VR Consultores:
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-style="italic" color="#6b7280">
+            "Mi papá era contador público y su actividad fue totalmente diferente a cuando yo estudié. Además, es notable que uno tiene que actualizarse para seguir aportando."
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Y Ernesto Antonio, académico de la UNAM, remata:
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-style="italic" color="#6b7280">
+            "Desde que sales de la carrera es una constante actualización de información. La especialización y estar actualizado son claves para la sobrevivencia."
+          </mj-text>
+
+          <mj-text font-size="22px" font-weight="700" color="#111418" padding-bottom="16px">
+            <span class="highlight">Sobrevivencia.</span>
+          </mj-text>
+
+          <mj-text padding-bottom="40px">
+            No crecimiento. No éxito. <strong style="font-weight: 700;">Sobrevivencia</strong>.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Key Insight Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            Lo que me dejó pensando del artículo
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            El presidente del IMCP explica algo que yo he visto con mis propios ojos:
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-style="italic" color="#6b7280">
+            "La tecnología les liberó tiempo. Ahora ofrecen servicios más especializados."
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Traducción: Los contadores que dominan las herramientas digitales ya no están atrapados en captura de datos. Están haciendo análisis estratégico, planeación fiscal, consultoría.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Los que no, siguen llenando Excel manualmente.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            La brecha ya no es entre "los que saben de impuestos" y "los que no".
+          </mj-text>
+
+          <mj-text font-size="19px" font-weight="700" color="#111418" line-height="32px" padding-bottom="40px">
+            La brecha es entre los que usan IA estratégicamente y los que la usan como glorificado buscador de Google.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Why This Challenge Exists -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            Y por eso existe el Reto de 12 Días
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            No porque yo lo haya inventado.
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Porque después de entrenar a más de 500 contadores mexicanos en uso estratégico de IA, me di cuenta de algo:
+          </mj-text>
+
+          <mj-text font-size="19px" font-weight="700" color="#111418" line-height="32px" padding-bottom="24px">
+            Todo mundo usa ChatGPT. Casi nadie sabe CUÁNDO usar ChatGPT vs Claude vs Gemini vs Perplexity.
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Es como tener una caja de herramientas completa pero usar solo el martillo.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            El reto te enseña <strong style="font-weight: 700;">cuándo usar cada herramienta</strong> para casos contables reales:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Use Cases List -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column background-color="#f9fafb" border-radius="12px" padding="24px">
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Análisis de viáticos al extranjero
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Revisión masiva de CFDIs
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Respuestas a requerimientos del SAT
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Dictámenes fiscales
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="0">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Cálculos comparativos de regímenes
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="40px">
+            No son ejemplos inventados. Son casos que resuelvo yo y mis alumnos <strong style="font-weight: 700;">cada semana</strong>.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Last Opportunity CTA Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            La última oportunidad (en serio, la última)
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            El reto comienza <strong style="font-weight: 700;">este lunes 5 de enero</strong>.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Ya pasaron dos descuentos más grandes:
+          </mj-text>
+
+          <mj-text padding-bottom="8px">
+            ✅ El descuento de lanzamiento (ya expiró)
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            ✅ El descuento de Navidad (ya expiró)
+          </mj-text>
+
+          <mj-text font-size="20px" font-weight="700" color="#111418" padding-bottom="24px">
+            Este es el último descuento: 10%
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Es el más pequeño que vamos a tener.
+          </mj-text>
+
+          <mj-text padding-bottom="32px">
+            Usa el código: <strong style="font-weight: 700; color: #137fec;">ULTIMAOPORTUNIDAD10</strong>
+          </mj-text>
+
+          <!-- CTA Button -->
+          <mj-button
+            background-color="#137fec"
+            color="#ffffff"
+            font-size="16px"
+            font-weight="700"
+            border-radius="8px"
+            padding="16px 32px"
+            href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+            align="center"
+          >
+            Inscribirme al Reto con 10% de descuento
+          </mj-button>
+
+          <mj-text padding-top="32px" padding-bottom="40px">
+            Después de hoy, <strong style="font-weight: 700;">el precio sube</strong> y se queda así.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Why Smallest Discount -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            ¿Por qué este descuento es el más pequeño?
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Porque ya estamos a 4 días de comenzar.
+          </mj-text>
+
+          <mj-text padding-bottom="8px">
+            Los materiales están listos.
+          </mj-text>
+
+          <mj-text padding-bottom="8px">
+            El calendario está publicado.
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Las sesiones están programadas.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            No tiene sentido dar un descuento grande cuando el reto literalmente comienza el lunes.
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Si querías un descuento mayor, debiste inscribirte cuando lo anuncié la primera vez (y varios lo hicieron).
+          </mj-text>
+
+          <mj-text font-weight="700" padding-bottom="40px">
+            Este es el último empujón para los indecisos.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Who Is This For -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            Neta, ¿para quién es este reto?
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Para contadores con 0-5 clientes que quieren escalar <strong style="font-weight: 700;">sin contratar</strong>.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            No es para despachos grandes que ya tienen equipos de 10 personas.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Es para ti si:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Ideal Student List -->
+      <mj-section padding="0 32px 32px 32px">
+        <mj-column background-color="rgba(19, 127, 236, 0.08)" border-radius="12px" padding="24px">
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Gastas 2 horas en lo que podrías resolver en 12 minutos
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Usas solo ChatGPT para todo (y sabes que hay mejores herramientas)
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="12px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Quieres cobrar más pero no sabes cómo justificar el aumento
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+          <mj-text padding-bottom="0">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#137fec"/>
+                    <path d="M8 12l2.5 2.5L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </td>
+                <td style="vertical-align: top; padding-left: 12px;">
+                  <p style="font-family: Manrope, sans-serif; font-size: 16px; color: #374151; margin: 0;">
+                    Te da miedo que la IA "te reemplace" (spoiler: no va a pasar si sabes usarla)
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="19px" font-weight="700" color="#111418" line-height="32px" padding-bottom="24px">
+            12 sesiones prácticas. 4 semanas. 20+ casos reales mexicanos.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Lunes, miércoles y viernes a las 9:00 AM.
+          </mj-text>
+
+          <mj-text padding-bottom="32px">
+            Comienza el lunes 5 de enero.
+          </mj-text>
+
+          <!-- CTA Button -->
+          <mj-button
+            background-color="#137fec"
+            color="#ffffff"
+            font-size="16px"
+            font-weight="700"
+            border-radius="8px"
+            padding="16px 32px"
+            href="https://nas.io/checkout-global?communityId=67ab5a14d444670df4027cad&communityCode=TODOCONTA_CLUB&requestor=whatsappSignup&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D6932a1a7d7b7451ff09982cc&sourceInfoType=challenge&sourceInfoOrigin=6932a1a7d7b7451ff09982cc"
+            align="center"
+          >
+            Ver programa completo + Inscribirme
+          </mj-button>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="40px 32px 32px 32px">
+        <mj-column>
+          <mj-divider border-width="2px" border-color="#e5e7eb" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Final Thought -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#111418" text-transform="uppercase" letter-spacing="1px" padding-bottom="24px">
+            Una última cosa
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            El artículo de Expansión termina con esta cita:
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-style="italic" color="#6b7280">
+            "En cinco años, yo veo la profesión convertida en analistas financieros, en estrategas, ya fuera de lo que es un concepto meramente administrativo."
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            Eso ya está pasando.
+          </mj-text>
+
+          <mj-text font-size="19px" font-weight="700" color="#111418" padding-bottom="24px">
+            No en 5 años. AHORA.
+          </mj-text>
+
+          <mj-text padding-bottom="24px">
+            Los contadores que dominan IA ya están cobrando más, trabajando menos horas, y ofreciendo servicios que antes eran exclusivos de consultoras grandes.
+          </mj-text>
+
+          <mj-text padding-bottom="16px">
+            ¿Vas a ser de los que se adaptan? ¿O de los que "después le entro"?
+          </mj-text>
+
+          <mj-text padding-bottom="40px">
+            El lunes arrancamos.
+          </mj-text>
+
+          <mj-text font-size="19px" padding-bottom="40px">
+            Nos vemos adentro,
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Personal Footer / Signature Section -->
+      <mj-section padding="0 32px 48px 32px">
+        <mj-column border-top="1px solid #e5e7eb" padding-top="32px">
+
+          <!-- Signature -->
+          <mj-text padding="0">
+            <div class="signature">Israel Castro</div>
+          </mj-text>
+
+          <!-- Divider -->
+          <mj-divider border-width="1px" border-color="#e5e7eb" padding-top="32px" padding-bottom="24px" />
+
+          <!-- PS Sections -->
+          <mj-text font-size="14px" padding-bottom="16px">
+            <strong style="font-weight: 700;">PD:</strong> Si quieres leer el artículo completo de Expansión, está aquí:<br/>
+            <a href="https://expansion.mx/actualizacion-especializacion-contadores-evolucion" style="color: #137fec; text-decoration: none;">https://expansion.mx/actualizacion-especializacion-contadores-evolucion</a>
+          </mj-text>
+
+          <mj-text font-size="14px" padding-bottom="24px">
+            <strong style="font-weight: 700;">PD2:</strong> Código de descuento 10%: <strong style="font-weight: 700; color: #137fec;">ULTIMAOPORTUNIDAD10</strong><br/>
+            Válido solo hasta este viernes.
+          </mj-text>
+
+          <!-- Footer Legal Text -->
+          <mj-text font-size="12px" color="#9ca3af" line-height="16px" padding-top="16px" align="left" padding="0">
+            Estás recibiendo este correo porque te suscribiste a mi newsletter en todoconta.com.<br/>
+            <a href="[unsubscribe]" style="color: #9ca3af; text-decoration: underline;">Darse de baja</a> |
+            <a href="[webversion]" style="color: #9ca3af; text-decoration: underline;">Ver en el navegador</a>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
