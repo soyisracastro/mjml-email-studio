@@ -55,21 +55,27 @@ function loadProjectConfig(projectName) {
 
 /**
  * Get all MJML files recursively
+ * Excludes components directories (used for includes)
  */
 function getMjmlFiles(dir, fileList = []) {
   const files = fs.readdirSync(dir);
-  
+
   files.forEach(file => {
     const filePath = path.join(dir, file);
     const stat = fs.statSync(filePath);
-    
+
+    // Skip components directories
+    if (stat.isDirectory() && file === 'components') {
+      return;
+    }
+
     if (stat.isDirectory()) {
       getMjmlFiles(filePath, fileList);
     } else if (path.extname(file) === '.mjml') {
       fileList.push(filePath);
     }
   });
-  
+
   return fileList;
 }
 
