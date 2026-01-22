@@ -1,0 +1,217 @@
+<mjml>
+  <mj-head>
+    <mj-title>25% OFF por Navidad - Reto 12 Días IA para Contadores</mj-title>
+    <mj-preview>No soy de esos que te bombardean con ÚLTIMA OPORTUNIDAD cada 5 minutos. Pero sí quiero avisarte que hasta el 25 de diciembre, el Reto 12 Días tiene 25% de descuento.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text font-size="16px" color="#ffffff" line-height="170%" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-style>
+      .link { color: #a855f7; text-decoration: none; font-weight: 500; }
+      .link:hover { color: #9333ea; text-decoration: underline; }
+      .bordered-section { border: 2px solid #10b981; border-radius: 8px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#000000">
+
+    <!-- Hero Image -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-image
+          src="https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/emails/masterclass-diciembre-2024/reto-12-dias-navidad.jpeg"
+          alt="Contador automatizando tareas con IA durante Navidad"
+          border-radius="8px"
+          padding-bottom="32px"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Header with Christmas Theme -->
+    <mj-section background-color="#0f0518" padding="0px 20px 32px">
+      <mj-column>
+        <!-- Greeting -->
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="24px"
+        >
+          Hola [Name,fallback=Contador/a],
+        </mj-text>
+
+        <!-- Opening -->
+        <mj-text padding-bottom="16px">
+          No soy de esos que te bombardean con <span style="color: #ef4444; font-weight: 700;">"ÚLTIMA OPORTUNIDAD"</span> cada 5 minutos.
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          Pero sí quiero avisarte que hasta el 25 de diciembre, el Reto 12 Días tiene 25% de descuento.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Coupon Section -->
+    <mj-section background-color="rgba(16, 185, 129, 0.1)" padding="40px 20px">
+      <mj-column>
+        <mj-text
+          color="#10b981"
+          font-size="16px"
+          font-weight="700"
+          text-transform="uppercase"
+          letter-spacing="1px"
+          align="center"
+          padding-bottom="12px"
+        >
+          Cupón:
+        </mj-text>
+
+        <mj-text
+          color="#10b981"
+          font-size="32px"
+          font-weight="800"
+          align="center"
+          padding-bottom="0px"
+        >
+          NAVIDAD25
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why Until Dec 25 -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#eab308"
+          font-size="20px"
+          font-weight="700"
+          padding-bottom="16px"
+        >
+          ¿Por qué hasta el 25?
+        </mj-text>
+
+        <mj-text padding-bottom="16px">
+          Porque el reto inicia el 5 de enero. Eso te da 10 días para revisar materiales y prepararte.
+        </mj-text>
+
+        <mj-text padding-bottom="0px">
+          Si ya viste el PDF de los 3 casos prácticos y pensaste <span style="color: #a855f7; font-weight: 600;">"esto me ahorraría horas"</span>, imagina lo que haremos en 12 días completos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#0f0518" padding="0px 20px 32px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="dashed" border-color="rgba(255, 255, 255, 0.2)" padding-bottom="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Social Proof -->
+    <mj-section background-color="rgba(255, 255, 255, 0.05)" padding="32px 20px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="18px"
+          font-weight="600"
+          padding-bottom="16px"
+        >
+          Ya hay 5 contadores dentro.
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          padding-bottom="0px"
+        >
+          Algunos están creando sus propias apps (como la de nóminas que mencioné).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- No Pressure Message -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-size="20px"
+          font-weight="700"
+          align="center"
+          padding-bottom="0px"
+        >
+          No hay prisa. Tienes 12 días.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Button -->
+    <mj-wrapper background-color="rgba(16, 185, 129, 0.1)" padding="40px 20px" css-class="bordered-section">
+      <mj-section background-color="transparent" padding="0">
+        <mj-column>
+          <mj-text
+            color="#ffffff"
+            font-size="18px"
+            font-weight="600"
+            align="center"
+            padding-bottom="24px"
+          >
+            🎄 Reto 12 Días: IA para Contadores
+          </mj-text>
+
+          <mj-button
+            background-color="#10b981"
+            color="#000000"
+            font-size="18px"
+            font-weight="700"
+            border-radius="8px"
+            href="https://nas.io/todoconta/challenges/reto-12-ia-contadores"
+            padding="0 0 20px 0"
+            inner-padding="16px 48px"
+          >
+            Ver detalles y unirme
+          </mj-button>
+
+          <mj-text
+            color="#10b981"
+            font-size="14px"
+            align="center"
+            padding-bottom="0px"
+          >
+            Cupón: <span style="font-weight: 700;">NAVIDAD25</span> (25% OFF)
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Signature -->
+    <mj-section background-color="#0f0518" padding="40px 20px 32px">
+      <mj-column>
+        <mj-text
+          color="#ffffff"
+          font-weight="600"
+          padding-bottom="8px"
+        >
+          Isca
+        </mj-text>
+
+        <mj-text
+          color="#9ca3af"
+          font-size="14px"
+          padding-bottom="0px"
+        >
+          TodoConta
+        </mj-text>
+
+        <mj-text
+          color="#6b7280"
+          font-size="12px"
+          align="center"
+          padding-top="32px"
+          padding-bottom="8px"
+        >
+          <a href="[unsubscribe]" style="color: #6b7280; text-decoration: underline;">Cancelar suscripción</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
