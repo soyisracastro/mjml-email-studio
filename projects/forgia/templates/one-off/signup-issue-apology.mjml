@@ -1,0 +1,106 @@
+<mjml>
+  <mj-head>
+    <mj-title>Problema resuelto con tu registro en Forgia</mj-title>
+    <mj-preview>Ya corregimos el error que impedía acceder desde el link de confirmación.</mj-preview>
+
+    <!-- Google Fonts: Inter -->
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="26px" color="#374151" padding="0" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      a {
+        color: #EF4444;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #DC2626;
+        text-decoration: underline;
+      }
+
+      .footer-legal {
+        font-size: 12px;
+        color: #9ca3af;
+        line-height: 1.6;
+      }
+      .footer-legal a {
+        color: #9ca3af;
+        text-decoration: underline;
+      }
+      .footer-legal a:hover {
+        color: #6b7280;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+    <mj-wrapper background-color="#ffffff" border-radius="16px" padding="0">
+
+      <!-- Logo Header -->
+      <mj-include path="../apps/components/header.mjml" />
+
+      <!-- Main Content -->
+      <mj-section padding="0 32px">
+        <mj-column>
+
+          <mj-text padding-bottom="24px" font-size="16px" line-height="26px">
+            Hola!
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-size="16px" line-height="26px">
+            Te escribo porque te registraste en <a href="https://forgia.fit">Forgia</a> y probablemente tuviste problemas para acceder. Encontré un error de configuración que impedía el acceso desde el link de confirmación. Ya está corregido.
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-size="16px" line-height="26px">
+            Te pido que intentes de nuevo entrando a <a href="https://forgia.fit">forgia.fit</a> — si ya te habías registrado, inicia sesión con tu correo y contraseña. Si no recuerdas tu contraseña o el link de confirmación ya expiró, usa <strong>"Olvidé mi contraseña"</strong> para generar uno nuevo.
+          </mj-text>
+
+          <!-- Divider -->
+          <mj-divider border-color="#e5e5e5" border-width="1px" padding="8px 0 32px 0"></mj-divider>
+
+          <!-- What's New -->
+          <mj-text padding-bottom="24px" font-size="16px" line-height="26px" font-weight="600">
+            Aprovecho para contarte las novedades:
+          </mj-text>
+
+          <mj-text padding-bottom="20px" font-size="15px" line-height="26px">
+            🏋️ <strong>Entrena funcional en tu gym</strong> — Si vas a un gimnasio tradicional, ahora Forgia adapta los entrenamientos a tu equipo (mancuernas, barras, bancos, barra de dominadas). Primer acercamiento al CrossFit sin cambiar de lugar ni pagar otra membresía.
+          </mj-text>
+
+          <mj-text padding-bottom="20px" font-size="15px" line-height="26px">
+            🏃 <strong>Preparación HYROX</strong> — Programación específica para la carrera: running comprometido, estaciones funcionales, metcons de 20-40 min.
+          </mj-text>
+
+          <mj-text padding-bottom="24px" font-size="15px" line-height="26px">
+            📅 <strong>Y más</strong> — Programas mensuales, records personales, biblioteca de benchmarks, análisis semanal y nivel Novato para principiantes absolutos (si nunca has probado CrossFit).
+          </mj-text>
+
+          <!-- CTA Button -->
+          <mj-button background-color="#EF4444" href="https://forgia.fit" font-size="16px" font-weight="600" padding="14px 32px" border-radius="8px" padding-bottom="32px">
+            Entrar ahora →
+          </mj-button>
+
+          <!-- Closing -->
+          <mj-text padding-bottom="32px" font-size="16px" line-height="26px">
+            Cualquier duda, responde a este correo. Disculpa las molestias y gracias por la paciencia. 💪
+          </mj-text>
+
+          <!-- Signature -->
+          <mj-text padding-bottom="40px" font-size="16px" line-height="26px">
+            – Israel Castro<br />
+            <a href="https://forgia.fit" style="font-weight: 600;">Forgia.fit</a>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-include path="../apps/components/footer.mjml" />
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

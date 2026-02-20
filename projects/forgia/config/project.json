@@ -1,0 +1,28 @@
+{
+  "name": "forgia",
+  "displayName": "Forgia",
+  "description": "Tu entrenador de CrossFit con IA personalizada",
+  "author": "Israel Castro",
+  "sender": {
+    "name": "Forgia",
+    "email": "hola@forgia.fit",
+    "replyTo": "hola@forgia.fit"
+  },
+  "aws": {
+    "region": "us-east-1",
+    "templatePrefix": "forgia-",
+    "sourceEmail": "hola@forgia.fit"
+  },
+  "website": "https://forgia.fit",
+  "contact": {
+    "email": "hola@forgia.fit"
+  },
+  "branding": {
+    "logo": "",
+    "logoWidth": "32px"
+  },
+  "legal": {
+    "privacyPolicy": "https://forgia.fit/privacidad",
+    "termsAndConditions": "https://forgia.fit/terminos"
+  }
+}

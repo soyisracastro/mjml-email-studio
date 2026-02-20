@@ -1,0 +1,19 @@
+<!-- Footer Section -->
+<mj-section padding="40px 32px 24px 32px" background-color="#f9fafb">
+  <mj-column padding-top="32px">
+
+    <!-- Footer Text -->
+    <mj-text align="center" font-size="13px" color="#6b7280" padding-bottom="16px">
+      &copy; 2026 Forgia
+    </mj-text>
+
+    <!-- Legal Text -->
+    <mj-text align="center" font-size="11px" color="#9ca3af" padding="0">
+      Recibiste este email porque creaste una cuenta en Forgia.<br />
+      Este es un email transaccional y no puedes desuscribirte de él. <br />
+      <a href="https://forgia.fit/privacidad" style="color: #9ca3af; text-decoration: underline;">Privacidad</a> |
+      <a href="https://forgia.fit/terminos" style="color: #9ca3af; text-decoration: underline;">Términos de servicio</a>
+    </mj-text>
+
+  </mj-column>
+</mj-section>

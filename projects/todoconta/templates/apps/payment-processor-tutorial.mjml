@@ -1,0 +1,306 @@
+<mjml>
+  <mj-head>
+    <mj-title>Tutorial: Automatiza el Seguimiento de Complementos de Pago</mj-title>
+    <mj-preview>En 5 minutos resuelves un problema fiscal real. Mira cómo usar Procesador de Pagos.</mj-preview>
+
+    <!-- Google Fonts: Manrope -->
+    <mj-font name="Manrope" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <!-- Global Styles -->
+      <mj-all font-family="Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="26px" color="#374151" padding="0" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      /* Link styles */
+      a {
+        color: #137fec;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #0d5bb5;
+        text-decoration: underline;
+      }
+
+      /* Primary button styles */
+      .btn-primary {
+        display: inline-block;
+        background-color: #137fec;
+        color: white !important;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #0d5bb5;
+        text-decoration: none;
+      }
+
+      /* Info box styling */
+      .info-box {
+        background-color: rgba(19, 127, 236, 0.08);
+        border: 1px solid rgba(19, 127, 236, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      /* Warning box styling */
+      .warning-box {
+        background-color: rgba(220, 38, 38, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      /* Success box styling */
+      .success-box {
+        background-color: rgba(34, 197, 94, 0.08);
+        border: 1px solid rgba(34, 197, 94, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      /* Step item styling */
+      .step-item {
+        margin: 0 0 20px 0;
+        font-size: 15px;
+        color: #374151;
+        line-height: 1.6;
+      }
+      .step-item:last-child {
+        margin: 0;
+      }
+      .step-number {
+        display: inline-block;
+        background-color: #137fec;
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 28px;
+        font-weight: 700;
+        margin-right: 12px;
+        font-size: 14px;
+      }
+
+      /* Support box styling */
+      .support-box {
+        background-color: #f9fafb;
+        border-radius: 12px;
+        padding: 24px;
+        text-align: center;
+      }
+      .support-text {
+        margin: 0 0 16px 0;
+        font-size: 14px;
+        color: #374151;
+      }
+      .support-email {
+        font-weight: 600;
+        color: #137fec;
+      }
+
+      /* Footer legal text */
+      .footer-legal {
+        font-size: 12px;
+        color: #9ca3af;
+        line-height: 1.6;
+      }
+      .footer-legal a {
+        color: #9ca3af;
+        text-decoration: underline;
+      }
+      .footer-legal a:hover {
+        color: #6b7280;
+      }
+
+      /* List styling */
+      .bullet-item {
+        margin: 0 0 12px 0;
+        font-size: 15px;
+        color: #374151;
+      }
+      .bullet-item:last-child {
+        margin: 0;
+      }
+      .bullet-item:before {
+        content: "• ";
+        font-weight: 700;
+        margin-right: 8px;
+      }
+
+      /* Code/quote styling */
+      .quote-box {
+        background-color: #f3f4f6;
+        border-left: 4px solid #137fec;
+        padding: 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #374151;
+        line-height: 1.6;
+        font-style: italic;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+    <!-- Email Container (max-width: 600px) -->
+    <mj-wrapper background-color="#ffffff" border-radius="16px" padding="0">
+
+      <!-- Logo Header -->
+      <mj-include path="./components/header.mjml" />
+
+      <!-- Main Content Area -->
+      <mj-section padding="0 32px">
+        <mj-column>
+
+          <!-- Video Thumbnail (Clickable) -->
+          <mj-image
+            src="https://img.youtube.com/vi/nRhIMGDOXJ8/maxresdefault.jpg"
+            alt="Thumbnail: Automatiza Complementos de Pago PPD"
+            href="https://youtu.be/nRhIMGDOXJ8"
+            width="600px"
+            padding-bottom="16px"
+            border-radius="8px"
+            css-class="thumbnail-image"
+          />
+
+          <mj-button background-color="#137fec" href="https://youtu.be/nRhIMGDOXJ8" font-size="16px" font-weight="600" padding="14px 32px" border-radius="8px" padding-bottom="32px">
+            ▶️ Ver Tutorial Completo
+          </mj-button>
+
+          <!-- Opening Problem -->
+          <mj-text padding-bottom="12px" font-size="16px" line-height="26px" font-weight="600">
+            ¿Recibiste un pago con método PPD?
+          </mj-text>
+
+          <mj-text padding-bottom="32px" font-size="15px" line-height="26px" color="#6b7280">
+            El cliente marcó la factura como liquidada, todo bien... excepto que si no genera el complemento de pago, tú tendrás un pasivo en tu declaración que el SAT detectará.
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Problem Explanation -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding="0">
+            <div class="warning-box">
+              <p style="margin: 0 0 16px 0; font-weight: 700; font-size: 16px; color: #dc2626;">🚨 El Problema Real</p>
+              <p style="margin: 0 0 12px 0; font-size: 15px; color: #374151; line-height: 1.6;">
+                Cuando presentes tu declaración, los números no cierran. El SAT ve movimiento de dinero sin comprobante. Resultado: requerimiento fiscal, tiempo perdido, estrés.
+              </p>
+              <p style="margin: 0; font-size: 15px; color: #374151; line-height: 1.6;">
+                Una llamada o correo ahora = 0 problemas después. Pero hacerlo manual es tedioso.
+              </p>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Solution Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="32px" padding-top="32px" font-size="15px" font-weight="600" color="#111418">
+            La Solución: Procesador de Pagos
+          </mj-text>
+
+          <mj-text padding-bottom="32px" font-size="15px" line-height="26px">
+            Tenemos una herramienta en todoconta que automáticamente:
+          </mj-text>
+
+          <mj-text padding-bottom="32px">
+            <div class="info-box">
+              <p class="bullet-item">Carga tus facturas descargadas del SAT</p>
+              <p class="bullet-item">Identifica cuáles tienen PPD sin complemento</p>
+              <p class="bullet-item">Filtra solo los casos críticos</p>
+              <p class="bullet-item" style="margin: 0;">Exporta la lista para automatizar correos personalizados</p>
+            </div>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 32px">
+        <mj-column>
+
+          <!-- Divider -->
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="24px 0 0 0"></mj-divider>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- How It Works Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-top="32px" padding-bottom="24px" font-size="15px" font-weight="600" color="#111418">
+            El flujo completo (6 pasos):
+          </mj-text>
+
+          <mj-text padding-bottom="32px">
+            <p class="step-item">
+              <span class="step-number">1</span>
+              <strong>Descarga XMLs del SAT</strong> de cualquier período (enero, febrero, etc.)
+            </p>
+            <p class="step-item">
+              <span class="step-number">2</span>
+              <strong>Abre Procesador de Pagos</strong> en todoconta → "Herramientas"
+            </p>
+            <p class="step-item">
+              <span class="step-number">3</span>
+              <strong>Carga la carpeta</strong> con tus XML. La herramienta procesa en segundos.
+            </p>
+            <p class="step-item">
+              <span class="step-number">4</span>
+              <strong>Filtra "PPD sin complemento"</strong> y ve solo los casos que necesitan seguimiento
+            </p>
+            <p class="step-item">
+              <span class="step-number">5</span>
+              <strong>Exporta a Excel</strong> con hojas separadas: resumen, detalle, contactos
+            </p>
+            <p class="step-item">
+              <span class="step-number">6</span>
+              <strong>Automatiza con Mail Merge</strong> en Google Drive. Envía correos personalizados sin escribir nada.
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Support Section -->
+      <mj-section padding="32px 32px">
+        <mj-column>
+          <mj-text padding="0">
+            <div class="support-box">
+              <p class="support-text">¿Preguntas o necesitas ayuda?</p>
+              <p class="support-text">
+                Responde a este email o contacta a nuestro equipo en <br/>
+                <span class="support-email">soporte@todoconta.com</span>
+              </p>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Closing Message -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="32px" padding-top="32px" font-size="15px" line-height="26px" color="#6b7280">
+            Esta herramienta existe para que NO pierdas tiempo en esto. Usa esos minutos para ayudar a tus clientes o crecer tu negocio.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer (Reusable Component) -->
+      <mj-include path="./components/footer.mjml" />
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

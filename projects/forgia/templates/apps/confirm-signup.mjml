@@ -1,0 +1,213 @@
+<mjml>
+  <mj-head>
+    <mj-title>Bienvenido a Forgia</mj-title>
+    <mj-preview>Tu cuenta está por confirmarse. Haz clic en el botón para confirmar tu correo y comenzar a entrenar con IA.</mj-preview>
+
+    <!-- Google Fonts: Inter -->
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <!-- Global Styles -->
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="26px" color="#374151" padding="0" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      /* Link styles */
+      a {
+        color: #EF4444;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #DC2626;
+        text-decoration: underline;
+      }
+
+      /* Primary button styles */
+      .btn-primary {
+        display: inline-block;
+        background-color: #EF4444;
+        color: white !important;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #DC2626;
+        text-decoration: none;
+      }
+
+      /* Features list styling */
+      .features-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .features-list li {
+        padding: 12px 0;
+        font-size: 15px;
+        color: #374151;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .features-list li:last-child {
+        border-bottom: none;
+      }
+      .features-list li:before {
+        content: "✓ ";
+        color: #EF4444;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+
+      /* Coming soon section styling */
+      .coming-soon-box {
+        background-color: rgba(239, 68, 68, 0.08);
+        border: 1px solid rgba(239, 68, 68, 0.15);
+        border-radius: 12px;
+        padding: 24px;
+      }
+      .coming-soon-item {
+        margin: 0 0 12px 0;
+        font-size: 15px;
+        color: #374151;
+        line-height: 1.6;
+      }
+      .coming-soon-item:last-child {
+        margin: 0;
+      }
+
+      /* Support section styling */
+      .support-box {
+        background-color: #f9fafb;
+        border-radius: 12px;
+        padding: 24px;
+        text-align: center;
+      }
+      .support-text {
+        margin: 0 0 16px 0;
+        font-size: 14px;
+        color: #374151;
+      }
+      .support-email {
+        font-weight: 600;
+        color: #EF4444;
+      }
+
+      /* Footer legal text */
+      .footer-legal {
+        font-size: 12px;
+        color: #9ca3af;
+        line-height: 1.6;
+      }
+      .footer-legal a {
+        color: #9ca3af;
+        text-decoration: underline;
+      }
+      .footer-legal a:hover {
+        color: #6b7280;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+    <!-- Email Container (max-width: 600px) -->
+    <mj-wrapper background-color="#ffffff" border-radius="16px" padding="0">
+
+      <!-- Logo Header -->
+      <mj-include path="./components/header.mjml" />
+
+      <!-- Main Content Area -->
+      <mj-section padding="0 32px">
+        <mj-column>
+
+          <!-- Greeting -->
+          <mj-text font-size="22px" font-weight="700" color="#171717" line-height="32px" padding-top="8px" padding-bottom="24px">
+            Bienvenido a Forgia
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text padding-bottom="8px" font-size="16px" line-height="26px" font-weight="600">
+            Tu cuenta está por confirmarse.
+          </mj-text>
+
+          <!-- CTA Text -->
+          <mj-text padding-bottom="32px" font-size="15px" line-height="26px" color="#6b7280">
+            Haz clic en el botón para confirmar tu correo y comenzar a entrenar con tu coach de IA personalizado.
+          </mj-text>
+
+          <!-- Primary CTA Button -->
+          <mj-button background-color="#EF4444" href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email" font-size="16px" font-weight="600" padding="14px 32px" border-radius="8px" padding-bottom="32px">
+            Confirmar mi cuenta →
+          </mj-button>
+
+          <!-- Divider -->
+          <mj-divider border-color="#e5e5e5" border-width="1px" padding="24px 0 0 0"></mj-divider>
+
+          <!-- Fallback Link Section -->
+          <mj-text padding-bottom="32px" padding-top="24px">
+            <p style="margin: 0 0 12px 0; font-size: 14px; color: #374151;">O copia este enlace en tu navegador:</p>
+            <p style="margin: 0; word-break: break-all; color: #EF4444; font-size: 13px; line-height: 1.6;">
+              <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email</a>
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Available Features Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="16px" font-size="15px" font-weight="600" color="#171717">
+            Una vez confirmado, tendrás acceso a:
+          </mj-text>
+
+          <mj-text padding-bottom="32px" font-size="15px" line-height="26px">
+            WODs personalizados por IA, adaptados a tu nivel, equipamiento y objetivos. Tu entrenamiento, a tu medida.
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- Coming Soon Section -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="24px">
+            <div class="coming-soon-box">
+              <p style="margin: 0 0 16px 0; font-weight: 700; font-size: 16px; color: #171717;">Próximamente:</p>
+              <p class="coming-soon-item">⚡ Modo en vivo con timer inteligente</p>
+              <p class="coming-soon-item">📊 Análisis post-entrenamiento con IA</p>
+              <p class="coming-soon-item">📈 Seguimiento de progresión y PRs</p>
+              <p style="margin-top: 16px; font-size: 14px; color: #6b7280; line-height: 1.6;">
+                Mantente atento a nuestras actualizaciones.
+              </p>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Support Section -->
+      <mj-section padding="32px 32px">
+        <mj-column>
+          <mj-text padding="0">
+            <div class="support-box">
+              <p class="support-text">¿Preguntas o necesitas ayuda?</p>
+              <p class="support-text">
+                Responde a este email o contacta a nuestro equipo en <br/>
+                <span class="support-email">hola@forgia.fit</span>
+              </p>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer (Reusable Component) -->
+      <mj-include path="./components/footer.mjml" />
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
