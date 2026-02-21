@@ -1,165 +1,155 @@
-# 🚀 Guía Rápida - Email Templates Todoconta
+# Guia Rapida - MJML Email Studio
 
-## Inicio Rápido en 5 Minutos
+## Inicio Rapido
 
-### 1️⃣ Instalar (1 min)
+### 1. Instalar
 
 ```bash
-cd emails
+cd mjml-email-studio
 npm install
 ```
 
-### 2️⃣ Compilar (30 seg)
+### 2. Compilar
 
 ```bash
-npm run build
+# Compilar un proyecto especifico
+npm run build -- --project=todoconta
+
+# Compilar todos los proyectos
+npm run build:all
 ```
 
-Los archivos HTML estarán en la carpeta `dist/`
+Los archivos HTML compilados estaran en `dist/{proyecto}/`.
 
-### 3️⃣ Usar en Sendy (3 min)
+### 3. Enviar un email de prueba
 
-1. Abre el archivo HTML compilado (ej: `dist/transactional/purchase-confirmation.html`)
-2. Copia todo el contenido
-3. En Sendy: **Campaigns** → **Create new campaign**
-4. Pega el HTML
-5. Reemplaza las variables:
-   - `[CUSTOMER_NAME]` → `[Name]`
-   - `[Email]` → `[Email]`
-   - Otras variables según necesites
+```bash
+# Copiar las variables de entorno y configurar credenciales AWS
+cp .env.example .env
 
-### 4️⃣ Enviar Prueba
+# Enviar email de prueba (dry-run)
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade --subject="Test" --test=tu@email.com --dry-run
 
-Usa "Send a test email" en Sendy para verificar que todo se vea bien.
+# Enviar de verdad (sin --dry-run)
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade --subject="Tu plantilla DIOT se actualizo" --test=tu@email.com
+```
+
+### 4. Envio masivo desde CSV
+
+```bash
+# Vista previa sin enviar
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade --subject="Tu plantilla DIOT se actualizo" --data=data/clientes.csv --dry-run
+
+# Enviar a todos los destinatarios
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade --subject="Tu plantilla DIOT se actualizo" --data=data/clientes.csv
+```
+
+El CSV debe tener una columna `email`. La columna `nombre` se capitaliza automaticamente (MARIA ISABEL -> Maria Isabel).
 
 ---
 
-## 📧 Plantillas Disponibles
+## Plantillas Disponibles (Todoconta)
+
+### Apps (transaccionales de producto)
+- `dist/todoconta/apps/confirm-signup.html` - Confirmacion de registro
+- `dist/todoconta/apps/email-change.html` - Cambio de email
+- `dist/todoconta/apps/magic-link-access.html` - Acceso por magic link
+- `dist/todoconta/apps/diot-2026-upgrade.html` - Upgrade DIOT 2026
 
 ### Transaccional
-**Archivo:** `dist/transactional/purchase-confirmation.html`
-- Confirmación de compra
-- Detalles del pedido
-- Instrucciones de descarga
+- `dist/todoconta/transactional/purchase-confirmation.html` - Confirmacion de compra
+- `dist/todoconta/transactional/workshop-welcome.html` - Bienvenida a taller
+- `dist/todoconta/transactional/workshop-pre-start.html` - Pre-inicio de taller
 
 ### Promocional
-**Archivo:** `dist/promotional/special-offer.html`
-- Ofertas especiales
-- Descuentos
-- Múltiples servicios
+- `dist/todoconta/promotional/flash-offer.html` - Oferta flash
+- `dist/todoconta/promotional/special-offer.html` - Oferta especial
+- `dist/todoconta/promotional/reto-12-dias-navidad.html` - Reto 12 dias
+- `dist/todoconta/promotional/workshop-last-chance.html` - Ultima oportunidad taller
+
+### Newsletter
+- `dist/todoconta/newsletter/personal-newsletter-v2.html` - Boletin personal
+- `dist/todoconta/newsletter/lead-magnets/` - Secuencias de lead magnets
+- `dist/todoconta/newsletter/masterclass-diciembre-2024/` - Serie masterclass
 
 ### Seguimiento
-**Archivo:** `dist/follow-up/post-service-feedback.html`
-- Solicitud de feedback
-- Servicios relacionados
-- Encuesta de satisfacción
-
-### Newsletter Personal
-**Archivo:** `dist/newsletter/personal-newsletter.html`
-- Boletín personalizado
-- Contenido flexible
-- Ideal para talleres y anuncios
-
-**Ejemplo completo:** `dist/newsletter/workshop-example.html`
+- `dist/todoconta/follow-up/post-service-feedback.html` - Feedback post-servicio
+- `dist/todoconta/follow-up/sales-reminder.html` - Recordatorio de venta
 
 ---
 
-## 🔧 Comandos Útiles
+## Comandos
 
-```bash
-# Compilar todas las plantillas
-npm run build
-
-# Compilar y observar cambios
-npm run build:watch
-
-# Compilar para producción (minificado)
-npm run build:prod
-```
+| Comando | Descripcion |
+|---------|-------------|
+| `npm run build -- --project=nombre` | Compilar un proyecto |
+| `npm run build:all` | Compilar todos los proyectos |
+| `npm run send:email -- ...` | Enviar email via AWS SES |
+| `npm run send:bulk -- ...` | Enviar masivo con templates SES |
+| `npm run prepare:ses -- ...` | Generar config de template SES |
+| `npm run new:project` | Crear nuevo proyecto |
 
 ---
 
-## 📝 Variables Más Comunes
+## Variables de plantilla
 
-Reemplaza estas variables en Sendy:
+Las plantillas usan `{{variable}}` como placeholders. Se reemplazan al momento de enviar, no al compilar.
 
-| En la plantilla | En Sendy |
-|----------------|----------|
-| `[CUSTOMER_NAME]` | `[Name]` |
-| `[Email]` | `[Email]` |
-| `[PRODUCT_NAME]` | Tu variable personalizada |
-| `[ORDER_NUMBER]` | Tu variable personalizada |
-| `[AMOUNT]` | Tu variable personalizada |
+| Variable | Descripcion |
+|----------|-------------|
+| `{{nombre}}` | Nombre del destinatario (capitalizado automaticamente) |
 
 ---
 
-## 🎨 Personalizar
+## Personalizar
 
-### Cambiar Colores
+### Cambiar colores y fuentes
 
-Edita `src/config/design-tokens.json`:
+Edita `projects/tu-proyecto/config/design-tokens.json`:
 
 ```json
 {
   "colors": {
-    "primary": "#14b8a6",  // Color principal
-    "background": "#f6f7fb" // Fondo
+    "primary": "#14b8a6",
+    "background": "#f6f7fb"
   }
 }
 ```
 
-### Cambiar Logo
+> Nota: Los design tokens aun no se integran automaticamente al build. Por ahora los colores se configuran directamente en los templates MJML.
 
-Edita `src/components/header.mjml`:
+### Cambiar logo
+
+Edita `projects/tu-proyecto/components/header.mjml`:
 
 ```xml
-<mj-image 
-  src="https://tu-dominio.com/logo.png" 
-  alt="Tu Logo" 
+<mj-image
+  src="https://tu-dominio.com/logo.png"
+  alt="Tu Logo"
 />
 ```
 
-### Cambiar Footer
+### Cambiar footer
 
-Edita `src/components/footer.mjml` para actualizar:
-- Redes sociales
-- Información de contacto
-- Links legales
+Edita `projects/tu-proyecto/components/footer.mjml` para actualizar redes sociales, contacto y links legales.
 
 ---
 
-## ❓ Problemas Comunes
+## Problemas comunes
 
-### Las imágenes no se ven
-✅ Usa URLs completas: `https://todoconta.com/images/logo.png`
-❌ No uses rutas relativas: `/images/logo.png`
+### Las imagenes no se ven
+Usa URLs completas (`https://...`), no rutas relativas.
 
-### Los estilos no funcionan
-✅ Compila con `npm run build`
-✅ Copia el HTML completo de `dist/`
+### El template no existe al enviar
+Ejecuta `npm run build` antes de enviar. Los scripts de envio leen el HTML compilado desde `dist/`.
 
-### Variables no se reemplazan
-✅ Formato correcto: `[Name]` (con corchetes)
-✅ Sin espacios: `[Name]` no `[ Name ]`
+### Error de credenciales AWS
+Verifica tu `.env` con las variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` y `AWS_REGION`.
 
 ---
 
-## 📚 Más Información
+## Mas informacion
 
-Lee el [`README.md`](README.md) completo para:
-- Documentación detallada
-- Guía de personalización avanzada
-- Testing y troubleshooting
-- Mejores prácticas
-
----
-
-## 🆘 Soporte
-
-- 📧 soporte@todoconta.com
-- 📱 +52 55 4475 3602
-- 🌐 https://todoconta.com
-
----
-
-**¡Listo! Ya puedes crear y enviar emails profesionales 🎉**
+- [README.md](README.md) - Documentacion completa del proyecto
+- [docs/CREATING_PROJECTS.md](docs/CREATING_PROJECTS.md) - Como crear nuevos proyectos
+- [docs/DESIGN_TOKENS_GUIDE.md](docs/DESIGN_TOKENS_GUIDE.md) - Guia de design tokens

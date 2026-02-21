@@ -215,7 +215,7 @@ async function generateProject() {
       🌐 <a href="${website}" style="color: ${primaryColor};">${website}</a>
     </mj-text>
     <mj-text align="center" color="#6b7280" font-size="12px">
-      © 2025 ${displayName}. Todos los derechos reservados.
+      © ${new Date().getFullYear()} ${displayName}. Todos los derechos reservados.
     </mj-text>
   </mj-column>
 </mj-section>`;

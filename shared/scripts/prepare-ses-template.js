@@ -2,20 +2,19 @@
 
 /**
  * Prepare AWS SES template configuration
- * 
+ *
  * Usage:
  *   node shared/scripts/prepare-ses-template.js --project=todoconta --template=workshop-welcome --name=workshop-welcome-v1
  */
 
 const fs = require('fs');
 const path = require('path');
-
-// Parse arguments
-const args = process.argv.slice(2);
-const getArg = (name) => {
-  const arg = args.find(a => a.startsWith(`--${name}=`));
-  return arg ? arg.split('=')[1] : null;
-};
+const {
+  ROOT_DIR,
+  getArg,
+  loadProjectConfig,
+  loadHtmlTemplate,
+} = require('../utils/cli-helpers');
 
 const projectName = getArg('project');
 const templateName = getArg('template');
@@ -29,27 +28,9 @@ if (!projectName || !templateName) {
   process.exit(1);
 }
 
-// Load project config
-const ROOT_DIR = path.join(__dirname, '../..');
-const projectConfigPath = path.join(ROOT_DIR, 'projects', projectName, 'config', 'project.json');
-
-if (!fs.existsSync(projectConfigPath)) {
-  console.error(`❌ Project config not found: ${projectName}`);
-  process.exit(1);
-}
-
-const projectConfig = JSON.parse(fs.readFileSync(projectConfigPath, 'utf8'));
-
-// Find the HTML file
-const htmlPath = path.join(ROOT_DIR, 'dist', projectName, `${templateName}.html`);
-
-if (!fs.existsSync(htmlPath)) {
-  console.error(`❌ Template not found: ${htmlPath}`);
-  console.error('   Run npm run build first');
-  process.exit(1);
-}
-
-const htmlContent = fs.readFileSync(htmlPath, 'utf8');
+// Load project config and HTML template
+const projectConfig = loadProjectConfig(projectName);
+const htmlContent = loadHtmlTemplate(projectName, templateName);
 
 // Create SES template config
 const templateConfig = {
