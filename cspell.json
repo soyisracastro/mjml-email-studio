@@ -1,0 +1,52 @@
+{
+  "version": "0.2",
+  "language": "es,en",
+  "import": ["@cspell/dict-es-es/cspell-ext.json"],
+  "dictionaries": ["es-es"],
+  "ignorePaths": [
+    "node_modules",
+    "package-lock.json",
+    "*.json",
+    "**/*.csv"
+  ],
+  "words": [
+    "mjml",
+    "Forgia",
+    "forgia",
+    "TodoConta",
+    "todoconta",
+    "Manrope",
+    "Geist",
+    "BlinkMacSystemFont",
+    "Segoe",
+    "AMRAP",
+    "EMOM",
+    "Tabata",
+    "Metcon",
+    "metcon",
+    "metcons",
+    "CrossFit",
+    "HYROX",
+    "benchmarks",
+    "WOD",
+    "WODs",
+    "cooldown",
+    "warmup",
+    "PRs",
+    "Sendy",
+    "desuscribirte",
+    "SiteURL",
+    "TokenHash",
+    "ConfirmationURL",
+    "magiclink",
+    "rgba"
+  ],
+  "enableFiletypes": ["mjml"],
+  "languageSettings": [
+    {
+      "languageId": "mjml,html",
+      "locale": "es",
+      "dictionaries": ["es-es"]
+    }
+  ]
+}

@@ -8,7 +8,9 @@
     "new:project": "node shared/utils/generate-project.js",
     "prepare:ses": "node shared/scripts/prepare-ses-template.js",
     "send:bulk": "node shared/scripts/send-bulk-templated.js",
-    "send:email": "node shared/scripts/send-raw-email.js"
+    "send:email": "node shared/scripts/send-raw-email.js",
+    "spell": "cspell \"projects/**/*.mjml\"",
+    "spell:check": "cspell --no-progress \"projects/**/*.mjml\""
   },
   "keywords": [
     "email",
@@ -21,6 +23,8 @@
   "author": "MJML Email Studio",
   "license": "MIT",
   "devDependencies": {
+    "@cspell/dict-es-es": "^3.0.8",
+    "cspell": "^9.6.4",
     "mjml": "^4.15.3"
   },
   "dependencies": {
