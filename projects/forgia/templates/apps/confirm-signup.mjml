@@ -141,7 +141,7 @@
           </mj-text>
 
           <!-- Primary CTA Button -->
-          <mj-button background-color="#EF4444" href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email" font-size="16px" font-weight="600" padding="14px 32px" border-radius="8px" padding-bottom="32px">
+          <mj-button background-color="#EF4444" href="{{ .ConfirmationURL }}" font-size="16px" font-weight="600" padding="14px 32px" border-radius="8px" padding-bottom="32px">
             Confirmar mi cuenta →
           </mj-button>
 
@@ -152,7 +152,7 @@
           <mj-text padding-bottom="32px" padding-top="24px">
             <p style="margin: 0 0 12px 0; font-size: 14px; color: #374151;">O copia este enlace en tu navegador:</p>
             <p style="margin: 0; word-break: break-all; color: #EF4444; font-size: 13px; line-height: 1.6;">
-              <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email</a>
+              <a href="{{ .ConfirmationURL }}">{{ .ConfirmationURL }}</a>
             </p>
           </mj-text>
 
