@@ -2,22 +2,22 @@
 
 /**
  * Send bulk templated emails via AWS SES
- * 
+ *
  * Usage:
  *   node shared/scripts/send-bulk-templated.js --project=todoconta --template=workshop-welcome-v1 --data=data/participants.csv
  */
 
+require('dotenv').config();
 const AWS = require('aws-sdk');
-const fs = require('fs');
 const path = require('path');
-const csv = require('csv-parser');
-
-// Parse arguments
-const args = process.argv.slice(2);
-const getArg = (name) => {
-  const arg = args.find(a => a.startsWith(`--${name}=`));
-  return arg ? arg.split('=')[1] : null;
-};
+const {
+  ROOT_DIR,
+  getArg,
+  loadProjectConfig,
+  resolveDataPath,
+  readCsv,
+  isValidEmail,
+} = require('../utils/cli-helpers');
 
 const projectName = getArg('project');
 const templateName = getArg('template');
@@ -30,28 +30,13 @@ if (!projectName || !templateName || !dataPath) {
 }
 
 // Load project config
-const ROOT_DIR = path.join(__dirname, '../..');
-const projectConfigPath = path.join(ROOT_DIR, 'projects', projectName, 'config', 'project.json');
-
-if (!fs.existsSync(projectConfigPath)) {
-  console.error(`❌ Project config not found: ${projectName}`);
-  process.exit(1);
-}
-
-const projectConfig = JSON.parse(fs.readFileSync(projectConfigPath, 'utf8'));
+const projectConfig = loadProjectConfig(projectName);
 
 // Initialize AWS SES
 const ses = new AWS.SES({ region: projectConfig.aws.region });
 
 // Resolve data path
-const fullDataPath = path.isAbsolute(dataPath) 
-  ? dataPath 
-  : path.join(ROOT_DIR, 'projects', projectName, dataPath);
-
-if (!fs.existsSync(fullDataPath)) {
-  console.error(`❌ Data file not found: ${fullDataPath}`);
-  process.exit(1);
-}
+const fullDataPath = resolveDataPath(dataPath, projectName);
 
 async function sendTemplatedEmail(recipientEmail, templateData) {
   const params = {
@@ -66,50 +51,63 @@ async function sendTemplatedEmail(recipientEmail, templateData) {
   return ses.sendTemplatedEmail(params).promise();
 }
 
+/**
+ * Send with 1 retry on throttling errors
+ */
+async function sendWithRetry(recipientEmail, templateData) {
+  try {
+    return await sendTemplatedEmail(recipientEmail, templateData);
+  } catch (error) {
+    if (error.code === 'Throttling') {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      return sendTemplatedEmail(recipientEmail, templateData);
+    }
+    throw error;
+  }
+}
+
 async function sendBulkFromCSV(csvPath) {
-  const recipients = [];
-  
+  const recipients = await readCsv(csvPath);
+
   console.log('🚀 AWS SES Bulk Email Sender\n');
   console.log('='.repeat(50));
   console.log(`Project: ${projectConfig.displayName}`);
   console.log(`Template: ${templateName}`);
   console.log(`Data: ${path.relative(ROOT_DIR, csvPath)}`);
   console.log('='.repeat(50));
-  console.log('\nReading data...\n');
-  
-  // Read CSV
-  fs.createReadStream(csvPath)
-    .pipe(csv())
-    .on('data', (row) => recipients.push(row))
-    .on('end', async () => {
-      console.log(`📧 Processing ${recipients.length} emails...\n`);
-      
-      let successCount = 0;
-      let errorCount = 0;
+  console.log(`\n📧 Processing ${recipients.length} emails...\n`);
 
-      for (const [index, data] of recipients.entries()) {
-        const { email, ...templateData } = data;
-        
-        try {
-          await sendTemplatedEmail(email, templateData);
-          successCount++;
-          console.log(`✅ [${index + 1}/${recipients.length}] ${email}`);
-          
-          // Delay to respect rate limits
-          await new Promise(resolve => setTimeout(resolve, 100));
-        } catch (error) {
-          errorCount++;
-          console.error(`❌ [${index + 1}/${recipients.length}] ${email}: ${error.message}`);
-        }
-      }
+  let successCount = 0;
+  let errorCount = 0;
 
-      console.log('\n' + '='.repeat(50));
-      console.log('\n📊 Final Results:');
-      console.log(`   ✅ Success: ${successCount}`);
-      console.log(`   ❌ Failed: ${errorCount}`);
-      console.log(`   📝 Total: ${recipients.length}`);
-      console.log('\n' + '='.repeat(50));
-    });
+  for (const [index, data] of recipients.entries()) {
+    const { email, ...templateData } = data;
+
+    if (!email || !isValidEmail(email.trim())) {
+      errorCount++;
+      console.error(`❌ [${index + 1}/${recipients.length}] Invalid or missing email: ${email || '(empty)'}`);
+      continue;
+    }
+
+    try {
+      await sendWithRetry(email.trim(), templateData);
+      successCount++;
+      console.log(`✅ [${index + 1}/${recipients.length}] ${email}`);
+
+      // Delay to respect rate limits
+      await new Promise(resolve => setTimeout(resolve, 100));
+    } catch (error) {
+      errorCount++;
+      console.error(`❌ [${index + 1}/${recipients.length}] ${email}: ${error.message}`);
+    }
+  }
+
+  console.log('\n' + '='.repeat(50));
+  console.log('\n📊 Final Results:');
+  console.log(`   ✅ Success: ${successCount}`);
+  console.log(`   ❌ Failed: ${errorCount}`);
+  console.log(`   📝 Total: ${recipients.length}`);
+  console.log('\n' + '='.repeat(50));
 }
 
 // Execute

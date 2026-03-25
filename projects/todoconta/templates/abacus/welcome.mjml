@@ -1,0 +1,502 @@
+<mjml>
+  <mj-head>
+    <mj-title
+      >Ya tienes acceso a Abacus — Tu asistente fiscal en WhatsApp</mj-title
+    >
+    <mj-preview
+      >Abre WhatsApp, escribe "Abacus" y empieza. Tienes 14 días gratis para
+      probarlo sin límite.</mj-preview
+    >
+
+    <mj-font
+      name="Plus Jakarta Sans"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: rgba(19, 33, 117, 0.08);
+        border: 1px solid rgba(19, 33, 117, 0.18);
+        color: #132175;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .step-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #132175;
+        padding: 18px 20px;
+      }
+
+      .feature-row {
+        border-bottom: 1px solid #e8e8e6;
+        padding: 11px 0;
+      }
+      .feature-row:last-child {
+        border-bottom: none;
+      }
+      .check {
+        color: #10b981;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+
+      .price-box {
+        border: 1px solid #c6c5d3;
+        padding: 28px 24px;
+        text-align: center;
+        background-color: #f9f9f7;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-section background-color="#132175" padding="24px 32px">
+      <mj-column width="60%">
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="11px"
+          font-weight="700"
+          color="rgba(255,255,255,0.5)"
+          letter-spacing="0.12em"
+          padding-bottom="3px"
+        >
+          TODOCONTA
+        </mj-text>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="24px"
+          font-weight="900"
+          color="#ffffff"
+          letter-spacing="-0.02em"
+          padding="0"
+        >
+          Abacus
+        </mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-text
+          font-size="11px"
+          font-weight="500"
+          color="rgba(255,255,255,0.45)"
+          align="right"
+          padding="0"
+        >
+          Tu asistente fiscal<br />en WhatsApp
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gold accent line -->
+    <mj-section background-color="#745a27" padding="0">
+      <mj-column>
+        <mj-divider border-width="3px" border-color="#745a27" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge">Acceso anticipado</span>
+        </mj-text>
+
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="38px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="1.1"
+          letter-spacing="-0.03em"
+          padding-bottom="20px"
+        >
+          Ya tienes acceso<br />a Abacus.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="40px"
+        >
+          Hola, {{ nombre }} — Tu acceso para el número <strong style="color: #1a1c1b;">{{telefono}}</strong> ya está activo. Para empezar solo necesitas hacer una cosa.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── STEP 1 ──────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="0.12em"
+          padding-bottom="10px"
+        >
+          PASO 1 DE 1
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          <div class="step-block">
+            <p
+              style="
+                margin: 0 0 8px 0;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 17px;
+                font-weight: 800;
+                color: #1a1c1b;
+                line-height: 1.3;
+              "
+            >
+              Abre una conversación en WhatsApp<br />y escribe
+              <span style="color: #132175">"Abacus"</span>
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #454651;
+                line-height: 1.6;
+              "
+            >
+              No hay app que instalar. No hay cuenta que crear. Solo eso.
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-button
+          href="https://wa.me/525544753602?text=Hola%2C%20acabo%20de%20activar%20mi%20acceso%20a%20Abacus"
+          background-color="#132175"
+          color="#ffffff"
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="13px"
+          font-weight="700"
+          letter-spacing="0.08em"
+          inner-padding="14px 32px"
+          border-radius="2px"
+          align="left"
+          padding="0"
+        >
+          ABRIR WHATSAPP →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 40px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── TRIAL + PRICE ──────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 48px">
+      <mj-column>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="0.12em"
+          padding-bottom="16px"
+        >
+          TU PERIODO DE PRUEBA
+        </mj-text>
+
+        <mj-text padding-bottom="20px">
+          <div class="price-box">
+            <p
+              style="
+                margin: 0 0 4px 0;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 36px;
+                font-weight: 900;
+                color: #1a1c1b;
+                letter-spacing: -0.03em;
+                line-height: 1;
+              "
+            >
+              14 días gratis
+            </p>
+            <p style="margin: 0 0 20px 0; font-size: 13px; color: #454651">
+              Sin tarjeta. Sin app. Solo WhatsApp.
+            </p>
+            <div
+              style="
+                height: 1px;
+                background-color: #c6c5d3;
+                margin-bottom: 20px;
+              "
+            ></div>
+            <p
+              style="
+                margin: 0 0 4px 0;
+                font-size: 12px;
+                color: #9ca3af;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+              "
+            >
+              Después del periodo de prueba
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 28px;
+                font-weight: 800;
+                color: #745a27;
+                line-height: 1.1;
+              "
+            >
+              $99
+              <span style="font-size: 14px; font-weight: 500; color: #454651"
+                >MXN / mes</span
+              >
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="14px"
+          line-height="22px"
+          color="#454651"
+          padding="0"
+        >
+          Durante tu prueba puedes usarlo de forma
+          <strong style="color: #1a1c1b">ilimitada</strong>. Sin restricciones.
+          El mismo Abacus que tendrán los suscriptores.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FEATURES ───────────────────────────────── -->
+    <mj-section background-color="#f4f4f2" padding="40px 32px">
+      <mj-column>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="0.12em"
+          padding-bottom="20px"
+        >
+          LO QUE PUEDES HACER HOY
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Consultas de ISR, IVA, RESICO, CFDI,
+              RMF 2026 — <strong>con artículo y fundamento</strong>
+            </p>
+          </div>
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Análisis de CFDI (XML), verificación
+              de RFC y Lista 69-B del SAT
+            </p>
+          </div>
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Tipo de cambio FIX oficial
+              (Banxico-SAT, Art. 20 CFF) en tiempo real
+            </p>
+          </div>
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Lee PDFs, imágenes y screenshots — sin
+              copiar ni transcribir nada
+            </p>
+          </div>
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Memoria persistente — recuerda lo que
+              ya platicaron entre sesiones
+            </p>
+          </div>
+          <div class="feature-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Búsqueda en internet en tiempo real,
+              sin salir de WhatsApp
+            </p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── VISION ─────────────────────────────────── -->
+    <mj-section background-color="#1a1c1b" padding="40px 32px">
+      <mj-column>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="22px"
+          font-weight="900"
+          color="#ffffff"
+          letter-spacing="-0.02em"
+          line-height="1.25"
+          padding-bottom="16px"
+        >
+          Esto es solo el inicio.
+        </mj-text>
+        <mj-text
+          font-size="14px"
+          line-height="24px"
+          color="rgba(255,255,255,0.6)"
+          padding="0"
+        >
+          Abacus está siendo construido para convertirse en
+          <strong style="color: #ffffff">el asistente</strong> del contador,
+          fiscal, abogado fiscalista y área fiscal. Las capacidades irán
+          creciendo. Como usuario de acceso anticipado, tú estás ayudando a
+          definir qué sigue.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="36px 32px">
+      <mj-column>
+        <mj-text
+          font-size="14px"
+          line-height="22px"
+          color="#454651"
+          align="center"
+          padding="0"
+        >
+          ¿Tienes alguna duda? Responde a este correo o escríbenos a<br />
+          <a
+            href="mailto:hola@todoconta.com"
+            style="color: #132175; font-weight: 600"
+            >hola@todoconta.com</a
+          >
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-section background-color="#1a1c1b" padding="36px 32px 28px">
+      <mj-column>
+        <mj-text
+          font-family="'Plus Jakarta Sans', sans-serif"
+          font-size="15px"
+          font-weight="700"
+          color="#ffffff"
+          align="center"
+          padding-bottom="4px"
+        >
+          Todoconta
+        </mj-text>
+        <mj-text
+          font-size="12px"
+          color="rgba(255,255,255,0.35)"
+          align="center"
+          padding-bottom="20px"
+        >
+          Soluciones fiscales y contables para México
+        </mj-text>
+        <mj-text
+          font-size="12px"
+          color="#6b7280"
+          align="center"
+          padding-bottom="8px"
+        >
+          <a href="https://todoconta.com/privacidad" class="footer-link"
+            >Política de Privacidad</a
+          >
+          &nbsp;|&nbsp;
+          <a href="https://todoconta.com/terminos" class="footer-link"
+            >Términos y Condiciones</a
+          >
+        </mj-text>
+        <mj-text font-size="12px" color="#4b5563" align="center" padding="0">
+          © 2026 Todoconta. Todos los derechos reservados.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

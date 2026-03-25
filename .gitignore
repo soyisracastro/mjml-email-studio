@@ -12,6 +12,13 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Data (CSV, JSON with personal info)
+**/data/
+
+# Environment variables
+.env
+.env.local
+
 # IDE
 .vscode/
 .idea/

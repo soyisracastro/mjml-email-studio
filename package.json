@@ -8,6 +8,7 @@
     "new:project": "node shared/utils/generate-project.js",
     "prepare:ses": "node shared/scripts/prepare-ses-template.js",
     "send:bulk": "node shared/scripts/send-bulk-templated.js",
+    "send:email": "node shared/scripts/send-raw-email.js",
     "spell": "cspell \"projects/**/*.mjml\"",
     "spell:check": "cspell --no-progress \"projects/**/*.mjml\""
   },
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.1692.0",
-    "csv-parser": "^3.2.0"
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.3.1"
   }
 }

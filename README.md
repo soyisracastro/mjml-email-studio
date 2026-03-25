@@ -1,24 +1,24 @@
-# 📧 MJML Email Studio
+# MJML Email Studio
 
-Sistema multi-proyecto para crear plantillas de email profesionales y responsivas usando MJML. Gestiona múltiples proyectos con diferentes design systems desde un solo repositorio.
-
----
-
-## ✨ Características
-
-- 🎨 **Multi-Proyecto** - Gestiona emails para múltiples marcas/proyectos
-- 🎯 **Design System por Proyecto** - Cada proyecto tiene su propio sistema de diseño
-- 🔧 **Scripts Compartidos** - Herramientas reutilizables para todos los proyectos
-- 📦 **Build Inteligente** - Compila proyectos individuales o todos a la vez
-- ☁️ **AWS SES Ready** - Scripts integrados para envíos masivos
-- 📱 **100% Responsive** - Compatible con todos los clientes de email
-- 🚀 **Generador de Proyectos** - Crea nuevos proyectos en segundos
+Sistema multi-proyecto para crear plantillas de email profesionales y responsivas usando MJML. Gestiona multiples proyectos con diferentes design systems desde un solo repositorio y envia emails directamente via AWS SES.
 
 ---
 
-## 🚀 Quick Start
+## Caracteristicas
 
-### 1. Instalación
+- **Multi-Proyecto** - Gestiona emails para multiples marcas/proyectos
+- **Design System por Proyecto** - Cada proyecto tiene su propio sistema de diseno
+- **Envio directo via AWS SES** - Test individual, envio masivo desde CSV, dry-run
+- **Utilidades compartidas** - Funciones comunes centralizadas en `cli-helpers.js`
+- **Build inteligente** - Compila proyectos individuales o todos a la vez
+- **Generador de proyectos** - Crea nuevos proyectos en segundos
+- **100% Responsive** - Compatible con todos los clientes de email
+
+---
+
+## Quick Start
+
+### 1. Instalacion
 
 ```bash
 git clone <repo-url> mjml-email-studio
@@ -26,74 +26,78 @@ cd mjml-email-studio
 npm install
 ```
 
-### 2. Crear tu Primer Proyecto
+### 2. Compilar templates
 
 ```bash
-npm run new:project
-```
-
-Sigue el asistente interactivo para configurar tu proyecto.
-
-### 3. Compilar Templates
-
-```bash
-# Compilar proyecto específico
-npm run build -- --project=tu-proyecto
+# Compilar proyecto especifico
+npm run build -- --project=todoconta
 
 # Compilar todos los proyectos
 npm run build:all
 ```
 
-Los archivos HTML compilados estarán en `dist/{nombre-proyecto}/`
+Los archivos HTML compilados estaran en `dist/{nombre-proyecto}/`.
+
+### 3. Enviar email de prueba
+
+```bash
+# Configurar credenciales AWS
+cp .env.example .env
+# Editar .env con tus credenciales
+
+# Enviar prueba (dry-run)
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade --subject="Test" --test=tu@email.com --dry-run
+```
+
+Para la guia completa, ver [QUICK_START.md](QUICK_START.md).
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 mjml-email-studio/
-│
-├── projects/                       # 📂 Tus proyectos
-│   ├── todoconta/                  # Proyecto de ejemplo
-│   │   ├── config/
-│   │   │   ├── design-tokens.json  # Sistema de diseño
-│   │   │   └── project.json        # Configuración del proyecto
-│   │   ├── components/             # Componentes reutilizables
-│   │   │   ├── header.mjml
-│   │   │   └── footer.mjml
-│   │   ├── templates/              # Templates MJML
-│   │   │   ├── transactional/
-│   │   │   ├── promotional/
-│   │   │   └── newsletter/
-│   │   ├── data/                   # Datos de prueba
-│   │   └── docs/                   # Documentación específica
-│   │
-│   └── tu-proyecto/                # Tu nuevo proyecto aquí
-│       └── ...
-│
-├── shared/                         # 🔧 Recursos compartidos
+|
+├── projects/                          # Tus proyectos
+│   └── todoconta/                     # Proyecto de ejemplo
+│       ├── config/
+│       │   ├── project.json           # Config AWS SES, sender, branding
+│       │   └── design-tokens.json     # Colores, fuentes, espaciado
+│       ├── components/                # Componentes MJML reutilizables
+│       │   ├── header.mjml
+│       │   ├── footer.mjml
+│       │   ├── footer-simple.mjml
+│       │   └── button.mjml
+│       ├── templates/                 # Templates MJML por categoria
+│       │   ├── apps/                  # Emails transaccionales de producto
+│       │   ├── transactional/         # Confirmaciones, bienvenidas
+│       │   ├── promotional/           # Ofertas, descuentos
+│       │   ├── newsletter/            # Boletines, secuencias
+│       │   ├── follow-up/             # Seguimiento post-servicio
+│       │   └── gmail/                 # Templates simples para Gmail
+│       ├── data/                      # CSVs de destinatarios (gitignored)
+│       └── docs/                      # Documentacion del proyecto
+|
+├── shared/                            # Recursos compartidos
 │   ├── scripts/
-│   │   ├── build.js                # Compilador multi-proyecto
-│   │   ├── prepare-ses-template.js # Preparar para AWS SES
-│   │   └── send-bulk-templated.js  # Envío masivo
+│   │   ├── build.js                   # Compilador MJML -> HTML
+│   │   ├── send-raw-email.js          # Enviar HTML directo via SES
+│   │   ├── send-bulk-templated.js     # Envio masivo con templates SES
+│   │   └── prepare-ses-template.js    # Generar config de template SES
 │   └── utils/
-│       └── generate-project.js     # Generador de proyectos
-│
-├── dist/                           # 📦 Salida compilada
-│   ├── todoconta/
-│   └── tu-proyecto/
-│
-├── docs/                           # 📚 Documentación global
-│   ├── QUICK_START.md
-│   ├── CREATING_PROJECTS.md
-│   └── DESIGN_TOKENS_GUIDE.md
-│
+│       ├── cli-helpers.js             # Funciones compartidas entre scripts
+│       └── generate-project.js        # Generador interactivo de proyectos
+|
+├── dist/                              # HTML compilado (gitignored)
+├── docs/                              # Documentacion global
+├── mjml.config.js                     # Config global de MJML
+├── .env.example                       # Variables de entorno de ejemplo
 └── package.json
 ```
 
 ---
 
-## 💻 Comandos Principales
+## Comandos
 
 ### Desarrollo
 
@@ -101,220 +105,135 @@ mjml-email-studio/
 # Crear nuevo proyecto
 npm run new:project
 
-# Compilar proyecto específico
+# Compilar proyecto especifico
 npm run build -- --project=nombre-proyecto
 
 # Compilar todos los proyectos
 npm run build:all
 ```
 
-### AWS SES
+### Envio de emails (AWS SES)
+
+```bash
+# Enviar email de prueba
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade \
+  --subject="Tu plantilla DIOT se actualizo" --test=tu@email.com
+
+# Envio masivo desde CSV
+npm run send:email -- --project=todoconta --template=apps/diot-2026-upgrade \
+  --subject="Tu plantilla DIOT se actualizo" --data=data/clientes.csv
+
+# Dry-run (vista previa sin enviar)
+npm run send:email -- ... --dry-run
+
+# Personalizar nombre en test
+npm run send:email -- ... --test=tu@email.com --test-name="Juan Perez"
+```
+
+### Templates SES (alternativo)
 
 ```bash
 # Preparar template para SES
-npm run prepare:ses -- --project=nombre-proyecto --template=ruta/template --name=template-v1
-
-# Enviar emails masivos
-npm run send:bulk -- --project=nombre-proyecto --template=template-v1 --data=data/recipients.csv
-```
-
----
-
-## 📦 Proyectos Incluidos
-
-### Todoconta (Ejemplo)
-
-Proyecto completo con múltiples templates:
-- ✅ Emails transaccionales (confirmaciones, bienvenida)
-- ✅ Emails promocionales (ofertas, descuentos)
-- ✅ Newsletters personalizadas
-- ✅ Templates para Gmail
-- ✅ Sistema completo de seguimiento
-
-**Ver:** [`projects/todoconta/`](projects/todoconta/)
-
----
-
-## 🎨 Creando un Nuevo Proyecto
-
-### Opción 1: Generador Automático (Recomendado)
-
-```bash
-npm run new:project
-```
-
-El generador te pedirá:
-- Nombre del proyecto (ej: `despacho-contable`)
-- Nombre para mostrar (ej: `Despacho Contable`)
-- Descripción
-- Email del remitente
-- Sitio web
-- Color primario
-
-Y creará automáticamente:
-- ✅ Estructura completa de carpetas
-- ✅ `project.json` con tu configuración
-- ✅ `design-tokens.json` basado en tu color primario
-- ✅ Componentes base (header, footer)
-- ✅ Template de bienvenida de ejemplo
-- ✅ Documentación inicial
-
-### Opción 2: Manual
-
-Ver la guía completa: [**Creating Projects Guide**](docs/CREATING_PROJECTS.md)
-
----
-
-## 🎨 Sistema de Design Tokens
-
-Cada proyecto tiene su propio sistema de diseño en `config/design-tokens.json`:
-
-```json
-{
-  "colors": {
-    "primary": "#3B82F6",
-    "background": "#f6f7fb",
-    "textPrimary": "#1f2937"
-  },
-  "fonts": {
-    "primary": "'Inter', -apple-system, sans-serif"
-  },
-  "spacing": {
-    "sm": "8px",
-    "md": "16px",
-    "lg": "24px"
-  }
-}
-```
-
-**Aprende más:** [**Design Tokens Guide**](docs/DESIGN_TOKENS_GUIDE.md)
-
----
-
-## 🔨 Workflow Completo
-
-### 1. Crear Proyecto
-
-```bash
-npm run new:project
-```
-
-### 2. Personalizar Design System
-
-Edita `projects/tu-proyecto/config/design-tokens.json`
-
-### 3. Actualizar Logo
-
-Edita `projects/tu-proyecto/components/header.mjml`
-
-### 4. Crear Templates
-
-Crea archivos `.mjml` en `projects/tu-proyecto/templates/`
-
-### 5. Compilar
-
-```bash
-npm run build -- --project=tu-proyecto
-```
-
-### 6. Probar Localmente
-
-Abre `dist/tu-proyecto/tu-template.html` en el navegador
-
-### 7. Subir a AWS SES (Opcional)
-
-```bash
-# Preparar template
-npm run prepare:ses -- --project=tu-proyecto --template=welcome --name=welcome-v1
+npm run prepare:ses -- --project=todoconta --template=workshop-welcome --name=workshop-welcome-v1
 
 # Subir a AWS
-aws ses create-template --cli-input-json file://projects/tu-proyecto/docs/ses-welcome.json
+aws ses create-template --cli-input-json file://projects/todoconta/docs/ses-workshop-welcome.json
 
-# Enviar masivamente
-npm run send:bulk -- --project=tu-proyecto --template=welcome-v1 --data=data/users.csv
+# Envio masivo con template SES
+npm run send:bulk -- --project=todoconta --template=workshop-welcome-v1 --data=data/participants.csv
 ```
 
 ---
 
-## 📧 Componentes MJML
+## Crear un Nuevo Proyecto
 
-Cada proyecto puede tener sus propios componentes en `projects/{proyecto}/components/`:
+### Generador automatico (recomendado)
 
-### Header (`header.mjml`)
-Logo y barra superior con colores de marca
+```bash
+npm run new:project
+```
 
-### Footer (`footer.mjml`)
-Información de contacto, redes sociales, links legales
+El generador te pedira nombre, email, sitio web y color primario. Crea automaticamente la estructura completa con config, componentes y un template de ejemplo.
 
-### Buttons (`button.mjml`)
-Estilos de botones consistentes con el design system
+### Manual
 
-### Uso en Templates
+Ver la guia completa: [docs/CREATING_PROJECTS.md](docs/CREATING_PROJECTS.md)
+
+---
+
+## Variables de plantilla
+
+Las plantillas usan `{{variable}}` como placeholders que se reemplazan al momento del envio:
+
+```html
+<!-- En el template MJML -->
+<mj-text>Hola, {{nombre}}</mj-text>
+```
+
+Al enviar desde CSV, la columna `nombre` se capitaliza automaticamente:
+- `MARIA ISABEL` -> `Maria Isabel`
+- `jose angel` -> `Jose Angel`
+- Filas sin nombre usan `Usuario` como fallback.
+
+---
+
+## Componentes MJML
+
+Cada proyecto tiene sus componentes en `projects/{proyecto}/components/`:
+
+- **header.mjml** - Logo y barra superior
+- **footer.mjml** - Contacto, redes sociales, links legales
+- **footer-simple.mjml** - Version ligera del footer
+- **button.mjml** - Estilos de botones
+
+### Uso en templates
 
 ```xml
 <mjml>
   <mj-body>
     <mj-include path="../components/header.mjml" />
-    
-    <!-- Tu contenido aquí -->
-    
+
+    <!-- Tu contenido aqui -->
+
     <mj-include path="../components/footer.mjml" />
   </mj-body>
 </mjml>
 ```
 
+> Nota: Algunos templates en subcarpetas (ej: `apps/`) tienen sus propios componentes en `templates/apps/components/` con rutas `./components/header.mjml`.
+
 ---
 
-## 🧪 Testing
+## Configuracion
 
-### Testing Local
+### Variables de entorno (.env)
 
 ```bash
-# Compilar
-npm run build -- --project=tu-proyecto
-
-# Abrir en navegador
-open dist/tu-proyecto/templates/tu-template.html
+AWS_ACCESS_KEY_ID=tu-access-key
+AWS_SECRET_ACCESS_KEY=tu-secret-key
+AWS_REGION=us-east-1
 ```
 
-### Email Clients Recomendados
+### Proyecto (config/project.json)
 
-- ✅ Gmail (Desktop & Mobile)
-- ✅ Outlook 2016/2019/365
-- ✅ Apple Mail (iOS & macOS)
-- ✅ Yahoo Mail
-- ✅ Outlook.com
+```json
+{
+  "name": "todoconta",
+  "displayName": "Todoconta",
+  "sender": {
+    "name": "Israel Castro - Todoconta",
+    "email": "israel@todoconta.com",
+    "replyTo": "israel@todoconta.com"
+  },
+  "aws": {
+    "region": "us-east-1",
+    "templatePrefix": "todoconta-",
+    "sourceEmail": "israel@todoconta.com"
+  }
+}
+```
 
-### Herramientas de Testing
-
-- [Litmus](https://litmus.com/) - Testing profesional
-- [Email on Acid](https://www.emailonacid.com/) - Testing exhaustivo
-- [Mailtrap](https://mailtrap.io/) - Testing en desarrollo
-- [Putsmail](https://putsmail.com/) - Envíos de prueba
-
----
-
-## 📚 Documentación
-
-| Guía | Descripción |
-|------|-------------|
-| [**Quick Start**](docs/QUICK_START.md) | Referencia rápida de comandos |
-| [**Creating Projects**](docs/CREATING_PROJECTS.md) | Cómo crear nuevos proyectos |
-| [**Design Tokens**](docs/DESIGN_TOKENS_GUIDE.md) | Sistema de diseño y tokens |
-
-### Recursos Externos
-
-- [MJML Documentation](https://documentation.mjml.io/) - Documentación oficial
-- [MJML Try It Live](https://mjml.io/try-it-live) - Editor en línea
-- [Can I Email](https://www.caniemail.com/) - Compatibilidad CSS
-
----
-
-## 🔧 Configuración Avanzada
-
-### mjml.config.js
-
-Configuración global de MJML:
+### MJML global (mjml.config.js)
 
 ```javascript
 module.exports = {
@@ -328,92 +247,81 @@ module.exports = {
 };
 ```
 
-### AWS Configuration
+---
 
-Configura cada proyecto en `config/project.json`:
+## Proyecto incluido: Todoconta
 
-```json
-{
-  "aws": {
-    "region": "us-east-1",
-    "templatePrefix": "tu-proyecto-",
-    "sourceEmail": "hello@tuproyecto.com"
-  }
-}
-```
+Proyecto completo con 29 templates:
+
+| Categoria | Templates | Descripcion |
+|-----------|-----------|-------------|
+| `apps/` | 4 | Signup, email change, magic link, DIOT upgrade |
+| `transactional/` | 3 | Compras, bienvenida taller, pre-inicio |
+| `promotional/` | 4 | Ofertas, reto navidad, ultima oportunidad |
+| `newsletter/` | 13 | Boletines, lead magnets, masterclass, workshops |
+| `follow-up/` | 2 | Feedback, recordatorio de venta |
+| `gmail/` | 1 | Template simple |
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-### Build Errors
+### El template no existe al enviar
+Ejecuta `npm run build` primero. Los scripts de envio leen HTML desde `dist/`.
 
-```bash
-# Verificar que el proyecto existe
-ls projects/tu-proyecto
+### Error de credenciales AWS
+Verifica que `.env` tenga `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` y `AWS_REGION`.
 
-# Reinstalar dependencias
-rm -rf node_modules
-npm install
+### Warnings de mj-include al compilar
+Algunos templates antiguos referencian `../components/` que no existen en su directorio. El build completa con warnings pero sin errores.
 
-# Compilar con información detallada
-npm run build -- --project=tu-proyecto
-```
-
-### MJML Validation
-
-- Verifica que todos los `<mj-include>` apunten a archivos existentes
-- Asegúrate de cerrar todas las etiquetas MJML
-- Usa `validationLevel: 'soft'` en `mjml.config.js`
-
-### AWS SES
-
-- Verifica que tu email esté verificado en SES
-- Configura AWS credentials: `aws configure`
-- Revisa la región en `project.json`
+### Las imagenes no se ven en el email
+Usa URLs completas (`https://...`), nunca rutas relativas.
 
 ---
 
-## 🤝 Contribuir
+## Documentacion
 
-Este es un sistema interno, pero si quieres sugerir mejoras:
+| Guia | Descripcion |
+|------|-------------|
+| [QUICK_START.md](QUICK_START.md) | Referencia rapida de comandos |
+| [docs/CREATING_PROJECTS.md](docs/CREATING_PROJECTS.md) | Como crear nuevos proyectos |
+| [docs/DESIGN_TOKENS_GUIDE.md](docs/DESIGN_TOKENS_GUIDE.md) | Sistema de design tokens |
+| [docs/MIGRATION_GUIDE.md](docs/MIGRATION_GUIDE.md) | Guia de migracion |
 
-1. Crea un nuevo proyecto de ejemplo
-2. Documenta tus cambios
-3. Comparte tu configuración de design tokens
+### Recursos externos
+
+- [MJML Documentation](https://documentation.mjml.io/) - Documentacion oficial
+- [MJML Try It Live](https://mjml.io/try-it-live) - Editor en linea
+- [Can I Email](https://www.caniemail.com/) - Compatibilidad CSS en email
 
 ---
 
-## 📝 Changelog
+## Changelog
+
+### v2.1.0 (2026)
+- Utilidades compartidas centralizadas en `cli-helpers.js`
+- Envio directo de HTML via SES (`send:email`) con test, bulk y dry-run
+- Personalizacion de nombres desde CSV con soporte de acentos
+- HTML escaping en variables de plantilla
+- Validacion de email y retry con backoff para SES throttling
+- Fix bug en `getArg()` para valores con `=`
+- Copyright actualizado dinamicamente en el generador
 
 ### v2.0.0 (2025)
-- 🎨 **Arquitectura multi-proyecto**
-- 🔧 **Scripts compartidos reutilizables**
-- 📦 **Generador automático de proyectos**
-- 📚 **Documentación completa**
-- ☁️ **Integración mejorada con AWS SES**
-- 🎯 **Design system por proyecto**
+- Arquitectura multi-proyecto
+- Scripts compartidos reutilizables
+- Generador automatico de proyectos
+- Integracion con AWS SES (templates + envio masivo)
+- Design system por proyecto
 
 ### v1.0.0 (2024)
-- ✨ Sistema inicial para Todoconta
-- 📧 6 templates base
-- 🔨 Build automatizado
+- Sistema inicial para Todoconta
+- 6 templates base
+- Build automatizado
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 MIT License
-
----
-
-## 🚀 Próximos Pasos
-
-1. **Explora el proyecto de ejemplo:** [`projects/todoconta/`](projects/todoconta/)
-2. **Lee la guía de inicio:** [Quick Start](docs/QUICK_START.md)
-3. **Crea tu primer proyecto:** `npm run new:project`
-4. **Personaliza tu design system:** [Design Tokens Guide](docs/DESIGN_TOKENS_GUIDE.md)
-
----
-
-**¿Listo para crear emails increíbles? 🎨✨**

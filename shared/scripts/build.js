@@ -12,14 +12,12 @@
 const fs = require('fs');
 const path = require('path');
 const mjml2html = require('mjml');
+const { ROOT_DIR, getArg } = require('../utils/cli-helpers');
 
 // Parse command line arguments
-const args = process.argv.slice(2);
-const projectArg = args.find(arg => arg.startsWith('--project='));
-const specificProject = projectArg ? projectArg.split('=')[1] : null;
+const specificProject = getArg('project');
 
 // Root directories
-const ROOT_DIR = path.join(__dirname, '../..');
 const PROJECTS_DIR = path.join(ROOT_DIR, 'projects');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 
@@ -49,8 +47,13 @@ function loadProjectConfig(projectName) {
     console.warn(`⚠️  No project.json found for ${projectName}`);
     return { name: projectName, displayName: projectName };
   }
-  
-  return JSON.parse(fs.readFileSync(configPath, 'utf8'));
+
+  try {
+    return JSON.parse(fs.readFileSync(configPath, 'utf8'));
+  } catch (error) {
+    console.error(`❌ Invalid project config for ${projectName}: ${error.message}`);
+    process.exit(1);
+  }
 }
 
 /**
