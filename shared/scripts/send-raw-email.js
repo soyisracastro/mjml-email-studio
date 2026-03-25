@@ -161,6 +161,7 @@ async function sendBulk(csvPath) {
   for (const [index, row] of recipients.entries()) {
     const email = row.email || row.Email || row.EMAIL;
     const rawName = row.nombre || row.Nombre || row.NOMBRE || row.name || row.Name || row.NAME || '';
+    const rawPhone = row.telefono || row.Telefono || row.TELEFONO || row.phone || row.Phone || '';
 
     if (!email) {
       errorCount++;
@@ -178,6 +179,7 @@ async function sendBulk(csvPath) {
 
     const templateData = {
       nombre: capitalizeName(rawName) || 'Usuario',
+      telefono: rawPhone.trim(),
     };
 
     try {

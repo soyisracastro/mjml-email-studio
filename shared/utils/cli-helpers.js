@@ -80,7 +80,7 @@ function readCsv(filePath) {
   return new Promise((resolve, reject) => {
     const rows = [];
     fs.createReadStream(filePath)
-      .pipe(csv())
+      .pipe(csv({ mapHeaders: ({ header }) => header.replace(/^\ufeff/, '').trim() }))
       .on('data', (row) => rows.push(row))
       .on('end', () => resolve(rows))
       .on('error', reject);
