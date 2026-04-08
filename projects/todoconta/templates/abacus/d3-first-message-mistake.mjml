@@ -1,0 +1,324 @@
+<mjml>
+  <mj-head>
+    <mj-title
+      >El error que comete el 80% desde el primer mensaje</mj-title
+    >
+    <mj-preview
+      >Tres mensajes para una pregunta. Abacus funciona mejor si vas
+      directo.</mj-preview
+    >
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .header-subtitle div {
+          text-align: left !important;
+        }
+        .header-subtitle br {
+          display: none !important;
+        }
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: rgba(19, 33, 117, 0.08);
+        border: 1px solid rgba(19, 33, 117, 0.18);
+        color: #132175;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .quote-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #c6c5d3;
+        padding: 16px 20px;
+        margin: 0;
+      }
+
+      .good-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #132175;
+        padding: 18px 20px;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-header.mjml" />
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge">Tip de uso</span>
+        </mj-text>
+
+        <mj-text
+          font-size="34px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="40px"
+          letter-spacing="-1px"
+          padding-bottom="24px"
+        >
+          El error que comete<br />el 80% desde el<br />primer mensaje.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="32px"
+        >
+          Hola, [Name] — Cuando un usuario me dice que Abacus le respondió raro, reviso qué pasó. La mayoría de las veces no es un error de Abacus — es cómo estaba escrito el mensaje:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── BAD EXAMPLES ───────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text padding-bottom="16px">
+          <div class="quote-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 15px;
+                color: #6b7280;
+                line-height: 1.7;
+                font-style: italic;
+              "
+            >
+              "Tengo una duda."<br />
+              "Oye, ¿me puedes ayudar?"<br />
+              "Es sobre CFDI."
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Tres mensajes. Tres veces que Abacus tiene que preguntar de vuelta
+          para entender qué necesitas.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding="0"
+        >
+          No es culpa tuya [Name] — así le escribimos a cualquier persona en WhatsApp.
+          Primero saludamos, luego explicamos, luego preguntamos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── THE KEY INSIGHT ────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 8px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="32px"
+        >
+          Pero Abacus no es una persona. No se ofende si vas directo.
+          De hecho, <strong style="color: #1a1c1b">funciona mejor así</strong>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 40px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── THE TRICK ──────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          EL TRUCO
+        </mj-text>
+
+        <mj-text
+          font-size="20px"
+          font-weight="800"
+          color="#1a1c1b"
+          line-height="28px"
+          letter-spacing="-0.5px"
+          padding-bottom="24px"
+        >
+          Un solo mensaje.<br />Todo el contexto desde la primera línea.
+        </mj-text>
+
+        <!-- Bad example -->
+        <mj-text
+          font-size="11px"
+          font-weight="700"
+          color="#9ca3af"
+          letter-spacing="0.08em"
+          padding-bottom="8px"
+        >
+          ❌ ASÍ NO
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          <div class="quote-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #6b7280;
+                line-height: 1.6;
+              "
+            >
+              "Tengo una duda de declaración anual."
+            </p>
+          </div>
+        </mj-text>
+
+        <!-- Good example -->
+        <mj-text
+          font-size="11px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="0.08em"
+          padding-bottom="8px"
+        >
+          ✅ ASÍ SÍ
+        </mj-text>
+
+        <mj-text padding-bottom="24px">
+          <div class="good-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.6;
+              "
+            >
+              "Abacus, soy persona física, régimen general, ingresos por honorarios y
+              arrendamiento. Tengo una discrepancia entre lo que declaré en
+              pagos provisionales y lo que me sale en la declaración anual.
+              ¿Qué reviso primero?"
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          font-weight="700"
+          color="#1a1c1b"
+          line-height="26px"
+          padding-bottom="32px"
+        >
+          La diferencia en la calidad de la respuesta es enorme.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CTA ────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 48px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="24px"
+        >
+          Pruébalo hoy. Mándale algo que traes atorado y dile todo el contexto
+          desde el inicio.
+        </mj-text>
+
+        <mj-button
+          href="https://wa.me/525544753602?text=Abacus"
+          background-color="#132175"
+          color="#ffffff"
+          font-size="13px"
+          font-weight="700"
+          inner-padding="14px 32px"
+          border-radius="2px"
+          align="left"
+          padding="0"
+        >
+          ABRIR WHATSAPP →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SIGN OFF ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          line-height="24px"
+          color="#454651"
+          padding="0"
+        >
+          — Abacus
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-include path="../../components/abacus-support.mjml" />
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-footer.mjml" />
+  </mj-body>
+</mjml>

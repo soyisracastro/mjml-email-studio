@@ -1,0 +1,46 @@
+<!-- Abacus footer — include .footer-link styles in <mj-head>:
+     .footer-link { color: #6b7280; text-decoration: none; }
+     .footer-link:hover { text-decoration: underline; }
+-->
+<mj-section background-color="#1a1c1b" padding="36px 32px 28px">
+  <mj-column>
+    <mj-text
+      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      font-size="15px"
+      font-weight="700"
+      color="#ffffff"
+      align="center"
+      padding-bottom="4px"
+    >
+      Todoconta
+    </mj-text>
+    <mj-text
+      font-size="12px"
+      color="rgba(255,255,255,0.35)"
+      align="center"
+      padding-bottom="20px"
+    >
+      Soluciones fiscales y contables para México
+    </mj-text>
+    <mj-text
+      font-size="12px"
+      color="#6b7280"
+      align="center"
+      padding-bottom="8px"
+    >
+      <a href="https://todoconta.com/privacidad" class="footer-link"
+        >Política de Privacidad</a
+      >
+      &nbsp;|&nbsp;
+      <a href="https://todoconta.com/terminos" class="footer-link"
+        >Términos y Condiciones</a
+      >
+    </mj-text>
+    <mj-text font-size="12px" color="#6b7280" align="center" padding-bottom="8px">
+      <unsubscribe>Darse de baja</unsubscribe>
+    </mj-text>
+    <mj-text font-size="12px" color="#4b5563" align="center" padding="0">
+      © 2026 Todoconta. Todos los derechos reservados.
+    </mj-text>
+  </mj-column>
+</mj-section>

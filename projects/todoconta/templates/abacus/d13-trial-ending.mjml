@@ -1,0 +1,263 @@
+<mjml>
+  <mj-head>
+    <mj-title>Tu acceso vence mañana</mj-title>
+    <mj-preview
+      >Mañana termina tu periodo de prueba con Abacus. Solo te pregunto una
+      cosa.</mj-preview
+    >
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .header-subtitle div {
+          text-align: left !important;
+        }
+        .header-subtitle br {
+          display: none !important;
+        }
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge-urgent {
+        display: inline-block;
+        background-color: rgba(116, 90, 39, 0.1);
+        border: 1px solid rgba(116, 90, 39, 0.25);
+        color: #745a27;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .question-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #132175;
+        padding: 20px 24px;
+      }
+
+      .price-box {
+        border: 1px solid #c6c5d3;
+        padding: 28px 24px;
+        text-align: center;
+        background-color: #f9f9f7;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-header.mjml" />
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge-urgent">Día 13 de 14</span>
+        </mj-text>
+
+        <mj-text
+          font-size="34px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="40px"
+          letter-spacing="-1px"
+          padding-bottom="24px"
+        >
+          Tu acceso vence<br />mañana.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Hola, [Name] — Mañana termina tu periodo de prueba con Abacus.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding="0"
+        >
+          No te voy a llenar de bullets sobre funcionalidades ni te voy a
+          decir que "es ahora o nunca".
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="32px 32px 0">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── THE QUESTION ───────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="20px"
+        >
+          Solo te pregunto esto:
+        </mj-text>
+
+        <mj-text padding-bottom="32px">
+          <div class="question-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 17px;
+                color: #1a1c1b;
+                line-height: 1.6;
+                font-weight: 600;
+              "
+            >
+              ¿Hubo algún momento esta semana en que Abacus te ahorró tiempo,
+              te sacó de un apuro, o te dio una respuesta que no sabías cómo
+              buscar?
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          font-weight="700"
+          line-height="26px"
+          color="#1a1c1b"
+          padding-bottom="16px"
+        >
+          Si sí — ya sabes lo que vale.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding="0"
+        >
+          Si no lo usaste mucho, te entiendo. A veces la herramienta correcta
+          llega en el momento equivocado. Pero si quieres seguir teniendo
+          acceso cuando sí lo necesites, este es el momento.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CTA + PRICE ────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 8px">
+      <mj-column>
+        <mj-button
+          href="https://buy.stripe.com/5kQ9ATbd311VcqZ3ZKffy0i"
+          background-color="#132175"
+          color="#ffffff"
+          font-size="14px"
+          font-weight="700"
+          inner-padding="16px 40px"
+          border-radius="2px"
+          align="center"
+          padding="0 0 24px 0"
+        >
+          QUIERO MANTENER MI ACCESO →
+        </mj-button>
+
+        <mj-text padding="0">
+          <div class="price-box">
+            <p
+              style="
+                margin: 0 0 4px 0;
+                font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                font-size: 28px;
+                font-weight: 800;
+                color: #745a27;
+                line-height: 1.1;
+              "
+            >
+              $99
+              <span style="font-size: 14px; font-weight: 500; color: #454651"
+                >MXN / mes</span
+              >
+            </p>
+            <p style="margin: 8px 0 0 0; font-size: 13px; color: #9ca3af">
+              Mensual o anual — tú decides. El anual te sale en $82.50/mes (2 meses gratis). Sin contratos forzosos.
+            </p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CLOSE ──────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="32px 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="4px"
+        >
+          Si tienes preguntas, responde este correo. Yo lo leo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SIGN OFF ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          line-height="24px"
+          color="#454651"
+          padding="0"
+        >
+          — Israel
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-include path="../../components/abacus-support.mjml" />
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-footer.mjml" />
+  </mj-body>
+</mjml>

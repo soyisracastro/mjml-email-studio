@@ -1,0 +1,332 @@
+<mjml>
+  <mj-head>
+    <mj-title
+      >El caso del cliente que llegó con una carta del SAT</mj-title
+    >
+    <mj-preview
+      >Su cliente le mandó una foto de la carta a las 8pm. Le respondió en
+      menos de 5 minutos.</mj-preview
+    >
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .header-subtitle div {
+          text-align: left !important;
+        }
+        .header-subtitle br {
+          display: none !important;
+        }
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: rgba(19, 33, 117, 0.08);
+        border: 1px solid rgba(19, 33, 117, 0.18);
+        color: #132175;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .result-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #132175;
+        padding: 18px 20px;
+      }
+
+      .result-item {
+        border-bottom: 1px solid #e8e8e6;
+        padding: 12px 0;
+      }
+      .result-item:first-child {
+        padding-top: 0;
+      }
+      .result-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .highlight-block {
+        background-color: #fef9ec;
+        border-left: 3px solid #745a27;
+        padding: 20px 24px;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-header.mjml" />
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge">Caso real</span>
+        </mj-text>
+
+        <mj-text
+          font-size="34px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="40px"
+          letter-spacing="-1px"
+          padding-bottom="24px"
+        >
+          El caso del cliente<br />que llegó con una<br />carta del SAT.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── STORY ──────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Hola, [Name] — Un contador de Monterrey me contó esto hace unos días.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Su cliente llegó con una carta del SAT que decía que había
+          inconsistencias en su declaración anual. El cliente, pánico total,
+          le mandó una foto de la carta por WhatsApp a las 8pm.
+        </mj-text>
+
+        <mj-text
+          font-size="18px"
+          font-weight="700"
+          line-height="26px"
+          color="#1a1c1b"
+          padding="0"
+        >
+          El contador la reenvió directo a Abacus.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── RESULTS ────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          EN 40 SEGUNDOS TENÍA
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="result-block">
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                Qué tipo de notificación era exactamente
+              </p>
+            </div>
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                Qué obligación le estaban cuestionando
+              </p>
+            </div>
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                Cuáles eran los plazos para responder
+              </p>
+            </div>
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                Qué documentación necesitaba juntar
+              </p>
+            </div>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── OUTCOME ────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Le respondió a su cliente en menos de 5 minutos, con claridad, sin
+          tener que buscar en Google ni esperar al día siguiente.
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="highlight-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                color: #1a1c1b;
+                line-height: 1.6;
+                font-weight: 600;
+              "
+            >
+              El cliente quedó tranquilo.<br />El contador quedó como experto.
+            </p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CLOSE + CTA ───────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 24px">
+      <mj-column>
+        <mj-text
+          font-size="18px"
+          font-weight="700"
+          line-height="28px"
+          color="#1a1c1b"
+          padding-bottom="16px"
+        >
+          Eso es lo que quiero para ti con Abacus.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="24px"
+        >
+          Mañana te escribo con algo importante sobre tu acceso. Mientras
+          tanto: ¿ya probaste mandarle una imagen o documento?
+        </mj-text>
+
+        <mj-button
+          href="https://wa.me/525544753602?text=Abacus"
+          background-color="#132175"
+          color="#ffffff"
+          font-size="13px"
+          font-weight="700"
+          inner-padding="14px 32px"
+          border-radius="2px"
+          align="left"
+          padding="0"
+        >
+          ABRIR WHATSAPP →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SIGN OFF ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="24px 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          line-height="24px"
+          color="#454651"
+          padding="0"
+        >
+          — Abacus
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-include path="../../components/abacus-support.mjml" />
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-footer.mjml" />
+  </mj-body>
+</mjml>

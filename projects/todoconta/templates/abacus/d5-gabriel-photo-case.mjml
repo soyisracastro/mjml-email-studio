@@ -1,0 +1,399 @@
+<mjml>
+  <mj-head>
+    <mj-title
+      >Lo que hizo Gabriel con una foto de un archivero</mj-title
+    >
+    <mj-preview
+      >Le mandó una foto a Abacus. Sin texto. Y obtuvo clave SAT, unidad de
+      medida y cómo deducirlo.</mj-preview
+    >
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .header-subtitle div {
+          text-align: left !important;
+        }
+        .header-subtitle br {
+          display: none !important;
+        }
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: rgba(19, 33, 117, 0.08);
+        border: 1px solid rgba(19, 33, 117, 0.18);
+        color: #132175;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .result-block {
+        background-color: #f4f4f2;
+        border-left: 3px solid #132175;
+        padding: 18px 20px;
+      }
+
+      .result-item {
+        border-bottom: 1px solid #e8e8e6;
+        padding: 12px 0;
+      }
+      .result-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .highlight-block {
+        background-color: #fef9ec;
+        border-left: 3px solid #745a27;
+        padding: 20px 24px;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-header.mjml" />
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge">Caso real</span>
+        </mj-text>
+
+        <mj-text
+          font-size="34px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="40px"
+          letter-spacing="-1px"
+          padding-bottom="24px"
+        >
+          Lo que hizo Gabriel<br />con una foto de<br />un archivero.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── STORY ──────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Hola, [Name] — Gabriel Aranda es abogado fiscalista. Un día su cliente llegó con una factura de unos lockers metálicos — esos de 9 compartimentos para archivar expedientes — y quería saber si estaba bien emitida y si le servía para deducirlos.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          En lugar de buscar en el catálogo del SAT o revisar cláusula por cláusula, Gabriel le mandó una foto del locker directamente a Abacus.
+        </mj-text>
+
+        <mj-text
+          font-size="18px"
+          font-weight="700"
+          line-height="26px"
+          color="#1a1c1b"
+          padding="0"
+        >
+          Sin texto. Solo la imagen.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── WHAT ABACUS RETURNED ───────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          LO QUE ABACUS RESPONDIÓ
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="20px"
+        >
+          Abacus vio la foto, identificó que eran lockers metálicos de
+          almacenamiento para uso profesional, y respondió con:
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="result-block">
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0 0 4px 0;
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: #132175;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                "
+              >
+                Clave de producto SAT
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                <strong>44121700</strong> — Casilleros y gabinetes de
+                almacenamiento
+              </p>
+            </div>
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0 0 4px 0;
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: #132175;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                "
+              >
+                Unidad de medida
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                <strong>H87</strong> — Pieza
+              </p>
+            </div>
+            <div class="result-item">
+              <p
+                style="
+                  margin: 0 0 4px 0;
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: #132175;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                "
+              >
+                Deducibilidad
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  color: #1a1c1b;
+                  line-height: 1.5;
+                "
+              >
+                Resguardo de expedientes, documentación jurídica confidencial →
+                uso de CFDI <strong>I02</strong> (mobiliario y equipo de oficina
+                por inversiones)
+              </p>
+            </div>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── WHAT FOLLOWED ──────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 32px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          font-weight="700"
+          line-height="26px"
+          color="#1a1c1b"
+          padding-bottom="16px"
+        >
+          Todo eso con una imagen y sin teclear nada.
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="16px"
+        >
+          Lo que siguió fue mejor: le explicó qué descripción pedirle al
+          proveedor para el CFDI, cómo justificar la lógica de negocio ante el
+          SAT, y hasta qué evidencia guardar por si algún día hay una revisión.
+        </mj-text>
+
+        <mj-text padding-bottom="32px">
+          <div class="highlight-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 15px;
+                color: #454651;
+                line-height: 1.6;
+              "
+            >
+              Al final, Gabriel nos dijo que usó ese ejercicio para
+              <strong style="color: #1a1c1b">"presumirle" Abacus al C.P. Víctor</strong>
+              que estaba con él. Y funcionó.
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding="0"
+        >
+          Lo interesante es que Abacus sirve para los dos extremos: para el
+          fiscalista que necesita validar una factura compleja, y para quien
+          simplemente necesita saber qué clave del catálogo SAT y unidad de
+          medida usar antes de emitir.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CTA ────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 16px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          ABACUS PROCESA TODO ESTO
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="24px"
+        >
+          Fotos, documentos, capturas de pantalla del SAT, XMLs, estados de
+          cuenta. Lo que sea que tengas frente a ti.
+        </mj-text>
+
+        <mj-text
+          font-size="18px"
+          font-weight="700"
+          line-height="28px"
+          color="#1a1c1b"
+          padding-bottom="24px"
+        >
+          ¿Qué tienes atorado esta semana que podrías simplemente fotografiar
+          y mandarle?
+        </mj-text>
+
+        <mj-button
+          href="https://wa.me/525544753602?text=Abacus"
+          background-color="#132175"
+          color="#ffffff"
+          font-size="13px"
+          font-weight="700"
+          inner-padding="14px 32px"
+          border-radius="2px"
+          align="left"
+          padding="0"
+        >
+          ABRIR WHATSAPP →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SIGN OFF ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="24px 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          line-height="24px"
+          color="#454651"
+          padding="0"
+        >
+          — Abacus
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-include path="../../components/abacus-support.mjml" />
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-footer.mjml" />
+  </mj-body>
+</mjml>

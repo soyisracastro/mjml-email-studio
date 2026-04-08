@@ -1,0 +1,24 @@
+<!-- Abacus support section — place before abacus-footer.mjml -->
+<mj-section background-color="#ffffff" padding="0 32px 36px">
+  <mj-column>
+    <mj-divider
+      border-color="#e8e8e6"
+      border-width="1px"
+      padding="0 0 32px 0"
+    />
+    <mj-text
+      font-size="14px"
+      line-height="22px"
+      color="#454651"
+      align="center"
+      padding="0"
+    >
+      ¿Tienes alguna duda? Responde a este correo o escríbenos a<br />
+      <a
+        href="mailto:abacus@todoconta.com"
+        style="color: #132175; font-weight: 600"
+        >abacus@todoconta.com</a
+      >
+    </mj-text>
+  </mj-column>
+</mj-section>

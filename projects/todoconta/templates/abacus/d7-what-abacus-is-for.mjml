@@ -1,0 +1,362 @@
+<mjml>
+  <mj-head>
+    <mj-title>Para qué SÍ usar Abacus (y para qué no)</mj-title>
+    <mj-preview
+      >Una semana con Abacus. Quiero ser honesto contigo sobre algo.</mj-preview
+    >
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <mj-attributes>
+      <mj-all
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      />
+      <mj-text
+        font-size="15px"
+        line-height="24px"
+        color="#454651"
+        padding="0"
+      />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .header-subtitle div {
+          text-align: left !important;
+        }
+        .header-subtitle br {
+          display: none !important;
+        }
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      a {
+        color: #132175;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: rgba(19, 33, 117, 0.08);
+        border: 1px solid rgba(19, 33, 117, 0.18);
+        color: #132175;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+
+      .list-row {
+        padding: 11px 0;
+        border-bottom: 1px solid #e8e8e6;
+      }
+      .list-row:last-child {
+        border-bottom: none;
+      }
+
+      .check {
+        color: #10b981;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+      .cross {
+        color: #ef4444;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+
+      .insight-block {
+        background-color: #fef9ec;
+        border-left: 3px solid #745a27;
+        padding: 20px 24px;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f2">
+    <!-- ─── HEADER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-header.mjml" />
+
+    <!-- ─── HERO ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 32px 16px">
+      <mj-column>
+        <mj-text padding-bottom="20px">
+          <span class="badge">Semana 1</span>
+        </mj-text>
+
+        <mj-text
+          font-size="34px"
+          font-weight="900"
+          color="#1a1c1b"
+          line-height="40px"
+          letter-spacing="-1px"
+          padding-bottom="24px"
+        >
+          Para qué SÍ usar<br />Abacus (y para<br />qué no).
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding="0"
+        >
+          Hola, [Name] — A estas alturas ya llevas una semana con Abacus. Quiero ser honesto
+          contigo sobre algo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="32px 32px 0">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 32px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── YES LIST ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#132175"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          PARA QUÉ FUE DISEÑADO
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Resolver dudas fiscales rápidas con
+              fundamento
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Revisar claves SAT, regímenes,
+              deducciones
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Analizar documentos, CFDIs, capturas
+              de pantalla, XMLs
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Acompañarte cuando estás con un
+              cliente y necesitas una respuesta ya
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #1a1c1b;
+                line-height: 1.5;
+              "
+            >
+              <span class="check">✓</span>Explicarle a un cliente algo fiscal
+              sin que se pierda
+            </p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── NO LIST ────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="10px"
+          font-weight="700"
+          color="#9ca3af"
+          letter-spacing="1px"
+          padding-bottom="16px"
+        >
+          PARA QUÉ NO
+        </mj-text>
+
+        <mj-text padding="0">
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #454651;
+                line-height: 1.5;
+              "
+            >
+              <span class="cross">✗</span>Presentar declaraciones (eso requiere
+              tus datos reales en el portal del SAT)
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #454651;
+                line-height: 1.5;
+              "
+            >
+              <span class="cross">✗</span>Reemplazar tu criterio en casos
+              complejos con implicaciones legales serias
+            </p>
+          </div>
+          <div class="list-row">
+            <p
+              style="
+                margin: 0;
+                font-size: 14px;
+                color: #454651;
+                line-height: 1.5;
+              "
+            >
+              <span class="cross">✗</span>Darte certeza jurídica absoluta — es
+              un asistente, no un dictamen
+            </p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px">
+      <mj-column>
+        <mj-divider
+          border-color="#e8e8e6"
+          border-width="1px"
+          padding="0 0 40px 0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── KEY INSIGHT ────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text padding-bottom="32px">
+          <div class="insight-block">
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                color: #1a1c1b;
+                line-height: 1.6;
+                font-weight: 600;
+              "
+            >
+              Lo más valioso de Abacus no es que sepa todo. Es que está
+              disponible a las 11 de la noche cuando tu cliente te manda un
+              mensaje de pánico y tú no quieres quedar mal.
+            </p>
+          </div>
+        </mj-text>
+
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#1a1c1b"
+          font-weight="700"
+          padding="0"
+        >
+          Ese es el caso de uso real.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── CTA ────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="16px"
+          line-height="26px"
+          color="#454651"
+          padding-bottom="4px"
+        >
+          ¿En qué momento de tu semana te ha servido más?
+        </mj-text>
+        <mj-text
+          font-size="14px"
+          line-height="22px"
+          color="#9ca3af"
+          padding="0"
+        >
+          Responde este correo — genuinamente me interesa saber.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SIGN OFF ───────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0 32px 40px">
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          line-height="24px"
+          color="#454651"
+          padding="0"
+        >
+          — Abacus
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SUPPORT ────────────────────────────────── -->
+    <mj-include path="../../components/abacus-support.mjml" />
+
+    <!-- ─── FOOTER ─────────────────────────────────── -->
+    <mj-include path="../../components/abacus-footer.mjml" />
+  </mj-body>
+</mjml>

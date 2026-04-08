@@ -1,0 +1,227 @@
+<mjml>
+  <mj-head>
+    <mj-title>Le metimos mano a TodoConta (y quedó bien)</mj-title>
+    <mj-preview>Descarga CFDIs del SAT, archiva empresas, importa desde tu base de datos y más.</mj-preview>
+
+    <!-- Google Fonts: Manrope -->
+    <mj-font name="Manrope" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" />
+      <mj-text font-size="15px" line-height="24px" color="#1a1a1a" padding="0" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      /* Link styles */
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+      }
+
+      /* Section heading */
+      .section-heading {
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 8px 0;
+      }
+
+      /* Footer legal text */
+      .footer-legal {
+        font-size: 12px;
+        color: #9ca3af;
+        line-height: 1.6;
+      }
+      .footer-legal a {
+        color: #9ca3af;
+        text-decoration: underline;
+      }
+      .footer-legal a:hover {
+        color: #6b7280;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+    <mj-wrapper background-color="#ffffff" border-radius="16px" padding="0">
+
+      <!-- Logo Header -->
+      <mj-include path="./components/header.mjml" />
+
+      <!-- Greeting -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-top="8px" padding-bottom="16px">
+            Hola 👋,
+          </mj-text>
+          <mj-text padding-bottom="8px">
+            Llevamos semanas con la cabeza metida en el código.
+          </mj-text>
+          <mj-text padding-bottom="8px">
+            No para agregar cosas por agregar. Sino para resolver lo que más duele en el día a día de un contador: el tiempo que se va en tareas que debería hacer la máquina.
+          </mj-text>
+          <mj-text padding-bottom="24px">
+            Esto es lo que ya está disponible:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Feature 1: Descarga masiva de CFDIs -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="8px">
+            <p class="section-heading">Descarga masiva de CFDIs del SAT</p>
+          </mj-text>
+          <mj-text padding-bottom="8px" font-size="14px" color="#374151">
+            Con tu FIEL seleccionas el periodo y TodoConta baja todo. Emitidos, recibidos, con verificación automática de estatus. Los XMLs se quedan guardados en tu cuenta. Te avisamos por correo cuando están listos.
+          </mj-text>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Sin entrar al portal del SAT. Sin esperar. Sin rezar.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Feature 2: Historial completo -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="8px">
+            <p class="section-heading">Historial completo de CFDIs</p>
+          </mj-text>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Todo lo que descargas o subes queda en tu historial con filtros, estadísticas mensuales y desglose de impuestos. Puedes revalidar estatus en lote y exportar CSV directo a tu software contable.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Feature 3: Procesadores -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="8px">
+            <p class="section-heading">Los procesadores ahora importan desde tu empresa</p>
+          </mj-text>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Ya no subes XMLs cada vez. Con un botón jalás los CFDIs que ya tienes almacenados, directo al procesador que necesites: CFDI, Nómina o Pagos.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Feature 4: Gestión de empresas -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="8px">
+            <p class="section-heading">Gestión de empresas más limpia</p>
+          </mj-text>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Archiva las que ya no usas sin perder nada. Márcalas como favoritas. Búscalas por nombre o RFC con el nuevo buscador. Pequeños cambios, gran diferencia cuando manejas 30 clientes.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Feature 5: Análisis de pagos -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="8px">
+            <p class="section-heading">Análisis de pagos mejorado</p>
+          </mj-text>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Los complementos de pago ahora son relacionales. Ves qué facturas cubre cada complemento, cuánto se ha pagado, qué saldo queda. Sin armar cruces a mano en Excel.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Como empezar -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text padding-bottom="24px" font-size="14px" color="#374151">
+            Si ya tienes cuenta, entra a app.todoconta.com y empieza. Si aún no tienes, regístrate gratis y prueba las calculadoras. Los planes premium arrancan en $199/mes.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- CTA Button -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-button
+            background-color="#2563eb"
+            color="white"
+            href="https://app.todoconta.com"
+            font-size="14px"
+            font-weight="500"
+            padding="12px 24px"
+            border-radius="6px"
+            padding-bottom="32px"
+          >
+            Ir a TodoConta
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-divider border-color="#e5e7eb" border-width="1px" padding="0 0 24px 0"></mj-divider>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer text -->
+      <mj-section padding="0 32px">
+        <mj-column>
+          <mj-text font-size="12px" color="#9ca3af" align="center" padding-bottom="32px">
+            TodoConta Apps · app.todoconta.com
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer (Reusable Component) -->
+      <mj-include path="./components/footer.mjml" />
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
