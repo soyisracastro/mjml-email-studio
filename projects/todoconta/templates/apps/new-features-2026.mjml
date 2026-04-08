@@ -82,13 +82,13 @@
       <mj-section padding="0 32px">
         <mj-column>
           <mj-text padding-bottom="8px">
-            <p class="section-heading">Descarga masiva de CFDIs del SAT</p>
+            <p class="section-heading">📥 Descarga masiva de CFDIs del SAT</p>
           </mj-text>
           <mj-text padding-bottom="8px" font-size="14px" color="#374151">
-            Con tu FIEL seleccionas el periodo y TodoConta baja todo. Emitidos, recibidos, con verificación automática de estatus. Los XMLs se quedan guardados en tu cuenta. Te avisamos por correo cuando están listos.
+            Con tu <b>FIEL</b> seleccionas el periodo y TodoConta baja todo. Emitidos, recibidos, con verificación automática de estatus. Los XMLs se quedan guardados en tu cuenta. Te avisamos por correo cuando están listos.
           </mj-text>
           <mj-text padding-bottom="24px" font-size="14px" color="#374151">
-            Sin entrar al portal del SAT. Sin esperar. Sin rezar.
+            <b>Sin entrar al portal del SAT. Sin esperar. Sin rezar.</b>
           </mj-text>
         </mj-column>
       </mj-section>
@@ -104,10 +104,10 @@
       <mj-section padding="0 32px">
         <mj-column>
           <mj-text padding-bottom="8px">
-            <p class="section-heading">Historial completo de CFDIs</p>
+            <p class="section-heading">🗂️ Historial completo de CFDIs</p>
           </mj-text>
           <mj-text padding-bottom="24px" font-size="14px" color="#374151">
-            Todo lo que descargas o subes queda en tu historial con filtros, estadísticas mensuales y desglose de impuestos. Puedes revalidar estatus en lote y exportar CSV directo a tu software contable.
+            Todo lo que descargas o subes queda en tu historial con filtros, estadísticas mensuales y desglose de impuestos. Puedes <b>revalidar estatus en lote</b> y exportar CSV directo a tu software contable.
           </mj-text>
         </mj-column>
       </mj-section>
@@ -123,10 +123,10 @@
       <mj-section padding="0 32px">
         <mj-column>
           <mj-text padding-bottom="8px">
-            <p class="section-heading">Los procesadores ahora importan desde tu empresa</p>
+            <p class="section-heading">⚡ Los procesadores ahora importan desde tu empresa</p>
           </mj-text>
           <mj-text padding-bottom="24px" font-size="14px" color="#374151">
-            Ya no subes XMLs cada vez. Con un botón jalás los CFDIs que ya tienes almacenados, directo al procesador que necesites: CFDI, Nómina o Pagos.
+            Ya no subes XMLs cada vez. Con un botón jalás los CFDIs que ya tienes almacenados, directo al procesador que necesites: <b>CFDI, Nómina o Pagos</b>.
           </mj-text>
         </mj-column>
       </mj-section>
@@ -142,10 +142,10 @@
       <mj-section padding="0 32px">
         <mj-column>
           <mj-text padding-bottom="8px">
-            <p class="section-heading">Gestión de empresas más limpia</p>
+            <p class="section-heading">🏢 Gestión de empresas más limpia</p>
           </mj-text>
           <mj-text padding-bottom="24px" font-size="14px" color="#374151">
-            Archiva las que ya no usas sin perder nada. Márcalas como favoritas. Búscalas por nombre o RFC con el nuevo buscador. Pequeños cambios, gran diferencia cuando manejas 30 clientes.
+            Archiva las que ya no usas sin perder nada. Márcalas como favoritas. Búscalas por nombre o RFC con el nuevo buscador. <b>Pequeños cambios, gran diferencia</b> cuando manejas 30 clientes.
           </mj-text>
         </mj-column>
       </mj-section>
@@ -161,10 +161,10 @@
       <mj-section padding="0 32px">
         <mj-column>
           <mj-text padding-bottom="8px">
-            <p class="section-heading">Análisis de pagos mejorado</p>
+            <p class="section-heading">💰 Análisis de pagos mejorado</p>
           </mj-text>
           <mj-text padding-bottom="24px" font-size="14px" color="#374151">
-            Los complementos de pago ahora son relacionales. Ves qué facturas cubre cada complemento, cuánto se ha pagado, qué saldo queda. Sin armar cruces a mano en Excel.
+            Los complementos de pago ahora son relacionales. Ves qué facturas cubre cada complemento, cuánto se ha pagado, qué saldo queda. <b>Sin armar cruces a mano en Excel.</b>
           </mj-text>
         </mj-column>
       </mj-section>
